@@ -28,6 +28,18 @@ function updatePage(page) {
     window.history.pushState({ path: newUrl }, '', newUrl);
 }
 
+// Protik's pages
+
+function updateProtiksPage(page) {
+    document.getElementById("backgroundAnime").style.display = "none";
+    document.getElementById("bIframe").style.display = "flex";
+    document.getElementById("threeLineIcon").style.display = "block";
+    iframe.src = `./Protik/${page}.html`;
+    const newUrl = `${window.location.pathname}?page=${page}`;
+    window.history.pushState({ path: newUrl }, '', newUrl);
+}
+
+
 function showMenu() {
     document.getElementById("sideBar").style.left = "0px";
     document.getElementById("threeLineIcon").style.display = "none";
@@ -57,6 +69,10 @@ iframe.onload = function () {
 document.getElementById("home").onclick = () => updatePage("home");
 document.getElementById("about").onclick = () => updatePage("about");
 document.getElementById("privacy").onclick = () => updatePage("privacy");
+document.getElementById("list").onclick = () => updateProtiksPage("list");
+
+
+
 document.getElementById("threeLineIcon").onclick = () => showMenu();
 document.getElementById("crossIcon").onclick = () => hideMenu();
 document.getElementById("getstarted").onclick = () => updatePage("home");
