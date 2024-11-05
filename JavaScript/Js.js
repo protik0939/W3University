@@ -19,7 +19,15 @@ function loadIframeFromURL() {
     }
 }
 
+
+
 function updatePage(page) {
+    iframe.src = `./OtherRoutes/${page}.html`;
+    const newUrl = `${window.location.pathname}?page=${page}`;
+    window.history.pushState({ path: newUrl }, '', newUrl);
+}
+
+function updatePageUp(page) {
     document.getElementById("backgroundAnime").style.display = "none";
     document.getElementById("bIframe").style.display = "flex";
     document.getElementById("threeLineIcon").style.display = "block";
@@ -27,18 +35,6 @@ function updatePage(page) {
     const newUrl = `${window.location.pathname}?page=${page}`;
     window.history.pushState({ path: newUrl }, '', newUrl);
 }
-
-// Protik's pages
-
-function updateProtiksPage(page) {
-    document.getElementById("backgroundAnime").style.display = "none";
-    document.getElementById("bIframe").style.display = "flex";
-    document.getElementById("threeLineIcon").style.display = "block";
-    iframe.src = `./Protik/${page}.html`;
-    const newUrl = `${window.location.pathname}?page=${page}`;
-    window.history.pushState({ path: newUrl }, '', newUrl);
-}
-
 
 function showMenu() {
     document.getElementById("sideBar").style.left = "0px";
@@ -55,8 +51,10 @@ function hideMenu() {
 
 function hideIframe(page) {
     document.getElementById("backgroundAnime").style.display = "flex";
+    document.getElementById("sideBar").style.left = "-250px";
     document.getElementById("bIframe").style.display = "none";
     document.getElementById("threeLineIcon").style.display = "none";
+
     const newUrl = `${window.location.pathname}`;
     window.history.pushState({ path: newUrl }, '', newUrl);
 }
@@ -66,10 +64,11 @@ iframe.onload = function () {
     document.title = pageTitle ? `${pageTitle} | W3University` : "W3University";
 };
 
-document.getElementById("home").onclick = () => updatePage("home");
-document.getElementById("about").onclick = () => updatePage("about");
-document.getElementById("privacy").onclick = () => updatePage("privacy");
-document.getElementById("list").onclick = () => updateProtiksPage("list");
+document.getElementById("home").onclick = () => updatePageUp("home");
+document.getElementById("about").onclick = () => updatePageUp("about");
+document.getElementById("privacy").onclick = () => updatePageUp("privacy");
+document.getElementById("list").onclick = () => updatePage("list");
+document.getElementById("aboutHtml").onclick = () => updatePage("home");
 
 
 
