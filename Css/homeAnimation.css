@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap');
+
+.backgroundAnime {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(315deg, rgba(4, 170, 109, 0.034) 3%, rgba(4, 170, 109, 0.233) 38%, #04aa6d00 68%, rgba(4, 170, 109, 0.322) 98%);
+    animation: gradient 60s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: #04aa6d50;
+    border-radius: 1000% 1000% 0 0;
+    position: absolute;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.bgContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bgContainer h1 {
+    font-size: 80px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 70px;
+}
+
+.bgContainer h2 {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.bgContainer button {
+    background: #04aa6d;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: "Baloo Da 2", serif;
+    font-weight: bolder;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap');
+
+.bnormal {
+    font-family: "Baloo Da 2", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+    color: white;
+    font-family: "Baloo Da 2", serif;
+}
+
+.hDescription{
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+.hTitle{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.homeBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.bigTitle{
+    font-weight: bolder;
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #04aa6d95;
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Rounded scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Color of the scrollbar track */
+}

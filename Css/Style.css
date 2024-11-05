@@ -1,0 +1,169 @@
+body {
+    background: linear-gradient(180deg, rgba(5, 34, 24, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    margin: 0px !important;
+    height: 99vh;
+}
+
+.bnormal {
+    font-family: "Baloo Da 2", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.bBold {
+    font-family: "Baloo Da 2", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.homeLogo {
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 20;
+}
+
+.insideContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    list-style-type: none;
+    border-radius: 10px;
+    background: #04aa6d20;
+    backdrop-filter: blur(10px);
+}
+
+.menus {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.menus li {
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.bIframe {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.bInsideIframe {
+    position: relative;
+    width: 100%;
+    margin: 5px;
+    margin-top: 68px;
+}
+
+.mainIframe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.w3UniLogo {
+    cursor: pointer;
+}
+
+.sideBar {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: #04aa6d30;
+    backdrop-filter: blur(10px);
+    top: 0px;
+    overflow: auto;
+    left: -250px;
+    transition: left 0.3s ease;
+    direction: rtl;
+}
+
+.threeLineIcon {
+    font-size: 30px;
+    position: fixed;
+    bottom: 27px;
+    left: 23px;
+    background-color: #04aa6d30;
+    border-radius: 10px;
+    border: solid #ffffff 1px;
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+    backdrop-filter: blur(10px);
+}
+
+.crossIcon {
+    font-size: 30px;
+    position: fixed;
+    bottom: 27px;
+    left: 23px;
+    background-color: #04aa6d30;
+    border-radius: 10px;
+    border: solid #ffffff 1px;
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+    backdrop-filter: blur(10px);
+}
+
+.sideBarButton {
+    margin-bottom: 5px;
+    border: none;
+    background-color: #04aa6d95;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sideBar::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the scrollbar */
+}
+
+.sideBar::-webkit-scrollbar-thumb {
+    background-color: #04aa6d95;
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Rounded scrollbar thumb */
+}
+
+.sideBar::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Color of the scrollbar track */
+}
