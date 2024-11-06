@@ -69,6 +69,7 @@ document.getElementById("about").onclick = () => updatePageUp("about");
 document.getElementById("privacy").onclick = () => updatePageUp("privacy");
 document.getElementById("list").onclick = () => updatePage("list");
 document.getElementById("aboutHtml").onclick = () => updatePage("home");
+document.getElementById("classes").onclick = () => updatePage("classes");
 
 
 
