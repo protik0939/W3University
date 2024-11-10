@@ -71,6 +71,9 @@ document.getElementById("list").onclick = () => updatePage("list");
 document.getElementById("aboutHtml").onclick = () => updatePage("home");
 document.getElementById("classes").onclick = () => updatePage("classes");
 document.getElementById("elements").onclick = () => updatePage("elements");
+document.getElementById("div").onclick = () => updatePage("div");
+document.getElementById("id").onclick = () => updatePage("id");
+document.getElementById("iframe").onclick = () => updatePage("iframe");
 
 
 
