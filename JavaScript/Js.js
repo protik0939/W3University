@@ -70,7 +70,7 @@ document.getElementById("privacy").onclick = () => updatePageUp("privacy");
 document.getElementById("list").onclick = () => updatePage("list");
 document.getElementById("aboutHtml").onclick = () => updatePage("home");
 document.getElementById("classes").onclick = () => updatePage("classes");
-document.getElementById("elements").onclick = () => updatePage("Elemets");
+document.getElementById("elements").onclick = () => updatePage("elemets");
 
 
 
