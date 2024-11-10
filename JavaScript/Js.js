@@ -76,7 +76,7 @@ document.getElementById("classes").onclick = () => updatePage("Elemets");
 
 document.getElementById("threeLineIcon").onclick = () => showMenu();
 document.getElementById("crossIcon").onclick = () => hideMenu();
-document.getElementById("getstarted").onclick = () => updatePage("home");
+document.getElementById("getstarted").onclick = () => updatePageUp("home");
 document.getElementById("w3UniLogo").onclick = () => hideIframe();
 
 window.onload = loadIframeFromURL;
