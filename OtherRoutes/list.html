@@ -13,13 +13,14 @@
 <body>
     <p>HTML lists allow web developers to group a set of related items in lists.</p>
     <br>
-    <h2>Unordered List</h2>
+
+    <h2><span class="wTitle">Unordered List</span></h2>
     <p>An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the &lt;li&gt; tag.
         <br>
         The list items will be marked with bullets (small black circles) by default:
     </p>
     <br>
-    <h2>Examples:</h2>
+    <h3>Examples:</h3>
     <div class="codebox">
         <div class="mockup-code">
 
@@ -36,7 +37,7 @@
             <pre data-prefix="5"><code>&lt;/ul&gt;</code></pre>
         </div>
         <div class="outputview">
-            
+
             <h3>Output</h3>
             <ul>
                 <li>Coffee</li>
@@ -45,6 +46,125 @@
             </ul>
         </div>
     </div>
+
+
+
+    <h2 style="margin-top: 40px;"><span class="wTitle">Ordered List</span></h2>
+    <p>An ordered list starts with the
+        &lt;ol&gt; tag. Each list item starts with the &lt;li&gt; tag.
+        <br>
+        The list items will be marked with numbers by default:
+    </p>
+    <br>
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <pre data-prefix="1"><code>&lt;ol&gt;</code></pre>
+            <pre data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;li&gt;Coffee&lt;/li&gt;</code></pre>
+            <pre data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;li&gt;Tea&lt;/li&gt;</code></pre>
+            <pre data-prefix="4"><code>&#160;&#160;&#160;&#160;&lt;li&gt;Milk&lt;/li&gt;</code></pre>
+            <pre data-prefix="5"><code>&lt;/ol&gt;</code></pre>
+        </div>
+        <div class="outputview">
+
+            <h3>Output</h3>
+            <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+        </div>
+    </div>
+
+
+
+    <h2 style="margin-top: 40px;"><span class="wTitle">HTML Description Lists</span></h2>
+    <p>
+        HTML also supports description lists.
+
+        A description list is a list of terms, with a description of each term.
+
+        The
+        &lt;dl&gt; tag defines the description list, the &lt;dt&gt; tag defines the term (name), and the
+        &lt;dd&gt; tag describes each term:
+    </p>
+    <br>
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <pre data-prefix="1"><code>&lt;dl&gt;</code></pre>
+
+            <pre data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;dt&gt;Coffee&lt;/dt&gt;</code></pre>
+            <pre data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;dd&gt;- black hot drink&lt;/dd&gt;</code></pre>
+
+            <pre data-prefix="4"><code>&#160;&#160;&#160;&#160;&lt;dt&gt;Milk&lt;/dt&gt;</code></pre>
+            <pre data-prefix="5"><code>&#160;&#160;&#160;&#160;&lt;dd&gt;- white cold drink&lt;/dd&gt;</code></pre>
+
+            <pre data-prefix="6"><code>&lt;/dl&gt;</code></pre>
+        </div>
+        <div class="outputview">
+
+            <h3>Output</h3>
+            <dl>
+                <dt>Coffee</dt>
+                <dd>- black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>- white cold drink</dd>
+            </dl>
+        </div>
+    </div>
+
+    <h2 style="margin-top: 40px;"><span class="wTitle">HTML List Tags</span></h2>
+
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>&lt;ul&gt;</td>
+                <td>Defines an unordered list</td>
+            </tr>
+            <tr>
+                <td>&lt;ol&gt;</td>
+                <td>Defines an ordered list</td>
+            </tr>
+            <tr>
+                <td>&lt;li&gt;</td>
+                <td>Defines a list item</td>
+            </tr>
+            <tr>
+                <td>&lt;dl&gt;</td>
+                <td>Defines a description list</td>
+            </tr>
+            <tr>
+                <td>&lt;dt&gt;</td>
+                <td>Defines a term in a description list</td>
+            </tr>
+            <tr>
+                <td>&lt;dd&gt;</td>
+                <td>Describes the term in a description list</td>
+            </tr>
+        </table>
+    </div>
+
+    <br><br><br>
+
 </body>
 
 </html>
