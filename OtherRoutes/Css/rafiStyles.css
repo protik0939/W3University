@@ -1,31 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap');
 
 body{
-    display: flex;
+    /* 
+    
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    display: block;
     height: 100vh;
-    background-color: #2b3e50;
     margin: 0;
     color: white;
     font-family: "Baloo Da 2", serif;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    
 }
 table {
     width: 60%;
     border-collapse: collapse;
-    background-color: #19232d;
+    background-color: #00663db2;
     color: #dcdcdc;
     font-family: Arial, sans-serif;
+   
+    
 }
 
 th, td {
-    border: 1px solid #444;
+    border: 1px solid #022919b2;
     padding: 12px;
     text-align: center;
 }
 
 th {
-    background-color: #1a1f24;
+    background-color: #d5000000;
     font-weight: bold;
 }
 
@@ -36,4 +43,36 @@ td {
 em {
     color: #999;
     font-style: italic;
+}
+
+
+.container {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.code-box {
+    background-color: #003e33;
+    color: #fff;
+    padding: 20px;
+    min-width: 300px;
+    width: 400px;
+    border-right: 2px solid #2b5248;
+}
+.code-box pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.code-box .line-number {
+    color: #6ee7b7;
+    user-select: none;
+}
+.output-box {
+    background-color: #ffffff;
+    color: black;
+    padding: 20px;
+    min-width: 300px;
+    width: 400px;
 }

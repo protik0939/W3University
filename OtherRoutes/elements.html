@@ -1,45 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./Css/rafiStyles.css">
-   <!-- Rafi -->
+    <link rel="stylesheet" href="./Css/rafiStyles.css">
+    <!-- Rafi -->
     <title>Elements</title>
 </head>
+
 <body>
- <h2>HTML Elements</h2>
- <br>
-<p>An HTML element is defined by a start tag, some content, and an end tag.</p>
-<br>
-<p>Examples of some HTML elements:</p>
-<br><br>
-<table>
-    <thead>
-        <tr>
-            <th>Start tag</th>
-            <th>Element content</th>
-            <th>End tag</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>&lt;h1&gt;</td>
-            <td>My First Heading</td>
-            <td>&lt;/h1&gt;</td>
-        </tr>
-        <tr>
-            <td>&lt;p&gt;</td>
-            <td>My first paragraph.</td>
-            <td>&lt;/p&gt;</td>
-        </tr>
-        <tr>
-            <td>&lt;br&gt;</td>
-            <td><em>none</em></td>
-            <td><em>none</em></td>
-        </tr>
-    </tbody>
-</table>
+    <h2 style="color: rgb(11, 198, 231);">HTML Elements</h2>
+
+    <p>An HTML element is defined by a start tag, some content, and an end tag.</p>
+    <br>
+    <p>Examples of some HTML elements:</p>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Start tag</th>
+                <th>Element content</th>
+                <th>End tag</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;h1&gt;</td>
+                <td>My First Heading</td>
+                <td>&lt;/h1&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;p&gt;</td>
+                <td>My first paragraph.</td>
+                <td>&lt;/p&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;br&gt;</td>
+                <td><em>none</em></td>
+                <td><em>none</em></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h2 style="color: rgb(11, 198, 231);">Nested HTML Elements</h2>
+    <p>HTML elements can be nested (this means that elements can contain other elements).</p>
+    <p>All HTML documents consist of nested HTML elements.</p>
+    <p>
+        The following example contains four HTML elements:
+        <span style="color: tomato;">&lt;html&gt;</span>,
+        <span style="color: tomato;">&lt;body&gt;</span>,
+        <span style="color: tomato">&lt;h1&gt;</span>, and
+        <span style="color: tomato;">&lt;p&gt;</span>.
+    </p>
+
+    <h2>Examples:</h2>
+
+    <div class="container">
+        <!-- Left side: Code block -->
+        <div class="code-box">
+            <pre>
+<span class="line-number">1</span> &lt;!DOCTYPE html&gt;
+<span class="line-number">2</span> &lt;html&gt;
+<span class="line-number">3</span> &lt;body&gt;
+<span class="line-number">4</span> 
+<span class="line-number">5</span> &lt;h1&gt;My First Heading&lt;/h1&gt;
+<span class="line-number">6</span> &lt;p&gt;My first paragraph.&lt;/p&gt;
+<span class="line-number">7</span> 
+<span class="line-number">8</span> &lt;/body&gt;
+<span class="line-number">9</span> &lt;/html&gt;
+            </pre>
+        </div>
+
+        <!-- Right side: Output -->
+        <div class="output-box">
+            <h1>My First Heading</h1>
+            <p>My first paragraph.</p>
+        </div>
+    </div>
+
+    <h2>Example Explained:</h2>
+    <p>
+        The <span style="color: tomato;">&lt;html&gt;</span> element is the root element and it defines the whole HTML
+        document. <br> <br>
+        It has a start tag <span style="color: tomato;">&lt;html&gt;</span> and an end tag <span
+            style="color: tomato;">&lt;/html&gt;</span><br><br>
+        Then, inside the<span style="color: tomato;">&lt;html&gt;</span> element there is a <span
+            style="color: tomato;">&lt;html&gt;</span> element:
+    </p>
+
+
+
+    <div class="container">
+
+        <div class="code-box">
+            <pre>
+
+<span class="line-number"></span> &lt;body&gt; <br>
+<span class="line-number"></span> &lt;h1&gt;My First Heading&lt;/h1&gt;
+<span class="line-number"></span> &lt;p&gt;My first paragraph.&lt;/p&gt; <br>
+<span class="line-number"></span> &lt;/body&gt;
+
+            </pre>
+        </div>
+
+    </div>
+
+    <p>
+        The <span style="color: tomato;">&lt;body&gt;</span> element defines the document's body. <br> <br>
+        It has a start tag <span style="color: tomato;">&lt;body&gt;</span> and an end tag <span
+            style="color: tomato;">&lt;/body&gt;</span> <br> <br>
+        Then, inside the <span style="color: tomato;">&lt;body&gt;</span> element there are two other elements: <span
+            style="color: tomato;">&lt;h1&gt;</span> and <span style="color: tomato;">&lt;p&gt;</span> :
+    </p>
+
+
+    <div class="container">
+
+        <div class="code-box">
+            <pre>
+
+
+<span class="line-number"></span> &lt;h1&gt;My First Heading&lt;/h1&gt;
+<span class="line-number"></span> &lt;p&gt;My first paragraph.&lt;/p&gt; <br>
+
+
+            </pre>
+        </div>
+
+    </div>
+
+    <p>
+        The <span style="color: tomato;">&lt;h1&gt;</span>element defines a heading. <br><br>
+        It has a start tag <span style="color: tomato;">&lt;body&gt;</span>and an end tag <span
+            style="color: tomato;">&lt;/h1&gt;</span>:
+    </p>
+
+
+
+    <div class="container">
+
+        <div class="code-box">
+            <pre>
+
+<span class="line-number"></span> &lt;h1&gt;My First Heading&lt;/h1&gt;
+
+        </pre>
+        </div>
+
+    </div>
+
+
+
+    <p>
+        The <span style="color: tomato;">&lt;p&gt;</span>element defines a paragraph. <br><br>
+        It has a start tag <span style="color: tomato;">&lt;p&gt;</span>and an end tag <span
+            style="color: tomato;">&lt;/p&gt;</span>:
+    </p>
+
+
+
+    <div class="container">
+
+        <div class="code-box">
+            <pre>
+
+<span class="line-number"></span> &lt;p&gt;My first paragraph.&lt;p&gt;
+        </pre>
+        </div>
+
+    </div>
+
+
+
+    <h2 style="color: rgb(11, 198, 231);">Never Skip the End Tag</h2>
+    <p>Some HTML elements will display correctly, even if you forget the end tag:</p>
+    <div class="container">
+        <!-- Left side: Code block -->
+        <div class="code-box">
+            <pre>
+<span class="line-number">1</span> &lt;!DOCTYPE html&gt;
+<span class="line-number">2</span> &lt;html&gt;
+<span class="line-number">3</span> &lt;body&gt;
+<span class="line-number">4</span> 
+<span class="line-number">5</span> &lt;p&gt;This is a paragraph.
+<span class="line-number">6</span> &lt;p&gt;This is a paragraph.
+<span class="line-number">7</span> 
+<span class="line-number">8</span> &lt;/body&gt;
+<span class="line-number">9</span> &lt;/html&gt;
+            </pre>
+        </div>
+
+        <!-- Right side: Output -->
+        <div class="output-box">
+            <h1>My First Heading</h1>
+            <p>My first paragraph.</p>
+        </div>
+    </div>
+    <p>However, never rely on this! Unexpected results and errors may occur if you forget the end tag!</p>
+
+    <h2 style="color: rgb(11, 198, 231);">Empty HTML Elements</h2>
+    <p>HTML elements with no content are called empty elements</p>
+    <p>The <span style="color: tomato;">&lt;br&gt;</span> tag defines a line break, and is an empty element without a
+        closing tag:</p>
+
+    <div class="container">
+        <!-- Left side: Code block -->
+        <div class="code-box">
+            <pre>
+<span class="line-number">1</span> &lt;!DOCTYPE html&gt;
+<span class="line-number">2</span> &lt;html&gt;
+<span class="line-number">3</span> &lt;body&gt;
+<span class="line-number">4</span> <br>
+<span class="line-number">5</span> &lt;p&gt;This is a &lt;br&gt; paragraph with a line break &lt;/p&gt;.</p>
+<span class="line-number">6</span>
+<span class="line-number">7</span> &lt;/body&gt;
+<span class="line-number">8</span> &lt;/html&gt;
+            </pre>
+        </div>
+
+        <!-- Right side: Output -->
+        <div class="output-box">
+            <p>This is a</h1> <br>
+            <p>paragraph with a line break.</p>
+        </div>
+    </div>
+
+    <h2 style="color: rgb(11, 198, 231)">HTML is Not Case Sensitive</h2>
+
+    <p>HTML tags are not case sensitive: <span style="color: tomato;">&lt;p&gt;</span> means the same as <span
+            style="color: tomato;">&lt;p&gt;</span>. <br> <br>
+
+        The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase
+        for stricter document types like XHTML.
+
+    </p>
+
+
 
 </body>
+
+
 </html>
