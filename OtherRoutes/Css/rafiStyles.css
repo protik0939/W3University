@@ -1,6 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap');
 
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2b3e50;
+    margin: 0;
     color: white;
     font-family: "Baloo Da 2", serif;
+}
+table {
+    width: 60%;
+    border-collapse: collapse;
+    background-color: #19232d;
+    color: #dcdcdc;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    border: 1px solid #444;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #1a1f24;
+    font-weight: bold;
+}
+
+td {
+    background-color: #2e3d49;
+}
+
+em {
+    color: #999;
+    font-style: italic;
 }
