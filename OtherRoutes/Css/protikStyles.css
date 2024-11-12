@@ -84,38 +84,74 @@ h6 {
 
 
 
-.sideBar::-webkit-scrollbar {
-    width: 8px;
-}
-
-.sideBar::-webkit-scrollbar-thumb {
-    background-color: #04aa6d95;
-    border-radius: 10px;
-}
-
-.sideBar::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
 .table-container {
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
-th, td {
+
+th,
+td {
     padding: 12px;
     text-align: left;
     border: 1px solid #ffffff1e;
 }
+
 th {
     background-color: #04aa6d;
     color: white;
 }
+
 tr:nth-child(even) {
     background-color: #f2f2f21e;
+}
+
+
+
+/* Making Responsive */
+
+@media only screen and (max-width: 600px) {
+
+    .codebox {
+        width: 100%;
+        flex-direction: column;
+    }
+
+/* Code box styling */
+.mockup-code {
+    border-radius: 8px 8px 0px 0px;
+    width: auto;
+    font-size: medium;
+}
+
+
+    .outputview {
+        width: auto;
+        border-radius: 0px 0px 8px 8px;
+    }
+
+}
+
+
+
+
+/* For Customizing Scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #04aa6d95;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
 }
