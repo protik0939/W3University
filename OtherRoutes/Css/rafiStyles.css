@@ -1,20 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap');
 
-body{
+body {
     color: white;
     font-family: "Baloo Da 2", serif;
-    
-}
 
-
-/* h1-h6 styling */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
 }
 
 
@@ -45,7 +34,8 @@ tr {
     justify-content: space-between;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #022919b2;
     padding: 12px;
     text-align: center;
@@ -65,17 +55,6 @@ em {
     color: #999;
     font-style: italic;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* h1-h6 styling */
@@ -154,53 +133,6 @@ h6 {
 }
 
 
-
-
-
-/* .container {
-    display: block;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-.code-box {
-    background-color: #003e33;
-    color: #fff;
-    padding: 20px;
-    min-width: 300px;
-    width: 100%;
-    border-right: 2px solid #2b5248;
-}
-.code-box pre {
-    margin: 0;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-.code-box .line-number {
-    color: #6ee7b7;
-    user-select: none;
-}
-.output-box {
-    background-color: #ffffff;
-    color: black;
-    padding: 20px;
-    min-width: 300px;
-    width: 400px;
-}
-
-
-
-
-
-
-
-
- */
-
-
-
-
-
 /* Making Responsive */
 
 @media only screen and (max-width: 600px) {
@@ -210,12 +142,12 @@ h6 {
         flex-direction: column;
     }
 
-/* Code box styling */
-.mockup-code {
-    border-radius: 8px 8px 0px 0px;
-    width: auto;
-    font-size: medium;
-}
+    /* Code box styling */
+    .mockup-code {
+        border-radius: 8px 8px 0px 0px;
+        width: auto;
+        font-size: medium;
+    }
 
 
     .outputview {
