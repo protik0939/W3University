@@ -1,34 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap');
 
-body{
-    /* 
-    
-    justify-content: center;
-    align-items: center; */
-    display: block;
-    height: 100vh;
-    margin: 0;
+body {
     color: white;
     font-family: "Baloo Da 2", serif;
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-    
-}
-table {
-    width: 60%;
-    border-collapse: collapse;
-    background-color: #00663db2;
-    color: #dcdcdc;
-    font-family: Arial, sans-serif;
-   
-    
+
 }
 
-th, td {
+
+table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #00663db2;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+thead {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+tbody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+tr {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+th,
+td {
     border: 1px solid #022919b2;
     padding: 12px;
     text-align: center;
+    flex: 1;
 }
 
 th {
@@ -46,33 +57,120 @@ em {
 }
 
 
-.container {
-    display: flex;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-.code-box {
-    background-color: #003e33;
-    color: #fff;
-    padding: 20px;
-    min-width: 300px;
-    width: 400px;
-    border-right: 2px solid #2b5248;
-}
-.code-box pre {
+/* h1-h6 styling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
-    white-space: pre-wrap;
-    word-wrap: break-word;
 }
-.code-box .line-number {
-    color: #6ee7b7;
-    user-select: none;
+
+.codebox {
+    width: 100%;
+    display: flex;
 }
-.output-box {
+
+.wTitle {
+    border: solid #04aa6d 2px;
+    color: #04aa6d;
+    border-right: 0px;
+    border-top: 0px;
+    padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+/* Code box styling */
+.mockup-code {
+    background-color: #053122;
+    color: #f5f5f7;
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 8px 0px 0px 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    width: 50%;
+    overflow-x: auto;
+    position: relative;
+}
+
+.code-header {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+}
+
+.dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #04aa6d;
+    border-radius: 50%;
+}
+
+.mockup-code pre {
+    margin: 0;
+}
+
+.mockup-code pre::before {
+    content: attr(data-prefix);
+    color: #04aa6d;
+    margin-right: 1rem;
+    min-width: 2rem;
+    text-align: right;
+}
+
+.outputview {
+    padding: 10px;
     background-color: #ffffff;
-    color: black;
-    padding: 20px;
-    min-width: 300px;
-    width: 400px;
+    color: #000000;
+    width: 50%;
+    border-radius: 0px 8px 8px 0px;
+}
+
+
+/* Making Responsive */
+
+@media only screen and (max-width: 600px) {
+
+    .codebox {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    /* Code box styling */
+    .mockup-code {
+        border-radius: 8px 8px 0px 0px;
+        width: auto;
+        font-size: medium;
+    }
+
+
+    .outputview {
+        width: auto;
+        border-radius: 0px 0px 8px 8px;
+    }
+
+}
+
+
+
+
+/* For Customizing Scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #04aa6d95;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
 }

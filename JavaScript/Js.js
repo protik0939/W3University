@@ -25,6 +25,10 @@ function updatePage(page) {
     iframe.src = `./OtherRoutes/${page}.html`;
     const newUrl = `${window.location.pathname}?page=${page}`;
     window.history.pushState({ path: newUrl }, '', newUrl);
+    document.getElementById("sideBar").style.left = "-250px";
+    document.getElementById("crossIcon").style.display = "none";
+    document.getElementById("threeLineIcon").style.display = "block";
+
 }
 
 function updatePageUp(page) {

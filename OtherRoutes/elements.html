@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <h2 style="color: rgb(11, 198, 231);">HTML Elements</h2>
+    <h2> <span class="wTitle">HTML Elements</span></h2>
 
     <p>An HTML element is defined by a start tag, some content, and an end tag.</p>
     <br>
@@ -43,200 +43,287 @@
         </tbody>
     </table>
     <br>
-    <h2 style="color: rgb(11, 198, 231);">Nested HTML Elements</h2>
+    <h2> <span class="wTitle">Nested HTML Elements</span></h2>
     <p>HTML elements can be nested (this means that elements can contain other elements).</p>
     <p>All HTML documents consist of nested HTML elements.</p>
     <p>
         The following example contains four HTML elements:
-        <span style="color: tomato;">&lt;html&gt;</span>,
-        <span style="color: tomato;">&lt;body&gt;</span>,
-        <span style="color: tomato">&lt;h1&gt;</span>, and
-        <span style="color: tomato;">&lt;p&gt;</span>.
+        <span style="color: #04aa6d">&lt;html&gt;</span>,
+        <span style="color: #04aa6d">&lt;body&gt;</span>,
+        <span style="color: #04aa6d">&lt;h1&gt;</span>, and
+        <span style="color: #04aa6d">&lt;p&gt;</span>.
     </p>
 
-    <h2>Examples:</h2>
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
 
-    <div class="container">
-        <!-- Left side: Code block -->
-        <div class="code-box">
-            <pre>
-<span class="line-number">1</span> &lt;!DOCTYPE html&gt;
-<span class="line-number">2</span> &lt;html&gt;
-<span class="line-number">3</span> &lt;body&gt;
-<span class="line-number">4</span> 
-<span class="line-number">5</span> &lt;h1&gt;My First Heading&lt;/h1&gt;
-<span class="line-number">6</span> &lt;p&gt;My first paragraph.&lt;/p&gt;
-<span class="line-number">7</span> 
-<span class="line-number">8</span> &lt;/body&gt;
-<span class="line-number">9</span> &lt;/html&gt;
-            </pre>
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+
+            <pre
+                data-prefix="1"><code>&lt;<span style="color: tomato;">!DOCTYPE <span style="color: rgb(0, 255, 174);">html</span> </span>&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;<span style="color: tomato;">html</span>&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;<span span style="color: tomato;">body</span>&gt;</code></pre>
+
+            <br>
+
+            <pre
+                data-prefix="4"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h1</span>&gt;My First Heading&lt;<span style="color: rgb(0, 255, 174);">/h1</span>&gt;</code></pre>
+            <pre
+                data-prefix="5"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">p</span>&gt;My first paragraph.&lt;<span style="color: rgb(0, 255, 174);">/p</span>&gt;</code></pre>
+
+            <br>
+
+            <pre data-prefix="3"><code>&lt;<span span style="color: tomato;">/body</span>&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;<span style="color: tomato;">/html</span>&gt;</code></pre>
+
         </div>
+        <div class="outputview">
 
-        <!-- Right side: Output -->
-        <div class="output-box">
-            <h1>My First Heading</h1>
-            <p>My first paragraph.</p>
+            <h3>Output</h3>
+            <dl>
+                <h1>My First Heading</h1>
+                <p>My first paragraph.</p>
+            </dl>
         </div>
     </div>
 
-    <h2>Example Explained:</h2>
+    <h3>Example Explained:</h3>
     <p>
-        The <span style="color: tomato;">&lt;html&gt;</span> element is the root element and it defines the whole HTML
+        The <span style="color: #04aa6d">&lt;html&gt;</span> element is the root element and it defines the whole HTML
         document. <br> <br>
-        It has a start tag <span style="color: tomato;">&lt;html&gt;</span> and an end tag <span
-            style="color: tomato;">&lt;/html&gt;</span><br><br>
-        Then, inside the<span style="color: tomato;">&lt;html&gt;</span> element there is a <span
-            style="color: tomato;">&lt;html&gt;</span> element:
+        It has a start tag <span style="color: #04aa6d">&lt;html&gt;</span> and an end tag <span
+            style="color: #04aa6d">&lt;/html&gt;</span><br><br>
+        Then, inside the<span style="color: #04aa6d">&lt;html&gt;</span> element there is a <span
+            style="color: #04aa6d">&lt;html&gt;</span> element:
     </p>
 
+    <div class="codebox">
+        <div class="mockup-code">
 
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
 
-    <div class="container">
+            <pre data-prefix="1"><code>&lt;<span span style="color: tomato;">body</span>&gt;</code></pre>
 
-        <div class="code-box">
-            <pre>
+            <br>
 
-<span class="line-number"></span> &lt;body&gt; <br>
-<span class="line-number"></span> &lt;h1&gt;My First Heading&lt;/h1&gt;
-<span class="line-number"></span> &lt;p&gt;My first paragraph.&lt;/p&gt; <br>
-<span class="line-number"></span> &lt;/body&gt;
+            <pre
+                data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h1</span>&gt;My First Heading&lt;<span style="color: rgb(0, 255, 174);">/h1</span>&gt;</code></pre>
+            <pre
+                data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">p</span>&gt;My first paragraph.&lt;<span style="color: rgb(0, 255, 174);">/p</span>&gt;</code></pre>
 
-            </pre>
+            <br>
+
+            <pre data-prefix="4"><code>&lt;<span span style="color: tomato;">/body</span>&gt;</code></pre>
+
         </div>
+        <div class="outputview">
 
+            <h3>Output</h3>
+            <dl>
+                <h1>My First Heading</h1>
+                <p>My first paragraph.</p>
+            </dl>
+        </div>
     </div>
 
     <p>
-        The <span style="color: tomato;">&lt;body&gt;</span> element defines the document's body. <br> <br>
-        It has a start tag <span style="color: tomato;">&lt;body&gt;</span> and an end tag <span
-            style="color: tomato;">&lt;/body&gt;</span> <br> <br>
-        Then, inside the <span style="color: tomato;">&lt;body&gt;</span> element there are two other elements: <span
-            style="color: tomato;">&lt;h1&gt;</span> and <span style="color: tomato;">&lt;p&gt;</span> :
+        The <span style="color: #04aa6d">&lt;body&gt;</span> element defines the document's body. <br> <br>
+        It has a start tag <span style="color: #04aa6d">&lt;body&gt;</span> and an end tag <span
+            style="color: #04aa6d">&lt;/body&gt;</span> <br> <br>
+        Then, inside the <span style="color: #04aa6d">&lt;body&gt;</span> element there are two other elements: <span
+            style="color: #04aa6d">&lt;h1&gt;</span> and <span style="color: #04aa6d">&lt;p&gt;</span> :
     </p>
 
+    <div class="codebox">
+        <div class="mockup-code">
 
-    <div class="container">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
 
-        <div class="code-box">
-            <pre>
+            <pre
+                data-prefix="1"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h1</span>&gt;My First Heading&lt;<span style="color: rgb(0, 255, 174);">/h1</span>&gt;</code></pre>
+            <pre
+                data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">p</span>&gt;My first paragraph.&lt;<span style="color: rgb(0, 255, 174);">/p</span>&gt;</code></pre>
 
-
-<span class="line-number"></span> &lt;h1&gt;My First Heading&lt;/h1&gt;
-<span class="line-number"></span> &lt;p&gt;My first paragraph.&lt;/p&gt; <br>
-
-
-            </pre>
         </div>
+        <div class="outputview">
 
+            <h3>Output</h3>
+            <dl>
+                <h1>My First Heading</h1>
+                <p>My first paragraph.</p>
+            </dl>
+        </div>
     </div>
 
     <p>
-        The <span style="color: tomato;">&lt;h1&gt;</span>element defines a heading. <br><br>
-        It has a start tag <span style="color: tomato;">&lt;body&gt;</span>and an end tag <span
-            style="color: tomato;">&lt;/h1&gt;</span>:
+        The <span style="color: #04aa6d">&lt;h1&gt;</span>element defines a heading. <br><br>
+        It has a start tag <span style="color: #04aa6d">&lt;body&gt;</span>and an end tag <span
+            style="color: #04aa6d">&lt;/h1&gt;</span>:
     </p>
 
+    <div class="codebox">
+        <div class="mockup-code">
 
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
 
-    <div class="container">
+            <pre
+                data-prefix="1"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h1</span>&gt;My First Heading&lt;<span style="color: rgb(0, 255, 174);">/h1</span>&gt;</code></pre>
 
-        <div class="code-box">
-            <pre>
-
-<span class="line-number"></span> &lt;h1&gt;My First Heading&lt;/h1&gt;
-
-        </pre>
         </div>
+        <div class="outputview">
 
+            <h3>Output</h3>
+            <dl>
+                <h1>My First Heading</h1>
+
+            </dl>
+        </div>
     </div>
-
-
 
     <p>
-        The <span style="color: tomato;">&lt;p&gt;</span>element defines a paragraph. <br><br>
-        It has a start tag <span style="color: tomato;">&lt;p&gt;</span>and an end tag <span
-            style="color: tomato;">&lt;/p&gt;</span>:
+        The <span style="color: #04aa6d">&lt;p&gt;</span>element defines a paragraph. <br><br>
+        It has a start tag <span style="color: #04aa6d">&lt;p&gt;</span>and an end tag <span
+            style="color: #04aa6d">&lt;/p&gt;</span>:
     </p>
 
 
+    <div class="codebox">
+        <div class="mockup-code">
 
-    <div class="container">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
 
-        <div class="code-box">
-            <pre>
+            <pre
+                data-prefix="1"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">p</span>&gt;My first paragraph.&lt;<span style="color: rgb(0, 255, 174);">/p</span>&gt;</code></pre>
 
-<span class="line-number"></span> &lt;p&gt;My first paragraph.&lt;p&gt;
-        </pre>
+
         </div>
+        <div class="outputview">
 
+            <h3>Output</h3>
+            <dl>
+
+                <p>My first paragraph.</p>
+            </dl>
+        </div>
     </div>
 
+    <br>
+    <!-- Never Skip the End Tag -->
 
 
-    <h2 style="color: rgb(11, 198, 231);">Never Skip the End Tag</h2>
+    <h2> <span class="wTitle">Never Skip the End Tag </span></h2>
     <p>Some HTML elements will display correctly, even if you forget the end tag:</p>
-    <div class="container">
-        <!-- Left side: Code block -->
-        <div class="code-box">
-            <pre>
-<span class="line-number">1</span> &lt;!DOCTYPE html&gt;
-<span class="line-number">2</span> &lt;html&gt;
-<span class="line-number">3</span> &lt;body&gt;
-<span class="line-number">4</span> 
-<span class="line-number">5</span> &lt;p&gt;This is a paragraph.
-<span class="line-number">6</span> &lt;p&gt;This is a paragraph.
-<span class="line-number">7</span> 
-<span class="line-number">8</span> &lt;/body&gt;
-<span class="line-number">9</span> &lt;/html&gt;
-            </pre>
-        </div>
 
-        <!-- Right side: Output -->
-        <div class="output-box">
-            <h1>My First Heading</h1>
-            <p>My first paragraph.</p>
+
+    <div class="codebox">
+        <div class="mockup-code">
+
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+
+            <pre data-prefix="1"><code>&lt;<span style="color: tomato;">html</span>&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;<span span style="color: tomato;">body</span>&gt;</code></pre>
+
+            <br>
+
+            <pre
+                data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">p</span>&gt;My first paragraph.<span style="color: rgb(0, 255, 174);"></span></code></pre>
+            <pre
+                data-prefix="4"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">p</span>&gt;My first paragraph.<span style="color: rgb(0, 255, 174);"></span></code></pre>
+
+            <br>
+
+            <pre data-prefix="5"><code>&lt;<span span style="color: tomato;">/body</span>&gt;</code></pre>
+            <pre data-prefix="6"><code>&lt;<span style="color: tomato;">/html</span>&gt;</code></pre>
+
+
+        </div>
+        <div class="outputview">
+
+            <h3>Output</h3>
+            <dl>
+
+                <p>My first paragraph.</p>
+                <p>My first paragraph.</p>
+            </dl>
         </div>
     </div>
-    <p>However, never rely on this! Unexpected results and errors may occur if you forget the end tag!</p>
 
-    <h2 style="color: rgb(11, 198, 231);">Empty HTML Elements</h2>
-    <p>HTML elements with no content are called empty elements</p>
-    <p>The <span style="color: tomato;">&lt;br&gt;</span> tag defines a line break, and is an empty element without a
+    <p>However, never rely on this! Unexpected results and errors may occur if you forget the end tag!</p>
+    <br>
+    <!--  Empty HTML Elements -->
+
+    <h2> <span class="wTitle">Empty HTML Elements</span> </h2>
+    <p>The <span style="color: #04aa6d">&lt;br&gt;</span> tag defines a line break, and is an empty element without a
         closing tag:</p>
 
-    <div class="container">
-        <!-- Left side: Code block -->
-        <div class="code-box">
-            <pre>
-<span class="line-number">1</span> &lt;!DOCTYPE html&gt;
-<span class="line-number">2</span> &lt;html&gt;
-<span class="line-number">3</span> &lt;body&gt;
-<span class="line-number">4</span> <br>
-<span class="line-number">5</span> &lt;p&gt;This is a &lt;br&gt; paragraph with a line break &lt;/p&gt;.</p>
-<span class="line-number">6</span>
-<span class="line-number">7</span> &lt;/body&gt;
-<span class="line-number">8</span> &lt;/html&gt;
-            </pre>
-        </div>
 
-        <!-- Right side: Output -->
-        <div class="output-box">
-            <p>This is a</h1> <br>
-            <p>paragraph with a line break.</p>
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <pre data-prefix="1">
+                <code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">p</span>&gt;This is a paragraph with a line break.&lt;br&gt;&lt;<span style="color: rgb(0, 255, 174);">/p</span>&gt;</code>
+            </pre>
+
+
+            <br>
+
+
+        </div>
+        <div class="outputview">
+
+            <h3>Output</h3>
+            <dl>
+                <p>This is a</p><br>
+                <p>paragraph with a line break..</p>
+            </dl>
         </div>
     </div>
 
-    <h2 style="color: rgb(11, 198, 231)">HTML is Not Case Sensitive</h2>
+    <br>
+    <!-- HTML tags are not case sensitive -->
+    <h2> <span class="wTitle">HTML is Not Case Sensitive</span></h2>
 
-    <p>HTML tags are not case sensitive: <span style="color: tomato;">&lt;p&gt;</span> means the same as <span
-            style="color: tomato;">&lt;p&gt;</span>. <br> <br>
+    <p>HTML tags are not case sensitive: <span style="color: #04aa6d">&lt;p&gt;</span> means the same as <span
+            style="color: #04aa6d">&lt;p&gt;</span>. <br> <br>
 
         The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase
         for stricter document types like XHTML.
 
     </p>
-
-
 
 </body>
 
