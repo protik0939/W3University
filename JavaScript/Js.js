@@ -79,7 +79,7 @@ document.getElementById("div").onclick = () => updatePage("div");
 document.getElementById("id").onclick = () => updatePage("id");
 document.getElementById("iframe").onclick = () => updatePage("iframe");
 document.getElementById("forms").onclick = () => updatePage("forms");
-
+document.getElementById("links").onclick = () => updatePage("links");
 
 
 document.getElementById("threeLineIcon").onclick = () => showMenu();
@@ -88,3 +88,4 @@ document.getElementById("getstarted").onclick = () => updatePageUp("home");
 document.getElementById("w3UniLogo").onclick = () => hideIframe();
 
 window.onload = loadIframeFromURL;
+
