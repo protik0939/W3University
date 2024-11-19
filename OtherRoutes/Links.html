@@ -160,6 +160,7 @@
 
 
     </div> 
+
     <div class="outputview">
 
         <h3>Output</h3>
@@ -176,6 +177,7 @@
         <h3>Examples:</h3>
 
 <div class="codebox">
+
     <div class="mockup-code">
 
         <div class="code-header">
@@ -183,7 +185,7 @@
             <span class="dot"></span> 
             <span class="dot"></span> 
         </div>
-       
+
         <pre data-prefix="1"><code>&lt;button onclick=&quot;document.location=&#39;default.asp&#39;&quot;&gt;</code></pre>
         <pre data-prefix="2"><code>&#160;&#160;&#160;&#160;HTML Tutorial</code></pre>
         <pre data-prefix="3"><code>&lt;/button&gt;</code></pre>
@@ -225,7 +227,77 @@
 </div>
 <br>
 <h2><span class="wTitle">HTML Links - Different Colors</span></h2>
+<p>An HTML link is displayed in a different color depending on whether it has been visited, is unvisited, or is active.</p>
+<p>By default, a link will appear like this (in all browsers):</p>
 
+<div>
+    <ul>
+       <li>An unvisited link is underlined and blue</li>
+       <li>A visited link is underlined and purple</li>
+       <li>An active link is underlined and red</li>
+   </ul>
+</div>
+<p>You can change the link state colors, by using CSS:</p>
+
+<h3>Examples:</h3>
+<p>Here, an unvisited link will be green with no underline. A visited link will be pink with no underline. An active link will be yellow and underlined. In addition, when mousing over a link (a:hover) it will become red and underlined:</p>
+
+    <div class="codebox">
+        <div class="mockup-code">
+    
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+            <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+            <pre data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;head&gt;</code></pre>
+            <pre data-prefix="4"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;style&gt;</code></pre>
+            <pre data-prefix="5"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a:link {</code></pre>
+            <pre data-prefix="6"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;color: green;</code></pre>
+            <pre data-prefix="7"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;background-color: transparent;</code></pre>
+            <pre data-prefix="8"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;text-decoration: none;</code></pre>
+            <pre data-prefix="9"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</code></pre>
+            <pre data-prefix="10"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a:visited {</code></pre>
+            <pre data-prefix="11"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;color: pink;</code></pre>
+            <pre data-prefix="12"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;background-color: transparent;</code></pre>
+            <pre data-prefix="13"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;text-decoration: none;</code></pre>
+            <pre data-prefix="14"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</code></pre>
+            <pre data-prefix="15"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a:hover {</code></pre>
+            <pre data-prefix="16"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;color: red;</code></pre>
+            <pre data-prefix="17"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;background-color: transparent;</code></pre>
+            <pre data-prefix="18"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;text-decoration: underline;</code></pre>
+            <pre data-prefix="19"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</code></pre>
+            <pre data-prefix="20"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a:active {</code></pre>
+            <pre data-prefix="21"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;color: yellow;</code></pre>
+            <pre data-prefix="22"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;background-color: transparent;</code></pre>
+            <pre data-prefix="23"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;text-decoration: underline;</code></pre>
+            <pre data-prefix="24"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</code></pre>
+            <pre data-prefix="25"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/style&gt;</code></pre>
+            <pre data-prefix="26"><code>&#160;&#160;&#160;&#160;&lt;/head&gt;</code></pre>
+            <pre data-prefix="27"><code>&#160;&#160;&#160;&#160;&lt;body&gt;</code></pre>
+            <pre data-prefix="28"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;h2&gt;Link Colors&lt;/h2&gt;</code></pre>
+            <pre data-prefix="29"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;You can change the default colors of links&lt;/p&gt;</code></pre>
+            <pre data-prefix="30"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;a href=&quot;html_images.asp&quot; target=&quot;_blank&quot;&gt;HTML Images&lt;/a&gt;</code></pre>
+            <pre data-prefix="31"><code>&#160;&#160;&#160;&#160;&lt;/body&gt;</code></pre>
+            <pre data-prefix="32"><code>&lt;/html&gt;</code></pre>
+            
+
+
+        </div> 
+
+        <div class="outputview">
+        
+            <h3>Output</h3>
+            <p><h2>Link Colors</h2></p>
+            <p>You can change the default colors of links</p>
+            <p style="color: #ed0909;"><u target="_blank">HTML Images</u></p>
+            
+        </div>
+        </div>
+        <br>
+            
 
 </body>
 </html>
