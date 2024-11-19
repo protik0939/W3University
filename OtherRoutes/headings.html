@@ -1,62 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Headings</title>
     <link rel="stylesheet" href=".//Css/rafiStyles.css">
 </head>
+
 <body>
-<p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
+    <h2> <span class="wTitle">HTML Headings</span></h2>
+    <p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
 
 
-<div class="codebox">
-    <div class="mockup-code">
+    <div class="codebox">
+        <div class="mockup-code">
 
-        <div class="code-header">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <pre data-prefix="1"><code>&lt;<span span style="color: tomato;">body</span>&gt;</code></pre>
+            <pre
+                data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h1</span>&gt;Heading 1&lt;<span style="color: rgb(0, 255, 174);">/h1</span>&gt;</code></pre>
+            <pre
+                data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h2</span>&gt;Heading 2&lt;<span style="color: rgb(0, 255, 174);">/h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h3</span>&gt;Heading 3&lt;<span style="color: rgb(0, 255, 174);">/h3</span>&gt;</code></pre>
+            <pre
+                data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h4</span>&gt;Heading 4&lt;<span style="color: rgb(0, 255, 174);">/h4</span>&gt;</code></pre>
+            <pre
+                data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h5</span>&gt;Heading 5&lt;<span style="color: rgb(0, 255, 174);">/h5</span>&gt;</code></pre>
+            <pre
+                data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h6</span>&gt;Heading 6&lt;<span style="color: rgb(0, 255, 174);">/h6</span>&gt;</code></pre>
+
+
+            <pre data-prefix="4"><code>&lt;<span span style="color: tomato;">/body</span>&gt;</code></pre>
+
         </div>
+        <div class="outputview">
 
-        <pre data-prefix="1"><code>&lt;<span span style="color: tomato;">body</span>&gt;</code></pre>
-        <pre
-            data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h1</span>&gt;Heading 1&lt;<span style="color: rgb(0, 255, 174);">/h1</span>&gt;</code></pre>
-            <pre
-            data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h2</span>&gt;Heading 2&lt;<span style="color: rgb(0, 255, 174);">/h2</span>&gt;</code></pre>    
-            <pre
-            data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h3</span>&gt;Heading 3&lt;<span style="color: rgb(0, 255, 174);">/h3</span>&gt;</code></pre>    
-            <pre
-            data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h4</span>&gt;Heading 4&lt;<span style="color: rgb(0, 255, 174);">/h4</span>&gt;</code></pre>    
-            <pre
-            data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h5</span>&gt;Heading 5&lt;<span style="color: rgb(0, 255, 174);">/h5</span>&gt;</code></pre>    
-            <pre
-            data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h6</span>&gt;Heading 6&lt;<span style="color: rgb(0, 255, 174);">/h6</span>&gt;</code></pre>    
-        
-            
-        <pre data-prefix="4"><code>&lt;<span span style="color: tomato;">/body</span>&gt;</code></pre>
+            <h3>Output</h3>
+            <dl>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
 
+
+            </dl>
+        </div>
     </div>
-    <div class="outputview">
 
-        <h3>Output</h3>
-        <dl>
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
-            
-            
-        </dl>
+    <p>HTML headings are defined with the <span style="color: rgb(0, 255, 174);"> &lt;h1&gt;</span> to <span
+            style="color: rgb(0, 255, 174);">&lt;h6&gt;</span> tags. <br> <br>
+
+        <span style="color: rgb(0, 255, 174);"> &lt;h1&gt;</span> defines the most important heading. <span
+            style="color: rgb(0, 255, 174);">&lt;h6&gt;</span> defines the least important heading.
+    </p>
+
+    <div class="highlight">
+        <p> <span style="color: rgb(0, 255, 174);">Note:</span> Use HTML headings for headings only. Don't use headings
+            to make text <b>BIG</b> or <b>bold</b>.</p>
     </div>
-</div>
+
+    <br>
+
+    <h2> <span class="wTitle">Headings Are Important</span></h2>
+
+    <p>Search engines use the headings to index the structure and content of your web pages. <br><br>
+
+        Users often skim a page by its headings. It is important to use headings to show the document structure.
+        <br><br>
+
+        <span style="color: rgb(0, 255, 174);"> &lt;h1&gt;</span>headings should be used for main headings, followed by
+        <span style="color: rgb(0, 255, 174);"> &lt;h2&gt;</span> headings, then the less important <span
+            style="color: rgb(0, 255, 174);"> &lt;h3&gt;</span>, and so on.
+    </p>
+
+    <div class="highlight">
+        <p> <span style="color: rgb(0, 255, 174);">Note:</span> Use HTML headings for headings only. Don't use headings
+            to make text <b>BIG</b> or <b>bold</b>.</p>
+    </div>
+    <br>
+
+    <h2> <span class="wTitle">Bigger Headings</span></h2> <br>
+    <p>Each HTML heading has a default size. However, you can specify the size for any heading with the <span
+            style="color: rgb(0, 255, 174);">style</span> attribute, using the CSS <span
+            style="color: rgb(0, 255, 174);">font-size</span> property:</p> <br>
 
 
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
 
 
+            <pre
+                data-prefix="1"><code>&lt;<span style="color: tomato;">!DOCTYPE <span style="color: rgb(0, 255, 174);">html</span> </span>&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;<span style="color: tomato;">html</span>&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;<span span style="color: tomato;">body</span>&gt;</code></pre>
+            <pre
+                data-prefix="4"><code>    &lt;<span style="color: rgb(0, 255, 174);">h1 <span style="color:#c5a5c5">style</span> <span style="color:white">=</span> <span style="color:#88c999">"font-size:60px;"</span></span>&gt;Heading 1&lt;<span style="color: rgb(0, 255, 174);">/h1</span>&gt;</code></pre>
+            <pre
+                data-prefix="5"><code>    &lt;<span style="color: rgb(0, 255, 174);">p</span>&gt;You can change the size of a heading with the style attribute, using the font-size property.&lt;<span style="color: rgb(0, 255, 174);">/p</span>&gt;</code></pre>
+            <pre data-prefix="6"><code>&lt;<span span style="color: tomato;">/body</span>&gt;</code></pre>
+            <pre data-prefix="7"><code>&lt;<span style="color: tomato;">/html</span>&gt;</code></pre>
 
+        </div>
+        <div class="outputview">
+
+            <h3>Output</h3>
+            <dl>
+                <h1> Heading 1</h1>
+                <p>You can change the size of a heading with the style attribute, using the font-size property.</p>
+            </dl>
+        </div>
+    </div>
+    <br><br>
 
 </body>
+
 </html>
