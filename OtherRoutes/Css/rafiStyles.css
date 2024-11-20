@@ -131,7 +131,9 @@ h6 {
     width: 50%;
     border-radius: 0px 8px 8px 0px;
 }
-
+.noteText{
+    margin: 20px;
+}
 .highlight {
     background-color: rgb(1, 43, 30) ;
     color: tomato;
