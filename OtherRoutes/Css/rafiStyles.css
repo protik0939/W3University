@@ -135,7 +135,7 @@ h6 {
 .highlight {
     background-color: rgb(1, 43, 30) ;
     color: tomato;
-    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    /* padding: 2.5rem 1.5rem 1.5rem 1.5rem; */
     border-radius: 8px;
     font-family: 'Courier New', monospace;
     font-size: 1rem;
