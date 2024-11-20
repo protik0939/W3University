@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./Css/shakibStyles.css">
 </head>
 <body>
+    <h2><span class="wTitle">HTML Links</span></h2>
     <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
     <br>
     <h2><span class="wTitle">HTML Links - Hyperlinks</span> </h2>
@@ -292,12 +293,114 @@
             <h3>Output</h3>
             <p><h2>Link Colors</h2></p>
             <p>You can change the default colors of links</p>
-            <p style="color: #ed0909;"><u target="_blank">HTML Images</u></p>
+            <span class="wTitle">HTML Links - Different Colors</span>
             
         </div>
         </div>
         <br>
-            
+        <h2><span class="wTitle">Link Buttons</span></h2>
+        <p>A link can also be styled as a button, by using CSS:</p>
+        <p><a href="#" class="button">This is a link</a></p>
+
+        <h3>Examples:</h3>
+
+    <div class="codebox">
+        <div class="mockup-code">
+    
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+
+<pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+<pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+<pre data-prefix="3"><code>&lt;head&gt;</code></pre>
+<pre data-prefix="4"><code>&lt;style&gt;</code></pre>
+<pre data-prefix="5"><code>a:link, a:visited {</code></pre>
+<pre data-prefix="6"><code>&#160;&#160;background-color: #f44336;</code></pre>
+<pre data-prefix="7"><code>&#160;&#160;color: white;</code></pre>
+<pre data-prefix="8"><code>&#160;&#160;padding: 15px 25px;</code></pre>
+<pre data-prefix="9"><code>&#160;&#160;text-align: center;</code></pre>
+<pre data-prefix="10"><code>&#160;&#160;text-decoration: none;</code></pre>
+<pre data-prefix="11"><code>&#160;&#160;display: inline-block;</code></pre>
+<pre data-prefix="12"><code>}</code></pre>
+<pre data-prefix="13"><code>a:hover, a:active {</code></pre>
+<pre data-prefix="14"><code>&#160;&#160;background-color: red;</code></pre>
+<pre data-prefix="15"><code>}</code></pre>
+<pre data-prefix="16"><code>&lt;/style&gt;</code></pre>
+<pre data-prefix="17"><code>&lt;/head&gt;</code></pre>
+<pre data-prefix="18"><code>&lt;body&gt;</code></pre>
+<pre data-prefix="19"><code>&lt;h2&gt;Link Button&lt;/h2&gt;</code></pre>
+<pre data-prefix="20"><code>&lt;p&gt;A link styled as a button:&lt;/p&gt;</code></pre>
+<pre data-prefix="21"><code>&lt;a href=&quot;default.asp&quot; target=&quot;_blank&quot;&gt;This is a link&lt;/a&gt;</code></pre>
+<pre data-prefix="22"><code>&lt;/body&gt;</code></pre>
+<pre data-prefix="23"><code>&lt;/html&gt;</code></pre>
+
+</div> 
+
+<div class="outputview">
+
+    <h3>Output</h3>
+    <h2>Link Button</h2>
+<p>A link styled as a button:</p>
+    <p><a href="#" class="button">This is a link</a></p>
+    
+</div>
+</div>
+<br>
+<h2><span class="wTitle">HTML Links - Create Bookmarks</span></h2>
+<p>HTML links can be used to create bookmarks, so that readers can jump to specific parts of a web page.</p>
+
+<h3>Examples:</h3>
+<P>First, use the  <span style="color: #04aa6d;">id</span>  attribute to create a bookmark:</P>
+
+<div class="codebox">
+    <div class="mockup-code">
+
+        <div class="code-header">
+            <span class="dot"></span>
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+        <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+        <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+        <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+        <pre data-prefix="4"><code>&lt;p&gt;&lt;a href=&quot;#C4&quot;&gt;Jump to Chapter 4&lt;/a&gt;&lt;/p&gt;</code></pre>
+        <pre data-prefix="5"><code>&lt;p&gt;&lt;a href=&quot;#C10&quot;&gt;Jump to Chapter 10&lt;/a&gt;&lt;/p&gt;</code></pre>
+        <pre data-prefix="6"><code>&lt;h2&gt;Chapter 1&lt;/h2&gt;</code></pre>
+        <pre data-prefix="7"><code>&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</code></pre>
+        <pre data-prefix="8"><code>&lt;h2&gt;Chapter 2&lt;/h2&gt;</code></pre>
+        <pre data-prefix="9"><code>&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</code></pre>
+        <pre data-prefix="10"><code>&lt;h2&gt;Chapter 3&lt;/h2&gt;</code></pre>
+        <pre data-prefix="11"><code>&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</code></pre>
+        <pre data-prefix="12"><code>&lt;h2 id=&quot;C4&quot;&gt;Chapter 4&lt;/h2&gt;</code></pre>
+        <pre data-prefix="13"><code>&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</code></pre>
+        <pre data-prefix="14"><code>&lt;h2&gt;Chapter 5&lt;/h2&gt;</code></pre>
+        <pre data-prefix="15"><code>&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</code></pre>
+        <pre data-prefix="16"><code>&lt;h2&gt;Chapter 6&lt;/h2&gt;</code></pre>
+        <pre data-prefix="17"><code>&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</code></pre>
+        <pre data-prefix="18"><code>&lt;h2&gt;Chapter 7&lt;/h2&gt;</code></pre>
+        <pre data-prefix="19"><code>&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</code></pre>
+        <pre data-prefix="20"><code>&lt;h2&gt;Chapter 8&lt;/h2&gt;</code></pre>
+        <pre data-prefix="21"><code>&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</code></pre>
+        <pre data-prefix="22"><code>&lt;h2&gt;Chapter 9&lt;/h2&gt;</code></pre>
+        <pre data-prefix="23"><code>&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</code></pre>
+        <pre data-prefix="24"><code>&lt;h2 id=&quot;C10&quot;&gt;Chapter 10&lt;/h2&gt;</code></pre>
+        <pre data-prefix="25"><code>&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</code></pre>
+        <pre data-prefix="26"><code>&lt;h2&gt;Chapter 11&lt;/h2&gt;</code></pre>
+        <pre data-prefix="27"><code>&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</code></pre>
+        <pre data-prefix="28"><code>&lt;h2&gt;Chapter 12&lt;/h2&gt;</code></pre>
+        <pre data-prefix="29"><code>&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</code></pre>
+        <pre data-prefix="30"><code>&lt;h2&gt;Chapter 13&lt;/h2&gt;</code></pre>
+        <pre data-prefix="31"><code>&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</code></pre>
+        <pre data-prefix="32"><code>&lt;/body&gt;</code></pre>
+        <pre data-prefix="33"><code>&lt;/html&gt;</code></pre>
+        
+
+
+
+         
 
 </body>
 </html>
