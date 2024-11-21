@@ -91,6 +91,18 @@ body {
 }
 
 
+.tip-box {
+    background-color: #fff8b0; /* Yellow background */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+}
+.tip-text {
+    font-size: 14px;
+    color: #333;
+}
+
 
 
 

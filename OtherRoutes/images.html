@@ -11,5 +11,124 @@
 
     <h2><span class="wTitle">HTML Images</span></h2>
 <p>Images can improve the design and the appearance of a web page.</p>
+
+<div>
+
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUfGmkOAPhouaB-lBc_VB-_xRjlR1XzrBk1g&s" alt="Trulli" width="500" height="333"> <img src="https://webdevelopment.philipramsey.ca/webcourse/HTML/include/images/img_girl.jpg" alt="Trulli" width="500" height="333"></p>
+
+</div>
+
+
+<h3>Examples:</h3>
+        <div class="codebox">
+            <div class="mockup-code">
+    
+                <div class="code-header">
+                    <span class="dot"></span>
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+
+<pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+<pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+<pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+<pre data-prefix="4"><code>&lt;h2&gt;HTML Image&lt;/h2&gt;</code></pre>
+<pre data-prefix="5"><code>&lt;img src=&quot;https://www.w3schools.com/html/pic_trulli.jpg&quot; alt=&quot;Trulli&quot; width=&quot;500&quot; height=&quot;333&quot;&gt;</code></pre>
+<pre data-prefix="6"><code>&lt;/body&gt;</code></pre>
+<pre data-prefix="7"><code>&lt;/html&gt;</code></pre>
+
+</div> 
+<div class="outputview">
+
+    <h3>Output</h3>
+
+    <h2>HTML Image</h2>
+    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" width="500" height="333">
+
+</div>
+</div>
+<br>
+
+<h2><span class="wTitle">HTML Images Syntax</span></h2>
+<p>The HTML <span style="color: #04aa6d;"> &lt;img&gt; </span> tag is used to embed an image in a web page.</p>
+<p>Images are not technically inserted into a web page; images are linked to web pages. The <span style="color: #04aa6d;"> &lt;img&gt; </span> tag creates a holding space for the referenced image.</p>
+<p>The <span style="color: #04aa6d;"> &lt;img&gt; </span> tag is empty, it contains attributes only, and does not have a closing tag.</p>
+<p>The <span style="color: #04aa6d;"> &lt;img&gt; </span> tag has two required attributes:</p>
+<div>
+    <ul>
+    <li>src - Specifies the path to the image</li>
+    <li>alt - Specifies an alternate text for the image</li>
+    </ul>
+</div>
+<br>
+<h2><span class="wTitle">The src Attribute</span></h2>
+<p>The required <span style="color: #04aa6d;">src</span> attribute specifies the path (URL) to the image.</p>
+<p>Note: When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the <span style="color: #04aa6d;">alt</span> text are shown if the browser cannot find the image.</p>
+<br>
+
+<h2><span class="wTitle">The alt Attribute</span></h2>
+<p>The required <span style="color: #04aa6d;">alt</span> attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).</p>
+<p>The value of the <span style="color: #04aa6d;">alt</span> attribute should describe the image:</p>
+
+<br>
+
+<h2><span class="wTitle">Width and Height, or Style?</span></h2>
+<p>The <span style="color: #04aa6d;">width</span> , <span style="color: #04aa6d;">height</span> and <span style="color: #04aa6d;">style</span> attributes are all valid in HTML.</p>
+<p>However, we suggest using the <span style="color: #04aa6d;">style</span> attribute. It prevents styles sheets from changing the size of images:</p>
+
+<h3>Examples:</h3>
+        <div class="codebox">
+            <div class="mockup-code">
+    
+                <div class="code-header">
+                    <span class="dot"></span>
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+                <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+                <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+                <pre data-prefix="3"><code>&lt;head&gt;</code></pre>
+                <pre data-prefix="4"><code>&lt;style&gt;</code></pre>
+                <pre data-prefix="5"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;img {</code></pre>
+                <pre data-prefix="6"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;width: 100%;</code></pre>
+                <pre data-prefix="7"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</code></pre>
+                <pre data-prefix="8"><code>&lt;/style&gt;</code></pre>
+                <pre data-prefix="9"><code>&#160;&lt;/head&gt;</code></pre>
+                <pre data-prefix="10"><code>&lt;body&gt;</code></pre>
+                <pre data-prefix="11"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;h2&gt;Width/Height Attributes or Style?&lt;/h2&gt;</code></pre>
+                <pre data-prefix="12"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;The first image uses the width attribute (set to 128 pixels), but the style in the head section overrides it, and sets the width to 100%.&lt;/p&gt;</code></pre>
+                <pre data-prefix="13"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;img src=&quot;html5.gif&quot; alt=&quot;HTML5 Icon&quot; width=&quot;128&quot; height=&quot;128&quot;&gt;</code></pre>
+                <pre data-prefix="14"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;The second image uses the style attribute to set the width to 128 pixels, this will not be overridden by the style in the head section:&lt;/p&gt;</code></pre>
+                <pre data-prefix="15"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;img src=&quot;html5.gif&quot; alt=&quot;HTML5 Icon&quot; style=&quot;width:128px;height:128px;&quot;&gt;</code></pre>
+                <pre data-prefix="16"><code>&lt;/body&gt;</code></pre>
+                <pre data-prefix="17"><code>&lt;/html&gt;</code></pre>
+                
+            </div> 
+            <div class="outputview">
+            
+                <h3>Output</h3>
+                <h2>Width/Height Attributes or Style?</h2>
+                <p>The first image uses the width attribute (set to 128 pixels), but the style in the head section overrides it, and sets the width to 100%.</p>
+               <div>
+                <img src="https://www.w3schools.com/html/html5.gif" alt="HTML5 Icon" width="128" height="128" style="width: 100%;">
+
+                <!-- <img src="https://www.w3schools.com/html/html5.gif" alt="HTML5 Icon" width="128" height="128"> -->
+            </div>
+                <p>The second image uses the style attribute to set the width to 128 pixels, this will not be overridden by the style in the head section:</p>
+               
+            
+                <img src="https://www.w3schools.com/html/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+
+
+            
+            </div>
+            </div>
+            <br>
+
+
+
+
+
 </body>
 </html>
