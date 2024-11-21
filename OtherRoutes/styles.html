@@ -1,11 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styles</title>
+    <link rel="stylesheet" href=".//Css/rafiStyles.css">
 </head>
+
 <body>
-    <h1>This is styles</h1>
+    <h2> <span class="wTitle">HTML Styles</span></h2>
+    <p>The HTML <span style="color: rgb(0, 255, 174);">style</span> attribute is used to add styles to an element, such
+        as color, font, size, and more.
+    </p>
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre
+                data-prefix="1"><code>&lt;<span style="color: tomato;">!DOCTYPE <span style="color: rgb(0, 255, 174);">html</span> </span>&gt;</code></pre>
+
+            <pre data-prefix="2"><code>&lt;<span style="color: tomato;">html</span>&gt;</code></pre>
+
+            <pre data-prefix="3"><code>&lt;<span span style="color: tomato;">body</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="4"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">p</span>&gt;I am normal&lt;<span style="color: rgb(0, 255, 174);">/p</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="5"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);"><span>p</span> <span style="color: #c5a5c5">style</span>="color:red;"</span>&gt;I am red&lt;<span style="color: rgb(0, 255, 174);">/p</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="6"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);"><span>p</span> <span style="color: #c5a5c5">style</span>="color:red;"</span>&gt;I am blue&lt;<span style="color: rgb(0, 255, 174);">/p</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="7"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);"><span>p</span> <span style="color: #c5a5c5">style</span>="font-size:50px;"</span>&gt;I am big&lt;<span style="color: rgb(0, 255, 174);">/p</span>&gt;</code></pre>
+
+            <pre data-prefix="8"><code>&lt;<span span style="color: tomato;">/body</span>&gt;</code></pre>
+
+
+            <pre data-prefix="9"><code>&lt;<span style="color: tomato;">/html</span>&gt;</code></pre>
+
+        </div>
+        <div class="outputview">
+
+            <h3>Output</h3>
+            <dl>
+
+                <p>I am normal</p>
+                <p style="color:red;">I am red</p>
+                <p style="color:blue;">I am blue</p>
+                <p style="font-size:50px;">I am big</p>
+
+            </dl>
+        </div>
+    </div>
+    <br>
+    <h2> <span class="wTitle">The HTML Style Attribute</span></h2>
+
+    <p>Setting the <span style="color: rgb(0, 255, 174);">style</span> of an HTML element, can be done with the style
+        attribute.</p>
+    <p>The HTML <span style="color: rgb(0, 255, 174);">style</span> attribute has the following syntax:</p>
+
+
+    <div class="highlightStyles">
+        <p> <span class="noteText">
+                <p>&lt; <span style="color: tomato;">tagname</span> <span style="color: #c5a5c5">style</span> <span
+                        style="color: rgb(0, 255, 174);">= "property:value;"</span>&gt;</p>
+            </span></p>
+    </div>
+    <br>
+
+    <h2> <span class="wTitle">Background Color</span></h2>
+    <p>The CSS <span style="color: tomato;">background-color</span> property defines the background color for an HTML
+        element.</p>
+
+
+
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre
+                data-prefix="1"><code>&lt;<span style="color: tomato;">!DOCTYPE <span style="color: rgb(0, 255, 174);">html</span> </span>&gt;</code></pre>
+
+            <pre data-prefix="2"><code>&lt;<span style="color: tomato;">html</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="3"><code>&lt;<span span style="color: tomato;">body <span style="color: #c5a5c5">style</span>=<span style="color: rgb(0, 255, 174);">"background-color:powderblue;"</span></span>&gt;</code></pre>
+
+
+            <pre
+                data-prefix="4"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h1</span>&gt;This is a heading&lt;<span style="color: rgb(0, 255, 174);">/h1</span>&gt;</code></pre>
+            <pre
+                data-prefix="5"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">p</span>&gt;This is a paragraph.&lt;<span style="color: rgb(0, 255, 174);">/p</span>&gt;</code></pre>
+
+
+            <pre data-prefix="6"><code>&lt;<span span style="color: tomato;">/body</span>&gt;</code></pre>
+
+
+            <pre data-prefix="7"><code>&lt;<span style="color: tomato;">/html</span>&gt;</code></pre>
+
+        </div>
+        <div class="outputview" style="background-color:powderblue;">
+
+
+            <h3>Output</h3>
+            <dl>
+
+                <h1>This is a heading</h1>
+                <p>This is a paragraph.</p>
+            </dl>
+
+        </div>
+    </div>
+    <br>
+
+
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre
+                data-prefix="1"><code>&lt;<span style="color: tomato;">!DOCTYPE <span style="color: rgb(0, 255, 174);">html</span> </span>&gt;</code></pre>
+
+            <pre data-prefix="2"><code>&lt;<span style="color: tomato;">html</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="3"><code>&lt;<span span style="color: tomato;">body <span style="color: #c5a5c5">style</span>=<span style="color: rgb(0, 255, 174);">"background-color:powderblue;"</span></span>&gt;</code></pre>
+
+
+            <pre
+                data-prefix="4"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h1 <span style="color: #c5a5c5">style</span>="background-color:powderblue;"</span>&gt;This is a heading&lt;<span style="color: rgb(0, 255, 174);">/h1</span>&gt;</code></pre>
+            <pre
+                data-prefix="5"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">p <span style="color: #c5a5c5">style</span>="background-color:tomato;"</span>&gt;</span>This is a paragraph.&lt;<span style="color: rgb(0, 255, 174);">/p</span>&gt;</code></pre>
+
+
+            <pre data-prefix="6"><code>&lt;<span  style="color: tomato;">/body</span>&gt;</code></pre>
+
+
+            <pre data-prefix="7"><code>&lt;<span style="color: tomato;">/html</span>&gt;</code></pre>
+
+        </div>
+        <div class="outputview">
+
+
+            <h3>Output</h3>
+            <dl>
+
+                <h1 style="background-color:powderblue;">This is a heading</h1>
+                <p style="background-color:tomato;">This is a paragraph.</p>
+            </dl>
+
+        </div>
+    </div>
+    <br>
+
+    <h2> <span class="wTitle">Text Color</span></h2>
+    <p>The CSS <span style="color: tomato;">color</span> property defines the text color for an HTML element:</p>
+
+
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre
+                data-prefix="1"><code>&lt;<span style="color: tomato;">!DOCTYPE <span style="color: rgb(0, 255, 174);">html</span> </span>&gt;</code></pre>
+
+            <pre data-prefix="2"><code>&lt;<span style="color: tomato;">html</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="3"><code>&lt;<span span style="color: tomato;">body<span style="color: rgb(0, 255, 174);"></span></span>&gt;</code></pre>
+
+
+            <pre
+                data-prefix="4"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h1 <span style="color: #c5a5c5">style</span>="color:blue;"</span>&gt;This is a heading&lt;<span style="color: rgb(0, 255, 174);">/h1</span>&gt;</code></pre>
+            <pre
+                data-prefix="5"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">p  <span style="color: #c5a5c5">style</span>="color:blue;"</span>&gt;This is a paragraph.&lt;<span style="color: rgb(0, 255, 174);">/p</span>&gt;</code></pre>
+
+
+            <pre data-prefix="6"><code>&lt;<span  style="color: tomato;">/body</span>&gt;</code></pre>
+
+
+            <pre data-prefix="7"><code>&lt;<span style="color: tomato;">/html</span>&gt;</code></pre>
+
+        </div>
+        <div class="outputview">
+
+            <h3>Output</h3>
+            <dl>
+
+                <h1 style="color:blue;">This is a heading</h1>
+                <p style="color:red;">This is a paragraph.</p>
+            </dl>
+
+        </div>
+    </div>
+    <br>
+
+    <h2> <span class="wTitle">Fonts</span></h2>
+    <p>The CSS <span style="color: tomato;">font-family</span> property defines the font to be used for an HTML element:
+    </p>
+
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre
+                data-prefix="1"><code>&lt;<span style="color: tomato;">!DOCTYPE <span style="color: rgb(0, 255, 174);">html</span> </span>&gt;</code></pre>
+
+            <pre data-prefix="2"><code>&lt;<span style="color: tomato;">html</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="3"><code>&lt;<span span style="color: tomato;">body<span style="color: rgb(0, 255, 174);"></span></span>&gt;</code></pre>
+
+
+            <pre
+                data-prefix="4"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h1 <span style="color: #c5a5c5">style</span>="font-family:verdana;"</span>&gt;This is a heading&lt;<span style="color: rgb(0, 255, 174);">/h1</span>&gt;</code></pre>
+            <pre
+                data-prefix="5"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">p <span style="color: #c5a5c5">style</span>="font-family:courier;"</span>&gt;This is a paragraph.&lt;<span style="color: rgb(0, 255, 174);">/p</span>&gt;</code></pre>
+
+
+            <pre data-prefix="6"><code>&lt;<span  style="color: tomato;">/body</span>&gt;</code></pre>
+
+
+            <pre data-prefix="7"><code>&lt;<span style="color: tomato;">/html</span>&gt;</code></pre>
+
+        </div>
+        <div class="outputview">
+
+            <h3>Output</h3>
+            <dl>
+
+                <h1 style="font-family:verdana;">This is a heading</h1>
+                <p style="font-family:courier;">This is a paragraph.</p>
+            </dl>
+
+        </div>
+    </div>
+    <br>
+
+    <h2> <span class="wTitle">Text Size</span></h2>
+<p>The CSS <span style="color: tomato;">font-size</span> property defines the text size for an HTML element:</p>
+
+
+<h3>Examples:</h3>
+<div class="codebox">
+    <div class="mockup-code">
+
+        <div class="code-header">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <pre
+            data-prefix="1"><code>&lt;<span style="color: tomato;">!DOCTYPE <span style="color: rgb(0, 255, 174);">html</span> </span>&gt;</code></pre>
+
+        <pre data-prefix="2"><code>&lt;<span style="color: tomato;">html</span>&gt;</code></pre>
+
+        <pre
+            data-prefix="3"><code>&lt;<span span style="color: tomato;">body<span style="color: rgb(0, 255, 174);"></span></span>&gt;</code></pre>
+
+
+        <pre
+            data-prefix="4"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h1 <span style="color: #c5a5c5">style</span>="font-size:300%;"</span>&gt;This is a heading&lt;<span style="color: rgb(0, 255, 174);">/h1</span>&gt;</code></pre>
+        <pre
+            data-prefix="5"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">p <span style="color: #c5a5c5">style</span>="font-size:300%;"</span>&gt;This is a paragraph.&lt;<span style="color: rgb(0, 255, 174);">/p</span>&gt;</code></pre>
+
+
+        <pre data-prefix="6"><code>&lt;<span  style="color: tomato;">/body</span>&gt;</code></pre>
+
+
+        <pre data-prefix="7"><code>&lt;<span style="color: tomato;">/html</span>&gt;</code></pre>
+
+    </div>
+    <div class="outputview">
+
+        <h3>Output</h3>
+        <dl>
+
+            <h1 style="font-size:300%;">This is a heading</h1>
+            <p style="font-size:160%;">This is a paragraph.</p>
+        </dl>
+
+    </div>
+</div>
+<br>
+
+<h2> <span class="wTitle">Text Alignment</span></h2>
+<p>The CSS <span style="color: tomato;">text-align</span> property defines the horizontal text alignment for an HTML element:</p>
+
+<h3>Examples:</h3>
+<div class="codebox">
+    <div class="mockup-code">
+
+        <div class="code-header">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <pre
+            data-prefix="1"><code>&lt;<span style="color: tomato;">!DOCTYPE <span style="color: rgb(0, 255, 174);">html</span> </span>&gt;</code></pre>
+
+        <pre data-prefix="2"><code>&lt;<span style="color: tomato;">html</span>&gt;</code></pre>
+
+        <pre
+            data-prefix="3"><code>&lt;<span span style="color: tomato;">body<span style="color: rgb(0, 255, 174);"></span></span>&gt;</code></pre>
+
+
+        <pre
+            data-prefix="4"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">h1 <span style="color: #c5a5c5">style</span>="text-align:center;"</span>&gt;Centered Heading&lt;<span style="color: rgb(0, 255, 174);">/h1</span>&gt;</code></pre>
+        <pre
+            data-prefix="5"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">p <span style="color: #c5a5c5">style</span>="text-align:center;"</span>&gt;Centered paragraph.&lt;<span style="color: rgb(0, 255, 174);">/p</span>&gt;</code></pre>
+
+
+        <pre data-prefix="6"><code>&lt;<span  style="color: tomato;">/body</span>&gt;</code></pre>
+
+
+        <pre data-prefix="7"><code>&lt;<span style="color: tomato;">/html</span>&gt;</code></pre>
+
+    </div>
+    <div class="outputview">
+
+        <h3>Output</h3>
+        <dl>
+            <h1 style="text-align:center;">Centered Heading</h1>
+            <p style="text-align:center;">Centered paragraph.</p>
+        </dl>
+
+    </div>
+</div>
+<br>
+
 </body>
+
 </html>

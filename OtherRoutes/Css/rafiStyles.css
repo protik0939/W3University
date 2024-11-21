@@ -145,7 +145,18 @@ h6 {
     overflow-x: auto;
     position: relative;
 }
-
+.highlightStyles{
+    background-color: rgb(1, 43, 30) ;
+    color: tomato;
+    padding-bottom: 25px;
+    border-radius: 8px;
+    padding-left: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    width: 100%;
+    overflow-x: auto;
+    position: relative;
+}
 
 /* Making Responsive */
 
