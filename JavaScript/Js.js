@@ -88,6 +88,7 @@ document.getElementById("favicon").onclick = () => updatePage("favicon");
 document.getElementById("images").onclick = () => updatePage("images");
 
 
+
 document.getElementById("threeLineIcon").onclick = () => showMenu();
 document.getElementById("crossIcon").onclick = () => hideMenu();
 document.getElementById("getstarted").onclick = () => updatePageUp("home");
