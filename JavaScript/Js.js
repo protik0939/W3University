@@ -86,6 +86,7 @@ document.getElementById("forms").onclick = () => updatePage("forms");
 document.getElementById("links").onclick = () => updatePage("links");
 
 
+
 document.getElementById("threeLineIcon").onclick = () => showMenu();
 document.getElementById("crossIcon").onclick = () => hideMenu();
 document.getElementById("getstarted").onclick = () => updatePageUp("home");
