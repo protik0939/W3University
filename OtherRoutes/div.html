@@ -21,35 +21,385 @@
     <h3>Examples:</h3>
     <div class="codebox">
         <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>Lorem Ipsum &lt;div&gt;I am a div&lt;/div&gt; dolor sit amet.</code></pre>
 
+        </div>
+        <div class="outputview">
+
+            <h3>Output</h3>
+            <h1>HTML DIV Example</h1>
+
+            Lorem Ipsum <div style="background-color: #FFF4A3;">I am a div</div> dolor sit amet.
+
+            <p>The yellow background is added to demonstrate the footprint of the DIV element.</p>
+        </div>
+    </div>
+
+    <p>The &lt;div&gt; element has no required attributes, but style, class and id are common.</p>
+
+    <h2><span class="wTitle">&lt;div&gt; as a container</span></h2>
+    <p>The &lt;div&gt; element is often used to group sections of a web page together.</p>
+    <h3>Examples:</h3>
+    <p>A &lt;div&gt; element with HTML elements:</p>
+
+    <div class="codebox">
+        <div class="mockup-code">
             <div class="code-header">
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
 
-            <pre data-prefix="1"><code>&lt;html&gt;</code></pre>
-            <pre data-prefix="1"><code>&lt;style&gt;</code></pre>
-            <pre data-prefix="1"><code>div &lcub;</code></pre>
-            <pre data-prefix="1"><code>  background-color: #FFF4A3;</code></pre>
-            <pre data-prefix="1"><code>&rcub;</code></pre>
-            <pre data-prefix="1"><code>&lt;/style&gt;</code></pre>
-            <pre data-prefix="1"><code>&lt;body&gt;</code></pre>
-            <pre data-prefix="1"><code>&lt;h1&gt;HTML DIV Example&lt;/h1&gt;</code></pre>
-            <pre data-prefix="1"><code>Lorem Ipsum &lt;div&gt;I am a div&lt;/div&gt; dolor sit amet.</code></pre>
-            <pre data-prefix="1"><code>&lt;p&gt;The yellow background is added to demonstrate the footprint of the DIV element.&lt;/p&gt;</code></pre>
-            <pre data-prefix="1"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix="1"><code>&lt;div&gt;</code></pre>
+            <pre data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;h2&gt;London&lt;/h2&gt;</code></pre>
+            <pre
+                data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;p&gt;London is the capital city of England.&lt;/p&gt;</code></pre>
+            <pre
+                data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;p&gt;London has over 13 million inhabitants.&lt;/p&gt;</code></pre>
+            <pre data-prefix="1"><code>&lt;/div&gt;</code></pre>
         </div>
         <div class="outputview">
 
             <h3>Output</h3>
-            <ul>
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Milk</li>
-            </ul>
+            <div style="background-color: #FFF4A3; padding: 10px;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
         </div>
     </div>
+
+    <br><br>
+    <h2><span class="wTitle">Center align a &lt;div&gt; element as</span></h2>
+    <p>If you have a &lt;div&gt; element that is not 100% wide, and you want to center-align it, set the CSS margin
+        property to auto.</p>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <pre data-prefix="1"><code>&lt;style&gt;</code></pre>
+            <pre data-prefix="2"><code>div {</code></pre>
+            <pre data-prefix="2"><code>    width:300px;</code></pre>
+            <pre data-prefix="2"><code>    margin:auto;</code></pre>
+            <pre data-prefix="2"><code>}</code></pre>
+            <pre data-prefix="1"><code>&lt;/style&gt;</code></pre>
+        </div>
+        <div class="outputview">
+
+            <h3>Output</h3>
+            <h1>Center align a DIV element</h1>
+
+            <div style="width: 300px; margin: auto;background-color: #FFF4A3;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <br><br>
+    <h2><span class="wTitle">Multiple &lt;div&gt; elements</span></h2>
+    <p>You can have many &lt;div&gt; containers on the same page.</p>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <pre data-prefix="1"><code>&lt;div&gt;</code></pre>
+            <pre data-prefix="2"><code>    &lt;h2&gt;London&lt;/h2&gt;</code></pre>
+            <pre data-prefix="2"><code>    &lt;p&gt;London is the capital city of England.&lt;/p&gt;</code></pre>
+            <pre data-prefix="2"><code>    &lt;p&gt;London has over 13 million inhabitants.&lt;/p&gt;</code></pre>
+            <pre data-prefix="1"><code>&lt;/div&gt;</code></pre>
+
+
+            <pre data-prefix="1"><code>&lt;div&gt;</code></pre>
+            <pre data-prefix="2"><code>    &lt;h2&gt;Oslo&lt;/h2&gt;</code></pre>
+            <pre data-prefix="2"><code>    &lt;p&gt;Oslo is the capital city of Norway.&lt;/p&gt;</code></pre>
+            <pre data-prefix="2"><code>    &lt;p&gt;Oslo has over 600.000 inhabitants.&lt;/p&gt;</code></pre>
+            <pre data-prefix="1"><code>&lt;/div&gt;</code></pre>
+
+            <pre data-prefix="1"><code>&lt;div&gt;</code></pre>
+            <pre data-prefix="2"><code>    &lt;h2&gt;Rome&lt;/h2&gt;</code></pre>
+            <pre data-prefix="2"><code>    &lt;p&gt;Rome is the capital city of Italy.&lt;/p&gt;</code></pre>
+            <pre data-prefix="2"><code>    &lt;p&gt;Rome has almost 3 million inhabitants.&lt;/p&gt;</code></pre>
+            <pre data-prefix="1"><code>&lt;/div&gt;</code></pre>
+        </div>
+        <div class="outputview">
+
+            <h3>Output</h3>
+            <h1>Multiple DIV Elements</h1>
+
+            <div style="background-color:#FFF4A3;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#FFC0C7;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+
+            <div style="background-color:#D9EEE1;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+
+            <p>CSS styles are added to make it easier to separate the divs, and to make them more pretty:)</p>
+        </div>
+    </div>
+
+
+    <br><br>
+    <h2><span class="wTitle">Aligning &lt;div&gt; elements side by side</span></h2>
+    <p>When building web pages, you often want to have two or more &lt;div&gt; elements side by side, like this:</p>
+
+    <div style="display: flex; color:black; width:100%">
+
+        <div style="background-color:#FFF4A3; width: 33.3333%;">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+        </div>
+
+        <div style="background-color:#FFC0C7; width: 33.3333%;">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 600.000 inhabitants.</p>
+        </div>
+
+        <div style="background-color:#D9EEE1; width: 33.3333%;">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has almost 3 million inhabitants.</p>
+        </div>
+    </div>
+
+    <p>There are different methods for aligning elements side by side, all include some CSS styling. We will look at the
+        most common methods:</p>
+    <br>
+    <h2><span class="wTitle">Float</span></h2>
+
+
+    <p>The CSS float property was not originally meant to align &lt;div&gt; elements side-by-side, but has been used for
+        this purpose for many years.</p>
+    <p>The CSS float property is used for positioning and formatting content and allow elements float next to each other
+        instead of on top of each other.</p>
+
+    <h3>Examples:</h3>
+    <p>How to use float to align div elements side by side:</p>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <pre data-prefix="1"><code>&lt;style&gt;</code></pre>
+            <pre data-prefix="1"><code>.mycontainer {</code></pre>
+            <pre data-prefix="1"><code>    width: 100%;</code></pre>
+            <pre data-prefix="1"><code>    overflow: auto;</code></pre>
+            <pre data-prefix="1"><code>}</code></pre>
+            <pre data-prefix="1"><code>.mycontainer div {</code></pre>
+            <pre data-prefix="1"><code>    width: 33%;</code></pre>
+            <pre data-prefix="1"><code>    float: left;</code></pre>
+            <pre data-prefix="1"><code>}</code></pre>
+            <pre data-prefix="1"><code>&lt;/style&gt;</code></pre>
+        </div>
+        <div class="outputview">
+
+            <h3>Output</h3>
+            <div style="width:100%; overflow:auto;">
+
+                <div style="background-color:#FFF4A3;width:33%;float:left;">
+                    <h2>London</h2>
+                    <p>London is the capital city of England.</p>
+                    <p>London has over 13 million inhabitants.</p>
+                </div>
+
+                <div style="background-color:#FFC0C7;width:33%;float:left;">
+                    <h2>Oslo</h2>
+                    <p>Oslo is the capital city of Norway.</p>
+                    <p>Oslo has over 600.000 inhabitants.</p>
+                </div>
+
+                <div style="background-color:#D9EEE1;width:33%;float:left;">
+                    <h2>Rome</h2>
+                    <p>Rome is the capital city of Italy.</p>
+                    <p>Rome has almost 3 million inhabitants.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <h2><span class="wTitle">Inline-block</span></h2>
+    <p>If you change the &lt;div&gt; element's display property from block to inline-block, the &lt;div&gt; elements
+        will no longer add a line break before and after, and will be displayed side by side instead of on top of each
+        other.</p>
+    <h3>Examples:</h3>
+    <p>How to use display: inline-block to align div elements side by side:</p>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <pre data-prefix="1"><code>&lt;style&gt;</code></pre>
+            <pre data-prefix="1"><code>div {</code></pre>
+            <pre data-prefix="1"><code>    width: 30%;</code></pre>
+            <pre data-prefix="1"><code>    display: inline-block;</code></pre>
+            <pre data-prefix="1"><code>}</code></pre>
+            <pre data-prefix="1"><code>&lt;/style&gt;</code></pre>
+        </div>
+        <div class="outputview">
+
+            <h3>Output</h3>
+
+            <div style="background-color:#FFF4A3; width:30%; display:inline-block;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#FFC0C7; width:30%; display:inline-block;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+
+            <div style="background-color:#D9EEE1; width:30%; display:inline-block;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <h2><span class="wTitle">Flex</span></h2>
+    <p>The CSS Flexbox Layout Module was introduced to make it easier to design flexible responsive layout structure
+        without using float or positioning.</p>
+    <p>To make the CSS flex method work, surround the &lt;div&gt; elements with another &lt;div&gt; element and give it
+        the status as a flex container.</p>
+    <h3>Examples:</h3>
+    <p>How to use flex to align div elements side by side:</p>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <pre data-prefix="1"><code>&lt;style&gt;</code></pre>
+            <pre data-prefix="1"><code>.mycontainer {</code></pre>
+            <pre data-prefix="1"><code>    display: flex;</code></pre>
+            <pre data-prefix="1"><code>}</code></pre>
+            <pre data-prefix="1"><code>.mycontainer > div {</code></pre>
+            <pre data-prefix="1"><code>    width: 33%;</code></pre>
+            <pre data-prefix="1"><code>}</code></pre>
+            <pre data-prefix="1"><code>&lt;/style&gt;</code></pre>
+        </div>
+        <div class="outputview">
+
+            <h3>Output</h3>
+
+            <div style="display: flex;">
+
+                <div style="background-color:#FFF4A3; width:33%;">
+                    <h2>London</h2>
+                    <p>London is the capital city of England.</p>
+                    <p>London has over 13 million inhabitants.</p>
+                </div>
+
+                <div style="background-color:#FFC0C7; width:33%;">
+                    <h2>Oslo</h2>
+                    <p>Oslo is the capital city of Norway.</p>
+                    <p>Oslo has over 600.000 inhabitants.</p>
+                </div>
+
+                <div style="background-color:#D9EEE1; width:33%;">
+                    <h2>Rome</h2>
+                    <p>Rome is the capital city of Italy.</p>
+                    <p>Rome has almost 3 million.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <h2><span class="wTitle">Grid</span></h2>
+    <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design
+        web pages without having to use floats and positioning.</p>
+    <p>Sounds almost the same as flex, but has the ability to define more than one row and position each row
+        individually.</p>
+    <p>The CSS grid method requires that you surround the &lt;div&gt; elements with another &lt;div&gt; element and give
+        the status as a grid container, and you must specify the width of each column.</p>
+    <h3>Examples:</h3>
+    <p>How to use grid to align &lt;div&gt; elements side by side:</p>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <pre data-prefix="1"><code>&lt;style&gt;</code></pre>
+            <pre data-prefix="1"><code>.mycontainer {</code></pre>
+            <pre data-prefix="1"><code>    display: grid;</code></pre>
+            <pre data-prefix="1"><code>    grid-template-columns: 33% 33% 33%;</code></pre>
+            <pre data-prefix="1"><code>}</code></pre>
+            <pre data-prefix="1"><code>&lt;/style&gt;</code></pre>
+        </div>
+        <div class="outputview">
+
+            <h1>Grid Example</h1>
+
+            <p>Align three DIV elements side by side.</p>
+
+            <div style="display: grid; grid-template-columns: 33% 33% 33%;">
+                <div style="background-color:#FFF4A3;">
+                    <h2>London</h2>
+                    <p>London is the capital city of England.</p>
+                    <p>London has over 13 million inhabitants.</p>
+                </div>
+                <div style="background-color:#FFC0C7;">
+                    <h2>Oslo</h2>
+                    <p>Oslo is the capital city of Norway.</p>
+                    <p>Oslo has over 600.000 inhabitants.</p>
+                </div>
+                <div style="background-color:#D9EEE1;">
+                    <h2>Rome</h2>
+                    <p>Rome is the capital city of Italy.</p>
+                    <p>Rome has almost 3 million inhabitants.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
