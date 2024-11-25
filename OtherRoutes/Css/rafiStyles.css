@@ -178,6 +178,7 @@ h6 {
     .outputview {
         width: auto;
         border-radius: 0px 0px 8px 8px;
+        overflow: auto;
     }
 
 }

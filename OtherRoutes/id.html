@@ -8,10 +8,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/protikStyles.css">
     <title>Id</title>
+    <style>
+        #myHeader {
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Id</h1>
+    <h2><span class="wTitle">HTML id Attribute</span></h2>
+    <p>The HTML id attribute is used to specify a unique id for an HTML element.</p>
+    <p>You cannot have more than one element with the same id in an HTML document.</p>
+    <br>
+    <h2><span class="wTitle">Using The id Attribute</span></h2>
+    <p>The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within
+        the HTML document.</p>
+    <p>The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript
+        to access and manipulate the element with the specific id.</p>
+    <p>The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within
+        curly braces {}.</p>
+    <p>In the following example we have an &lt;h1&gt; element that points to the id name "myHeader". This &lt;h1&gt;
+        element will be styled according to the #myHeader style definition in the head section:</p>
+    <h3>Examples:</h3>
+
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;head&gt;</code></pre>
+            <pre data-prefix="4"><code>&lt;style&gt;</code></pre>
+            <pre data-prefix="5"><code>#myHeader {</code></pre>
+            <pre data-prefix="6"><code>    background-color: lightblue;</code></pre>
+            <pre data-prefix="7"><code>    color: black;</code></pre>
+            <pre data-prefix="8"><code>    padding: 40px;</code></pre>
+            <pre data-prefix="9"><code>    text-align: center;</code></pre>
+            <pre data-prefix="10"><code>}</code></pre>
+            <pre data-prefix="11"><code>&lt;/style&gt;</code></pre>
+            <pre data-prefix="12"><code>&lt;/head&gt;</code></pre>
+            <pre data-prefix="13"><code>&lt;body&gt;</code></pre>
+            <pre data-prefix="14"><code></code></pre>
+            <pre data-prefix="15"><code>&lt;h1 id="myHeader"&gt;My Header&lt;/h1&gt;</code></pre>
+            <pre data-prefix="16"><code></code></pre>
+            <pre data-prefix="17"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix="18"><code>&lt;/html&gt;</code></pre>
+        </div>
+        <div class="outputview">
+
+            <h3>Output</h3>
+            <h1 id="myHeader">My Header</h1>
+        </div>
+    </div>
 </body>
 
 </html>
