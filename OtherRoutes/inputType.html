@@ -1,295 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./Css/siyumStyles.css">
-  <title>HTML Input Types</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Css/siyumStyles.css" />
+    <title>HTML Input Types</title>
+  </head>
+  <body>
+    <h2>HTML Input Types</h2>
+    <p>Here are the different input types you can use in HTML:</p>
 
-  <h2>HTML Input Types</h2>
-  <p>Here are the different input types you can use in HTML:</p>
-
-  <!-- Button Element -->
-  <h3 style="margin-top: 40px"><span class="wTitle">&lt;input type="button"&gt;</span></h3>
-  <p>
-    The <span style="color: #04aa6d">&lt;input type="button"&gt;</span> element creates a clickable button that can trigger JavaScript code.
-  </p>
-  <h3>Example</h3>
-  <div class="codebox">
-    <div class="mockup-code">
-      <pre data-prefix="1"><code>&lt;input type="button" value="Click Me"&gt;</code></pre>
+    <!-- Button Element -->
+    <h3 style="margin-top: 40px">
+      <span class="wTitle">&lt;input type="button"&gt;</span>
+    </h3>
+    <p>
+      The
+      <span style="color: #04aa6d">&lt;input type="button"&gt;</span> element
+      creates a clickable button that can trigger JavaScript code.
+    </p>
+    <h3>Example</h3>
+    <div class="codebox">
+      <div class="mockup-code">
+        <pre
+          data-prefix="1"
+        ><code>&lt;input type="button" value="Click Me"&gt;</code></pre>
+      </div>
+      <div class="outputview">
+        <h3>Output</h3>
+        <form>
+          <input type="button" value="Click Me" />
+        </form>
+      </div>
     </div>
-    <div class="outputview">
-      <h3>Output</h3>
-      <form>
-        <input type="button" value="Click Me">
-      </form>
+
+    <!-- Checkbox Element -->
+    <h3 style="margin-top: 40px">
+      <span class="wTitle">&lt;input type="checkbox"&gt;</span>
+    </h3>
+    <p>
+      The
+      <span style="color: #04aa6d">&lt;input type="checkbox"&gt;</span> element
+      creates a checkbox allowing multiple selections.
+    </p>
+    <h3>Example</h3>
+    <div class="codebox">
+      <div class="mockup-code">
+        <pre
+          data-prefix="1"
+        ><code>&lt;input type="checkbox" id="agree"&gt;</code></pre>
+        <pre
+          data-prefix="2"
+        ><code>&lt;label for="agree"&gt;I agree&lt;/label&gt;</code></pre>
+      </div>
+      <div class="outputview">
+        <h3>Output</h3>
+        <form>
+          <input type="checkbox" id="agree" />
+          <label for="agree">I agree</label>
+        </form>
+      </div>
     </div>
-  </div>
 
-  <!-- Checkbox Element -->
-  <h3 style="margin-top: 40px"><span class="wTitle">&lt;input type="checkbox"&gt;</span></h3>
-  <p>
-    The <span style="color: #04aa6d">&lt;input type="checkbox"&gt;</span> element creates a checkbox allowing multiple selections.
-  </p>
-  <h3>Example</h3>
-  <div class="codebox">
-    <div class="mockup-code">
-      <pre data-prefix="1"><code>&lt;input type="checkbox" id="agree"&gt;</code></pre>
-      <pre data-prefix="2"><code>&lt;label for="agree"&gt;I agree&lt;/label&gt;</code></pre>
+    <!-- Color Element -->
+    <h3 style="margin-top: 40px">
+      <span class="wTitle">&lt;input type="color"&gt;</span>
+    </h3>
+    <p>
+      The <span style="color: #04aa6d">&lt;input type="color"&gt;</span> element
+      creates a color picker input.
+    </p>
+    <h3>Example</h3>
+    <div class="codebox">
+      <div class="mockup-code">
+        <pre data-prefix="1"><code>&lt;input type="color"&gt;</code></pre>
+      </div>
+      <div class="outputview">
+        <h3>Output</h3>
+        <form>
+          <input type="color" />
+        </form>
+      </div>
     </div>
-    <div class="outputview">
-      <h3>Output</h3>
-      <form>
-        <input type="checkbox" id="agree">
-        <label for="agree">I agree</label>
-      </form>
+
+    <!-- Date Element -->
+    <h3 style="margin-top: 40px">
+      <span class="wTitle">&lt;input type="date"&gt;</span>
+    </h3>
+    <p>
+      The <span style="color: #04aa6d">&lt;input type="date"&gt;</span> element
+      creates a date selection field.
+    </p>
+    <h3>Example</h3>
+    <div class="codebox">
+      <div class="mockup-code">
+        <pre data-prefix="1"><code>&lt;input type="date"&gt;</code></pre>
+      </div>
+      <div class="outputview">
+        <h3>Output</h3>
+        <form>
+          <input type="date" />
+        </form>
+      </div>
     </div>
-  </div>
 
-  <!-- Color Element -->
-  <h3 style="margin-top: 40px"><span class="wTitle">&lt;input type="color"&gt;</span></h3>
-  <p>
-    The <span style="color: #04aa6d">&lt;input type="color"&gt;</span> element creates a color picker input.
-  </p>
-  <h3>Example</h3>
-  <div class="codebox">
-    <div class="mockup-code">
-      <pre data-prefix="1"><code>&lt;input type="color"&gt;</code></pre>
+    <!-- Email Element -->
+    <h3 style="margin-top: 40px">
+      <span class="wTitle">&lt;input type="email"&gt;</span>
+    </h3>
+    <p>
+      The <span style="color: #04aa6d">&lt;input type="email"&gt;</span> element
+      is used for input fields that should contain an email address.
+    </p>
+    <h3>Example</h3>
+    <div class="codebox">
+      <div class="mockup-code">
+        <pre
+          data-prefix="1"
+        ><code>&lt;label for="email"&gt;Email:&lt;/label&gt;</code></pre>
+        <pre
+          data-prefix="2"
+        ><code>&lt;input type="email" id="email" name="email"&gt;</code></pre>
+      </div>
+      <div class="outputview">
+        <h3>Output</h3>
+        <form>
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" /><br /><br />
+        </form>
+      </div>
     </div>
-    <div class="outputview">
-      <h3>Output</h3>
-      <form>
-        <input type="color">
-      </form>
+
+    <!-- File Element -->
+    <h3 style="margin-top: 40px">
+      <span class="wTitle">&lt;input type="file"&gt;</span>
+    </h3>
+    <p>
+      The <span style="color: #04aa6d">&lt;input type="file"&gt;</span> element
+      allows users to upload files from their device.
+    </p>
+    <h3>Example</h3>
+    <div class="codebox">
+      <div class="mockup-code">
+        <pre data-prefix="1"><code>&lt;input type="file"&gt;</code></pre>
+      </div>
+      <div class="outputview">
+        <h3>Output</h3>
+        <form>
+          <input type="file" />
+        </form>
+      </div>
     </div>
-  </div>
 
-  <!-- Date Element -->
-  <h3 style="margin-top: 40px"><span class="wTitle">&lt;input type="date"&gt;</span></h3>
-  <p>
-    The <span style="color: #04aa6d">&lt;input type="date"&gt;</span> element creates a date selection field.
-  </p>
-  <h3>Example</h3>
-  <div class="codebox">
-    <div class="mockup-code">
-      <pre data-prefix="1"><code>&lt;input type="date"&gt;</code></pre>
+    <!-- Hidden Element -->
+    <h3 style="margin-top: 40px">
+      <span class="wTitle">&lt;input type="hidden"&gt;</span>
+    </h3>
+    <p>
+      The
+      <span style="color: #04aa6d">&lt;input type="hidden"&gt;</span> element is
+      used to store data that is not visible to users but can be sent with the
+      form.
+    </p>
+    <h3>Example</h3>
+    <div class="codebox">
+      <div class="mockup-code">
+        <pre
+          data-prefix="1"
+        ><code>&lt;input type="hidden" name="userid" value="12345"&gt;</code></pre>
+      </div>
+      <div class="outputview">
+        <h3>Output</h3>
+        <p>(Hidden fields are not visible to the user)</p>
+      </div>
     </div>
-    <div class="outputview">
-      <h3>Output</h3>
-      <form>
-        <input type="date">
-      </form>
+
+    <!-- Image Element -->
+    <h3 style="margin-top: 40px">
+      <span class="wTitle">&lt;input type="image"&gt;</span>
+    </h3>
+    <p>
+      The <span style="color: #04aa6d">&lt;input type="image"&gt;</span> element
+      displays an image that acts as a submit button.
+    </p>
+    <h3>Example</h3>
+    <div class="codebox">
+      <div class="mockup-code">
+        <pre
+          data-prefix="1"
+        ><code>&lt;input type="image" src="submit.png" alt="Submit"&gt;</code></pre>
+      </div>
+      <div class="outputview">
+        <h3>Output</h3>
+        <form>
+          <input
+            type="image"
+            src="../image.gif"
+            alt="Submit"
+            style="width: 50px; height: 50px"
+          />
+        </form>
+      </div>
     </div>
-  </div>
 
-  <!-- Email Element -->
-  <h3 style="margin-top: 40px"><span class="wTitle">&lt;input type="email"&gt;</span></h3>
-  <p>
-    The <span style="color: #04aa6d">&lt;input type="email"&gt;</span> element is used for input fields that should contain an email address.
-  </p>
-  <h3>Example</h3>
-  <div class="codebox">
-    <div class="mockup-code">
-      <pre data-prefix="1"><code>&lt;label for="email"&gt;Email:&lt;/label&gt;</code></pre>
-      <pre data-prefix="2"><code>&lt;input type="email" id="email" name="email"&gt;</code></pre>
+    <!-- Month Element -->
+    <h3 style="margin-top: 40px">
+      <span class="wTitle">&lt;input type="month"&gt;</span>
+    </h3>
+    <p>
+      The <span style="color: #04aa6d">&lt;input type="month"&gt;</span> element
+      allows the user to select a month and year.
+    </p>
+    <h3>Example</h3>
+    <div class="codebox">
+      <div class="mockup-code">
+        <pre data-prefix="1"><code>&lt;input type="month"&gt;</code></pre>
+      </div>
+      <div class="outputview">
+        <h3>Output</h3>
+        <form>
+          <input type="month" />
+        </form>
+      </div>
     </div>
-    <div class="outputview">
-      <h3>Output</h3>
-      <form>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-      </form>
+
+    <!-- Number Element -->
+    <h3 style="margin-top: 40px">
+      <span class="wTitle">&lt;input type="number"&gt;</span>
+    </h3>
+    <p>
+      The
+      <span style="color: #04aa6d">&lt;input type="number"&gt;</span> element is
+      used for input fields that should contain a numeric value.
+    </p>
+    <h3>Example</h3>
+    <div class="codebox">
+      <div class="mockup-code">
+        <pre
+          data-prefix="1"
+        ><code>&lt;input type="number" min="1" max="10"&gt;</code></pre>
+      </div>
+      <div class="outputview">
+        <h3>Output</h3>
+        <form>
+          <input type="number" min="1" max="10" />
+        </form>
+      </div>
     </div>
-  </div>
 
-  <!-- File Element -->
-<h3 style="margin-top: 40px"><span class="wTitle">&lt;input type="file"&gt;</span></h3>
-<p>
-  The <span style="color: #04aa6d">&lt;input type="file"&gt;</span> element allows users to upload files from their device.
-</p>
-<h3>Example</h3>
-<div class="codebox">
-  <div class="mockup-code">
-    <pre data-prefix="1"><code>&lt;input type="file"&gt;</code></pre>
-  </div>
-  <div class="outputview">
-    <h3>Output</h3>
-    <form>
-      <input type="file">
-    </form>
-  </div>
-</div>
+    <!-- Password Element -->
+    <h3 style="margin-top: 40px">
+      <span class="wTitle">&lt;input type="password"&gt;</span>
+    </h3>
+    <p>
+      The
+      <span style="color: #04aa6d">&lt;input type="password"&gt;</span> element
+      creates a field for password input, which hides the characters.
+    </p>
+    <h3>Example</h3>
+    <div class="codebox">
+      <div class="mockup-code">
+        <pre data-prefix="1"><code>&lt;input type="password"&gt;</code></pre>
+      </div>
+      <div class="outputview">
+        <h3>Output</h3>
+        <form>
+          <input type="password" />
+        </form>
+      </div>
+    </div>
 
-<!-- Hidden Element -->
-<h3 style="margin-top: 40px"><span class="wTitle">&lt;input type="hidden"&gt;</span></h3>
-<p>
-  The <span style="color: #04aa6d">&lt;input type="hidden"&gt;</span> element is used to store data that is not visible to users but can be sent with the form.
-</p>
-<h3>Example</h3>
-<div class="codebox">
-  <div class="mockup-code">
-    <pre data-prefix="1"><code>&lt;input type="hidden" name="userid" value="12345"&gt;</code></pre>
-  </div>
-  <div class="outputview">
-    <h3>Output</h3>
-    <p>(Hidden fields are not visible to the user)</p>
-  </div>
-</div>
+    <!-- Radio Element -->
+    <h3 style="margin-top: 40px">
+      <span class="wTitle">&lt;input type="radio"&gt;</span>
+    </h3>
+    <p>
+      The <span style="color: #04aa6d">&lt;input type="radio"&gt;</span> element
+      creates a radio button, allowing the user to select one option from a
+      group.
+    </p>
+    <h3>Example</h3>
+    <div class="codebox">
+      <div class="mockup-code">
+        <pre
+          data-prefix="1"
+        ><code>&lt;input type="radio" id="male" name="gender" value="male"&gt;</code></pre>
+        <pre
+          data-prefix="2"
+        ><code>&lt;label for="male"&gt;Male&lt;/label&gt;</code></pre>
+        <pre
+          data-prefix="3"
+        ><code>&lt;input type="radio" id="female" name="gender" value="female"&gt;</code></pre>
+        <pre
+          data-prefix="4"
+        ><code>&lt;label for="female"&gt;Female&lt;/label&gt;</code></pre>
+      </div>
+      <div class="outputview">
+        <h3>Output</h3>
+        <form>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label><br />
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </form>
+      </div>
+    </div>
 
-<!-- Image Element -->
-<h3 style="margin-top: 40px"><span class="wTitle">&lt;input type="image"&gt;</span></h3>
-<p>
-  The <span style="color: #04aa6d">&lt;input type="image"&gt;</span> element displays an image that acts as a submit button.
-</p>
-<h3>Example</h3>
-<div class="codebox">
-  <div class="mockup-code">
-    <pre data-prefix="1"><code>&lt;input type="image" src="submit.png" alt="Submit"&gt;</code></pre>
-  </div>
-  <div class="outputview">
-    <h3>Output</h3>
-    <form>
-      <input type="image" src="../image.gif" alt="Submit" style="width: 50px; height: 50px;">
-    </form>
-  </div>
-</div>
+    <h3 style="margin-top: 40px">
+      <span class="wTitle">Input Restrictions</span>
+    </h3>
+    <p>
+      Input restrictions help control what users can enter into form fields.
+      Below are some common restrictions:
+    </p>
 
-<!-- Month Element -->
-<h3 style="margin-top: 40px"><span class="wTitle">&lt;input type="month"&gt;</span></h3>
-<p>
-  The <span style="color: #04aa6d">&lt;input type="month"&gt;</span> element allows the user to select a month and year.
-</p>
-<h3>Example</h3>
-<div class="codebox">
-  <div class="mockup-code">
-    <pre data-prefix="1"><code>&lt;input type="month"&gt;</code></pre>
-  </div>
-  <div class="outputview">
-    <h3>Output</h3>
-    <form>
-      <input type="month">
-    </form>
-  </div>
-</div>
-
-<!-- Number Element -->
-<h3 style="margin-top: 40px"><span class="wTitle">&lt;input type="number"&gt;</span></h3>
-<p>
-  The <span style="color: #04aa6d">&lt;input type="number"&gt;</span> element is used for input fields that should contain a numeric value.
-</p>
-<h3>Example</h3>
-<div class="codebox">
-  <div class="mockup-code">
-    <pre data-prefix="1"><code>&lt;input type="number" min="1" max="10"&gt;</code></pre>
-  </div>
-  <div class="outputview">
-    <h3>Output</h3>
-    <form>
-      <input type="number" min="1" max="10">
-    </form>
-  </div>
-</div>
-
-<!-- Password Element -->
-<h3 style="margin-top: 40px"><span class="wTitle">&lt;input type="password"&gt;</span></h3>
-<p>
-  The <span style="color: #04aa6d">&lt;input type="password"&gt;</span> element creates a field for password input, which hides the characters.
-</p>
-<h3>Example</h3>
-<div class="codebox">
-  <div class="mockup-code">
-    <pre data-prefix="1"><code>&lt;input type="password"&gt;</code></pre>
-  </div>
-  <div class="outputview">
-    <h3>Output</h3>
-    <form>
-      <input type="password">
-    </form>
-  </div>
-</div>
-
-<!-- Radio Element -->
-<h3 style="margin-top: 40px"><span class="wTitle">&lt;input type="radio"&gt;</span></h3>
-<p>
-  The <span style="color: #04aa6d">&lt;input type="radio"&gt;</span> element creates a radio button, allowing the user to select one option from a group.
-</p>
-<h3>Example</h3>
-<div class="codebox">
-  <div class="mockup-code">
-    <pre data-prefix="1"><code>&lt;input type="radio" id="male" name="gender" value="male"&gt;</code></pre>
-    <pre data-prefix="2"><code>&lt;label for="male"&gt;Male&lt;/label&gt;</code></pre>
-    <pre data-prefix="3"><code>&lt;input type="radio" id="female" name="gender" value="female"&gt;</code></pre>
-    <pre data-prefix="4"><code>&lt;label for="female"&gt;Female&lt;/label&gt;</code></pre>
-  </div>
-  <div class="outputview">
-    <h3>Output</h3>
-    <form>
-      <input type="radio" id="male" name="gender" value="male">
-      <label for="male">Male</label><br>
-      <input type="radio" id="female" name="gender" value="female">
-      <label for="female">Female</label>
-    </form>
-  </div>
-</div>
-
-
-<h3 style="margin-top: 40px"><span class="wTitle">Input Restrictions</span></h3>
-<p>
-  Input restrictions help control what users can enter into form fields. Below are some common restrictions:
-</p>
-
-<div class="table-container">
-  <table class="styled-table">
-    <thead>
-      <tr>
-        <th>Restriction Type</th>
-        <th>Description</th>
-        <th>Example</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Maxlength</td>
-        <td>Specifies the maximum number of characters allowed in an input field.</td>
-        <td>&lt;input type="text" maxlength="10"&gt;</td>
-      </tr>
-      <tr>
-        <td>Min and Max</td>
-        <td>Defines the minimum and maximum values for numeric inputs.</td>
-        <td>&lt;input type="number" min="1" max="100"&gt;</td>
-      </tr>
-      <tr>
-        <td>Pattern</td>
-        <td>Specifies a regular expression the input field's value must match.</td>
-        <td>&lt;input type="text" pattern="[A-Za-z]{3}"&gt;</td>
-      </tr>
-      <tr>
-        <td>Required</td>
-        <td>Makes the input field mandatory.</td>
-        <td>&lt;input type="text" required&gt;</td>
-      </tr>
-      <tr>
-        <td>Readonly</td>
-        <td>Specifies that the input field is read-only and cannot be modified.</td>
-        <td>&lt;input type="text" value="Read-only" readonly&gt;</td>
-      </tr>
-      <tr>
-        <td>Disabled</td>
-        <td>Disables the input field, preventing user interaction.</td>
-        <td>&lt;input type="text" disabled&gt;</td>
-      </tr>
-      <tr>
-        <td>Step</td>
-        <td>Specifies the interval between legal numbers in a number input.</td>
-        <td>&lt;input type="number" step="5"&gt;</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<br><br><br>
-
-</body>
+    <div class="table-container">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Restriction Type</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Maxlength</td>
+            <td>
+              Specifies the maximum number of characters allowed in an input
+              field.
+            </td>
+            <td>&lt;input type="text" maxlength="10"&gt;</td>
+          </tr>
+          <tr>
+            <td>Min and Max</td>
+            <td>Defines the minimum and maximum values for numeric inputs.</td>
+            <td>&lt;input type="number" min="1" max="100"&gt;</td>
+          </tr>
+          <tr>
+            <td>Pattern</td>
+            <td>
+              Specifies a regular expression the input field's value must match.
+            </td>
+            <td>&lt;input type="text" pattern="[A-Za-z]{3}"&gt;</td>
+          </tr>
+          <tr>
+            <td>Required</td>
+            <td>Makes the input field mandatory.</td>
+            <td>&lt;input type="text" required&gt;</td>
+          </tr>
+          <tr>
+            <td>Readonly</td>
+            <td>
+              Specifies that the input field is read-only and cannot be
+              modified.
+            </td>
+            <td>&lt;input type="text" value="Read-only" readonly&gt;</td>
+          </tr>
+          <tr>
+            <td>Disabled</td>
+            <td>Disables the input field, preventing user interaction.</td>
+            <td>&lt;input type="text" disabled&gt;</td>
+          </tr>
+          <tr>
+            <td>Step</td>
+            <td>
+              Specifies the interval between legal numbers in a number input.
+            </td>
+            <td>&lt;input type="number" step="5"&gt;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br /><br /><br />
+  </body>
 </html>
