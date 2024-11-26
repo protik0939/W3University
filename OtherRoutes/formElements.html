@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Css/siyumStyles.css" />
+    <title>The HTML Form Elements</title>
+  </head>
+  <body>
+    <p>
+      This chapter describes the different elements used within the HTML
+      <span style="color: #04aa6d">&lt;form&gt;</span> tag.
+    </p>
+
+    <!-- Input Element -->
+    <h3><span class="wTitle">The &lt;input&gt; Element</span></h3>
+    <p>
+      The <span style="color: #04aa6d">&lt;input&gt;</span> element is used to create various form controls, such as text fields, checkboxes, and buttons.
+    </p>
+    <h3>Examples</h3>
+    <div class="codebox">
+      <div class="mockup-code">
+        <pre data-prefix="1"><code>&lt;form&gt;</code></pre>
+        <pre data-prefix="2"><code>  &lt;label for="username"&gt;Username:&lt;/label&gt;&lt;br&gt;</code></pre>
+        <pre data-prefix="3"><code>  &lt;input type="text" id="username" name="username"&gt;&lt;br&gt;&lt;br&gt;</code></pre>
+        <pre data-prefix="4"><code>  &lt;input type="submit" value="Submit"&gt;</code></pre>
+        <pre data-prefix="5"><code>&lt;/form&gt;</code></pre>
+      </div>
+      <div class="outputview">
+        <h3>Output</h3>
+        <form>
+          <label for="username">Username:</label><br />
+          <input type="text" id="username" name="username" /><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+<!-- Label Element -->
+<h3 style="margin-top: 40px"><span class="wTitle">The &lt;label&gt; Element</span></h3>
+<p>
+  The <span style="color: #04aa6d">&lt;label&gt;</span> element defines a label for an <code>&lt;input&gt;</code> element. Clicking the label focuses the corresponding input field.
+</p>
+<h3>Example</h3>
+<div class="codebox">
+  <div class="mockup-code">
+    <pre data-prefix="1"><code>&lt;label for="email"&gt;Email:&lt;/label&gt;</code></pre>
+    <pre data-prefix="2"><code>&lt;input type="email" id="email" name="email"&gt;</code></pre>
+  </div>
+  <div class="outputview">
+    <h3>Output</h3>
+    <form>
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email"><br><br />
+    </form>
+  </div>
+</div>
+
+    <!-- Select Element -->
+    <h3 style="margin-top: 40px"><span class="wTitle">The &lt;select&gt; Element</span></h3>
+    <p>
+      The <span style="color: #04aa6d">&lt;select&gt;</span> element is used to create a drop-down list.
+    </p>
+    <h3>Examples</h3>
+    <div class="codebox">
+      <div class="mockup-code">
+        <pre data-prefix="1"><code>&lt;form&gt;</code></pre>
+        <pre data-prefix="2"><code>  &lt;label for="country"&gt;Choose a country:&lt;/label&gt;&lt;br&gt;</code></pre>
+        <pre data-prefix="3"><code>  &lt;select id="country" name="country"&gt;</code></pre>
+        <pre data-prefix="4"><code>    &lt;option value="bangladesh"&gt;Bangladesh&lt;/option&gt;</code></pre>
+        <pre data-prefix="5"><code>    &lt;option value="pakistan"&gt;Pakistan&lt;/option&gt;</code></pre>
+        <pre data-prefix="6"><code>    &lt;option value="southkorea"&gt;South Korea&lt;/option&gt;</code></pre>
+        <pre data-prefix="7"><code>  &lt;/select&gt;&lt;br&gt;&lt;br&gt;</code></pre>
+        <pre data-prefix="8"><code>  &lt;input type="submit" value="Submit"&gt;</code></pre>
+        <pre data-prefix="9"><code>&lt;/form&gt;</code></pre>
+      </div>
+      <div class="outputview">
+        <h3>Output</h3>
+        <form>
+          <label for="country">Choose a country:</label><br />
+          <select id="country" name="country">
+            <option value="bangladesh">Bangladesh</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="southkorea">South Korea</option>
+          </select><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <!-- Textarea Element -->
+    <h3 style="margin-top: 40px"><span class="wTitle">The &lt;textarea&gt; Element</span></h3>
+    <p>
+      The <span style="color: #04aa6d">&lt;textarea&gt;</span> element is used to create a multi-line text input field.
+    </p>
+    <h3>Examples</h3>
+    <div class="codebox">
+      <div class="mockup-code">
+        <pre data-prefix="1"><code>&lt;form&gt;</code></pre>
+        <pre data-prefix="2"><code>  &lt;label for="comments"&gt;Comments:&lt;/label&gt;&lt;br&gt;</code></pre>
+        <pre data-prefix="3"><code>  &lt;textarea id="comments" name="comments" rows="4" cols="30"&gt;</code></pre>
+        <pre data-prefix="4"><code>  &lt;/textarea&gt;&lt;br&gt;&lt;br&gt;</code></pre>
+        <pre data-prefix="5"><code>  &lt;input type="submit" value="Submit"&gt;</code></pre>
+        <pre data-prefix="6"><code>&lt;/form&gt;</code></pre>
+      </div>
+      <div class="outputview">
+        <h3>Output</h3>
+        <form>
+          <label for="comments">Comments:</label><br />
+          <textarea id="comments" name="comments" rows="4" cols="30"></textarea><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <!-- Button Element -->
+    <h3 style="margin-top: 40px"><span class="wTitle">The &lt;button&gt; Element</span></h3>
+    <p>
+      The <span style="color: #04aa6d">&lt;button&gt;</span> element creates a clickable button.
+    </p>
+    <h3>Examples</h3>
+    <div class="codebox">
+      <div class="mockup-code">
+        <pre data-prefix="1"><code>&lt;form&gt;</code></pre>
+        <pre data-prefix="2"><code>  &lt;button type="button" onclick="alert('Hello!')"&gt;Click Me!&lt;/button&gt;</code></pre>
+        <pre data-prefix="3"><code>&lt;/form&gt;</code></pre>
+      </div>
+      <div class="outputview">
+        <h3>Output</h3>
+        <form>
+          <button type="button" onclick="alert('Hello, I am Jubair Amin Siyum! ')">Click Me!</button>
+        </form>
+      </div>
+    </div>
+
+
+
+     <!-- Fieldset and Legend Elements -->
+  <h3 style="margin-top: 40px"><span class="wTitle">The &lt;fieldset&gt; and &lt;legend&gt; Elements</span></h3>
+  <p>
+    The <span style="color: #04aa6d">&lt;fieldset&gt;</span> element is used to group related elements in a form. The <span style="color: #04aa6d">&lt;legend&gt;</span> element defines a caption for the <code>&lt;fieldset&gt;</code>.
+  </p>
+  <h3>Example</h3>
+  <div class="codebox">
+    <div class="mockup-code">
+      <pre data-prefix="1"><code>&lt;fieldset&gt;</code></pre>
+      <pre data-prefix="2"><code>  &lt;legend&gt;Personal Information&lt;/legend&gt;</code></pre>
+      <pre data-prefix="3"><code>  &lt;label for="fname"&gt;First Name:&lt;/label&gt;&lt;br&gt;</code></pre>
+      <pre data-prefix="4"><code>  &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;</code></pre>
+      <pre data-prefix="5"><code>  &lt;label for="lname"&gt;Last Name:&lt;/label&gt;&lt;br&gt;</code></pre>
+      <pre data-prefix="6"><code>  &lt;input type="text" id="lname" name="lname"&gt;</code></pre>
+      <pre data-prefix="7"><code>&lt;/fieldset&gt;</code></pre>
+    </div>
+    <div class="outputview">
+      <h3>Output</h3>
+      <form>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fname">First Name:</label><br />
+          <input type="text" id="fname" name="fname"><br /><br />
+          <label for="lname">Last Name:</label><br />
+          <input type="text" id="lname" name="lname">
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+<!-- Datalist Element -->
+<h3 style="margin-top: 40px"><span class="wTitle">The &lt;datalist&gt; Element</span></h3>
+<p>
+  The <span style="color: #04aa6d">&lt;datalist&gt;</span> element provides a list of pre-defined options for an <code>&lt;input&gt;</code> element.
+</p>
+<h3>Example</h3>
+<div class="codebox">
+  <div class="mockup-code">
+    <pre data-prefix="1"><code>&lt;input list="browsers"&gt;</code></pre>
+    <pre data-prefix="2"><code>&lt;datalist id="browsers"&gt;</code></pre>
+    <pre data-prefix="3"><code>  &lt;option value="Chrome"&gt;</code></pre>
+    <pre data-prefix="4"><code>  &lt;option value="Firefox"&gt;</code></pre>
+    <pre data-prefix="5"><code>  &lt;option value="Edge"&gt;</code></pre>
+    <pre data-prefix="6"><code>&lt;/datalist&gt;</code></pre>
+  </div>
+  <div class="outputview">
+    <h3>Output</h3>
+    <form>
+      <input list="browsers" placeholder="Select a browser">
+      <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Edge">
+      </datalist>
+    </form>
+  </div>
+</div>
+
+<!-- Output Element -->
+<h3 style="margin-top: 40px"><span class="wTitle">The &lt;output&gt; Element</span></h3>
+<p>
+  The <span style="color: #04aa6d">&lt;output&gt;</span> element represents the result of a calculation or user action.
+</p>
+<h3>Example</h3>
+<div class="codebox">
+  <div class="mockup-code">
+    <pre data-prefix="1"><code>&lt;form oninput="result.value=parseInt(a.value)+parseInt(b.value)"&gt;</code></pre>
+    <pre data-prefix="2"><code>  0&lt;input type="range" id="a" name="a" value="50"&gt;100 +</code></pre>
+    <pre data-prefix="3"><code>  0&lt;input type="number" id="b" name="b" value="50"&gt; =</code></pre>
+    <pre data-prefix="4"><code>  &lt;output name="result"&gt;100&lt;/output&gt;</code></pre>
+    <pre data-prefix="5"><code>&lt;/form&gt;</code></pre>
+  </div>
+  <div class="outputview">
+    <h3>Output</h3>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+      0<input type="range" id="a" name="a" value="50">100 +
+      0<input type="number" id="b" name="b" value="50"> =
+      <output name="result">100</output>
+    </form>
+  </div>
+</div>
+
+<!-- Elements Table -->
+<h3 style="margin-top: 40px"><span class="wTitle">Summary Table of Form Elements</span></h3>
+<table border="1" style="width:100%; border-collapse: collapse; text-align: center;">
+  <thead style="background-color: #04aa6d; color: white;">
+    <tr>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&lt;input&gt;</td>
+      <td>Creates various form controls (text, button, etc.)</td>
+    </tr>
+    <tr>
+      <td>&lt;label&gt;</td>
+      <td>Defines labels for form elements</td>
+    </tr>
+    <tr>
+      <td>&lt;select&gt;</td>
+      <td>Creates a dropdown list</td>
+    </tr>
+    <tr>
+      <td>&lt;textarea&gt;</td>
+      <td>Creates a multi-line text input</td>
+    </tr>
+    <tr>
+      <td>&lt;button&gt;</td>
+      <td>Defines a clickable button</td>
+    </tr>
+    <tr>
+      <td>&lt;fieldset&gt;</td>
+      <td>Groups related form elements</td>
+    </tr>
+    <tr>
+      <td>&lt;legend&gt;</td>
+      <td>Defines a caption for a &lt;fieldset&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;datalist&gt;</td>
+      <td>Provides a list of pre-defined options</td>
+    </tr>
+    <tr>
+      <td>&lt;output&gt;</td>
+      <td>Displays the result of a calculation</td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br><br>
+  </body>
+</html>
