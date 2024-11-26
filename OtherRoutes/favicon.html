@@ -22,12 +22,31 @@
             contrast.</p>
     </div>
 
+    <p>A favicon image is displayed to the left of the page title in the browser tab, like this:</p>
 
-    <p>Next, add a <span style="color: #04aa6d;">&lt;link&gt;</span> element to your "index.html" file, after the <span
-            style="color: #04aa6d;"> &lt;title&gt;</span>
-        &lt;title&gt; element, like this:
+
+
     </p>
     <p>A favicon image is displayed to the left of the page title in the browser tab, like this:</p>
+
+    <div class="browser">
+        <div class="browser-header">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+            <div class="tab">
+                <a href="#">HTML Tutorial</a>
+            </div>
+        </div>
+        <div class="address-bar">
+            <span class="lock">🔒</span>
+            <input type="text" value="https://www.w3schools.com/html/default.asp" readonly>
+        </div>
+    </div>
+
+    <p>Next, add a <span style="color: #04aa6d;">&lt;link&gt;</span> element to your "index.html" file, after the <span
+        style="color: #04aa6d;"> &lt;title&gt;</span>
+    &lt;title&gt; element, like this:
 
     <h3>Examples:</h3>
     <div class="codebox">
@@ -43,8 +62,7 @@
             <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
             <pre data-prefix="3"><code>&lt;head&gt;</code></pre>
             <pre data-prefix="4"><code>&#160;&#160;&#160;&#160;&lt;title&gt;My Page Title&lt;/title&gt;</code></pre>
-            <pre
-                data-prefix="5"><code>&#160;&#160;&#160;&#160;&lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;/images/favicon.ico&quot;&gt;</code></pre>
+            <pre data-prefix="5"><code>&#160;&#160;&#160;&#160;&lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;/images/favicon.ico&quot;&gt;</code></pre>
             <pre data-prefix="6"><code>&lt;/head&gt;</code></pre>
             <pre data-prefix="7"><code>&lt;body&gt;</code></pre>
             <pre data-prefix="8"><code>&#160;&#160;&#160;&#160;&lt;h1&gt;This is a Heading&lt;/h1&gt;</code></pre>
@@ -54,9 +72,74 @@
         </div>
     </div>
 
-    <h1>Shakib</h1>
+    <p>Now, save the "index.html" file and reload it in your browser. Your browser tab should now display your favicon image to the left of the page title.</p>
 
+    <hr>
+    <br>
+    <hr>
 
+    <h2><span class="wTitle">Favicon File Format Support</span></h2>
+    <p>The following table shows the file format support for a favicon image:</p>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Browser</th>
+                <th>ICO</th>
+                <th>PNG</th>
+                <th>GIF</th>
+                <th>JPEG</th>
+                <th>SVG</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Edge</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Chrome</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Firefox</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Opera</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+<hr>
 
 
 </body>
