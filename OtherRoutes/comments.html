@@ -12,6 +12,7 @@
     <br>
     <h2><span class="wTitle">Add Comments</span></h2>
     <p>With comments you can place notifications and reminders in your HTML code:</p>
+    <h3>Examples:</h3>
     <div class="codebox">
         <div class="mockup-code">
             <div class="code-header">
@@ -20,11 +21,11 @@
                 <span class="dot"></span>
             </div>
 
-            <pre data-prefix="1"><code>&lt;!-- This is a comment --&gt;</code></pre>
-            <pre data-prefix="2"><code></code></pre>
-            <pre data-prefix="3"><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
-            <pre data-prefix="4"><code></code></pre>
-            <pre data-prefix="5"><code>&lt;!-- Comments are not displayed in the browser --&gt;</code></pre>
+            <pre data-prefix="1:"><code>&lt;!-- This is a comment --&gt;</code></pre>
+            <pre data-prefix="2:"><code></code></pre>
+            <pre data-prefix="3:"><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+            <pre data-prefix="4:"><code></code></pre>
+            <pre data-prefix="5:"><code>&lt;!-- Comments are not displayed in the browser --&gt;</code></pre>
 
         </div>
         <div class="outputview">
@@ -40,5 +41,82 @@
     <h2><span class="wTitle">Hide Content</span></h2>
     <p>Comments can be used to hide content.</p>
     <p>This can be helpful if you hide content temporarily:</p>
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <pre data-prefix="1:"><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+            <pre data-prefix="2:"><code></code></pre>
+            <pre data-prefix="3:"><code>&lt;!--&lt;p&gt; This is another paragraph &lt;/p&gt;--&gt;</code></pre>
+            <pre data-prefix="4:"><code></code></pre>
+            <pre data-prefix="5:"><code>&lt;p&gt;This is a paragraph too.&lt;/p&gt;</code></pre>
+
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>This is a paragraph.</p>
+            <p>This is a paragraph too.</p>
+        </div>
+    </div>
+    <br>
+    <div class="tip-box">
+        <p class="tip-text"><strong>Note:</strong> You can also hide more than one line. Everything between the &lt;!--and the --&gt; will be hidden from the display.</p>
+    </div>
+    <br>
+    <h3>Examples:</h3>
+    <p>Hide a section of HTML code:</p>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <pre data-prefix="1:"><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+            <pre data-prefix="2:"><code>&lt;!--</code></pre>
+            <pre data-prefix="3:"><code>&lt;p&gt; Look at this cool image:&lt;/p&gt;</code></pre>
+            <pre data-prefix="4:"><code>&lt;img border="0" src="pic_trulli.jpg" alt="Trulli"&gt;</code></pre>
+            <pre data-prefix="5:"><code>--&gt;</code></pre>
+            <pre data-prefix="6:"><code>&lt;p&gt;This is a paragraph too.&lt;/p&gt;</code></pre>
+
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>This is a paragraph.</p>
+            <p>This is a paragraph too.</p>
+        </div>
+    </div>
+    <br>
+    <div class="tip-box">
+        <p class="tip-text"><strong>Note:</strong>Comments are also great for debugging HTML, because you can comment out HTML lines of code, one at a time, to search for errors.</p>
+    </div>
+    <br><!--copy suru-->
+    <h2><span class="wTitle">Hide Inline Content</span></h2>
+    <p>Comments can be used to hide parts in the middle of the HTML code.</p>
+    <h3>Examples:</h3>
+    <p>Hide a part of a paragraph:</p>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1:"><code>&lt;p&gt;This&lt;!-- great text --&gt;is a paragraph.&lt;/p&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>This is a paragraph.</p>
+        </div>
+    </div>
+    <br>
+    <h1 style="text-align: center;">Try Yourself</h1>
+    </div>
 </body>
 </html>
