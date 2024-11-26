@@ -1,0 +1,9 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap');
+
+/* Body Styling */
+body {
+    color: white;
+    font-family: "Baloo Da 2", serif;
+    margin-bottom: 100px;
+}

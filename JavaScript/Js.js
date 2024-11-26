@@ -88,7 +88,11 @@ document.getElementById("links").onclick = () => updatePage("links");
 document.getElementById("favicon").onclick = () => updatePage("favicon");
 document.getElementById("images").onclick = () => updatePage("images");
 document.getElementById("page title").onclick = () => updatePage("page title");
-
+document.getElementById("quotation").onclick = () => updatePage("quotation");
+document.getElementById("comments").onclick = () => updatePage("comments");
+document.getElementById("colors").onclick = () => updatePage("colors");
+document.getElementById("css").onclick = () => updatePage("css");
+document.getElementById("formatting").onclick = () => updatePage("formatting");
 
 
 document.getElementById("threeLineIcon").onclick = () => showMenu();
