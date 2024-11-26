@@ -5,6 +5,8 @@
 body {
     color: white;
     font-family: "Baloo Da 2", serif;
+
+    
 }
 
 .wTitle {
@@ -103,6 +105,111 @@ body {
     font-size: 14px;
     color: #333;
 }
+
+
+.browser {
+    width: 600px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.browser-header {
+    background-color: #e5e7eb;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.browser-header span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.red {
+    background-color: #ff5f56;
+}
+
+.yellow {
+    background-color: #ffbd2e;
+}
+
+.green {
+    background-color: #27c93f;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+
+.tab a {
+    text-decoration: none;
+    color: #333;
+}
+
+.address-bar {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 0 10px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.address-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #555;
+}
+
+.address-bar .lock {
+    margin-right: 10px;
+    color: #4caf50;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #2d3748;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #444;
+    font-size: 16px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #444;
+}
+
+th {
+    background-color: #1a202c;
+}
+
+tr:nth-child(even) {
+    background-color: #3b4556;
+}
+
+tr:nth-child(odd) {
+    background-color: #2f3b4c;
+}
+
+
 
 
 
