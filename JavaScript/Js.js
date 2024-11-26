@@ -83,6 +83,7 @@ document.getElementById("div").onclick = () => updatePage("div");
 document.getElementById("id").onclick = () => updatePage("id");
 document.getElementById("iframe").onclick = () => updatePage("iframe");
 document.getElementById("forms").onclick = () => updatePage("forms");
+document.getElementById("formAttributes").onclick = () => updatePage("formAttributes");
 document.getElementById("links").onclick = () => updatePage("links");
 document.getElementById("favicon").onclick = () => updatePage("favicon");
 document.getElementById("images").onclick = () => updatePage("images");
