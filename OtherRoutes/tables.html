@@ -526,7 +526,123 @@
 <p>HTML tables can have borders of different styles and shapes.</p>
 <hr>
 <h3>How To Add a Border</h3>
-<p>To add a border, use the CSS border property on table, th, and td elements:</p>
+<p>To add a border, use the CSS <span style="color: #04aa6d;">border</span> property on <span style="color: #04aa6d;">table</span>,<span style="color: #04aa6d;">th</span>, and <span style="color: #04aa6d;">td</span> elements:</p>
+<br>
+
+<table>
+  <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+  </tr>
+</table>
+
+<h3>Examples:</h3>
+<div class="codebox">
+    <div class="mockup-code">
+
+        <div class="code-header">
+            <span class="dot"></span>
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+        <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+<pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+<pre data-prefix="3"><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;</code></pre>
+<pre data-prefix="4"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;</code></pre>
+<pre data-prefix="5"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;table, th, td {</code></pre>
+<pre data-prefix="6"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border: 1px solid black;</code></pre>
+<pre data-prefix="7"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></pre>
+<pre data-prefix="8"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;</code></pre>
+<pre data-prefix="9"><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;</code></pre>
+<pre data-prefix="10"><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;</code></pre>
+<pre data-prefix="11"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Table With Border&lt;/h2&gt;</code></pre>
+<pre data-prefix="12"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Use the CSS border property to add a border to the table.&lt;/p&gt;</code></pre>
+<pre data-prefix="13"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;table style=&quot;width:100%&quot;&gt;</code></pre>
+<pre data-prefix="14"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</code></pre>
+<pre data-prefix="15"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Firstname&lt;/th&gt;</code></pre>
+<pre data-prefix="16"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Lastname&lt;/th&gt;</code></pre>
+<pre data-prefix="17"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Age&lt;/th&gt;</code></pre>
+<pre data-prefix="18"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</code></pre>
+<pre data-prefix="19"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</code></pre>
+<pre data-prefix="20"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jill&lt;/td&gt;</code></pre>
+<pre data-prefix="21"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Smith&lt;/td&gt;</code></pre>
+<pre data-prefix="22"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;50&lt;/td&gt;</code></pre>
+<pre data-prefix="23"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</code></pre>
+<pre data-prefix="24"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/table&gt;</code></pre>
+<pre data-prefix="25"><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;</code></pre>
+<pre data-prefix="26"><code>&lt;/html&gt;</code></pre>
+</div> 
+<div class="outputview">
+
+    <h3>Output</h3>
+    <h2>Table With Border</h2>
+
+<p>Use the CSS border property to add a border to the table.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</div>
+</div>
+
+<br>
+<h3>Style Table Borders</h3>
+<p>If you set a background color of each cell, and give the border a white color (the same as the document background), you get the impression of an invisible border:</p>
+
+<h2>Styled Table</h2>
+<div style="color:#aeecef; background:black;">
+
+<table>
+    <tr style ="background-color: #aeecef; " >
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr style ="background-color: #aeecef; ">
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr style ="background-color: #aeecef; ">
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+</div>
+
+
 
 
 

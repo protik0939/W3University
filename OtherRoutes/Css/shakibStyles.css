@@ -5,6 +5,7 @@
 body {
     color: white;
     font-family: "Baloo Da 2", serif;
+    
 
     
 }
@@ -188,13 +189,13 @@ table {
     background-color: #2d3748;
     color: #fff;
     text-align: center;
-    border: 1px solid #444;
+    border: 1px solid black;
     font-size: 16px;
 }
 
 th, td {
     padding: 12px;
-    border: 1px solid #444;
+    border: 1px solid black;
 }
 
 th {
