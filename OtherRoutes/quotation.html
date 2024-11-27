@@ -7,6 +7,203 @@
     <link rel="stylesheet" href="./Css/jarifStyles.css">
 </head>
 <body>
-    
+    <h2><span class="wTitle">HTML Quotation and Citation Elements
+    </span></h2>
+    <p>In this chapter we will go through the &lt;blockquote> , &lt;q> ,  &lt;abbr> ,  &lt;address> ,  &lt;cite> ,  and  &lt;bdo> HTML elements.</p>
+    <br>
+    <!--<h2><span class="wTitle">Add Comments</span></h2>
+    <p>With comments you can place notifications and reminders in your HTML code:</p>-->
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <pre data-prefix=""><code>Here is a quote from WWF's website:</code></pre>
+            <pre data-prefix=""><code></code></pre>
+            <pre data-prefix=""><code>For 60 years, WWF has worked to help people and nature thrive.</code></pre>
+            <pre data-prefix=""><code>As the world's leading conservation organization, WWF works in </code></pre>
+            <pre data-prefix=""><code>nearly 100 countries. At every level, we collaborate with people</code></pre>
+            <pre data-prefix=""><code>around the world to develop and deliver innovative solutions that</code></pre>
+            <pre data-prefix=""><code>protect communities, wildlife, and the places in which they live.</code></pre>
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>Here is a quote from WWF's website:</p>
+            <p>For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.</p>
+        </div>
+    </div>
+    <br>
+    <h2><span class="wTitle">HTML &lt;q> for Short Quotations</span></h2>
+    <p>The HTML &lt;q> tag defines a short quotation.</p>
+    <p>Browsers normally insert quotation marks around the quotation.</p>
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;!DOCTYPE html></code></pre>
+            <pre data-prefix="2"><code>&lt;html></code></pre>
+            <pre data-prefix="3"><code>&lt;body></code></pre>
+            <pre data-prefix="4"><code></code></pre>
+            <pre data-prefix="5"><code>&lt;p>Browsers usually insert quotation marks around the q element.&lt;/p&gt;</code></pre>
+            <pre data-prefix="6"><code></code></pre>
+            <pre data-prefix="7"><code>&lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;&lt;/p&gt;</code></pre>
+            <pre data-prefix="8"><code></code></pre>
+            <pre data-prefix="9"><code>&lt;/body></code></pre>
+            <pre data-prefix="10"><code>&lt;/html></code></pre>
+            
+
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>Browsers usually insert quotation marks around the q element.</p>
+            <p>WWF's goal is to: "Build a future where people live in harmony with nature."</p>
+        </div>
+    </div>
+    <br>
+    <h2><span class="wTitle">HTML &lt;abbr> for Abbreviations</span></h2>
+    <p>The HTML &lt;abbr> tag defines an abbreviation or an acronym, like "HTML"  ,  "CSS"  ,  "Mr."  ,  "Dr."  ,  "ASAP"  ,  "ATM".</p>
+    <p>Marking abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+    <p><strong>Tip:</strong> Use the global <code>title</code> attribute to show the description for the abbreviation/acronym when you mouse over the element.</p>
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;!DOCTYPE html></code></pre>
+            <pre data-prefix="2"><code>&lt;html></code></pre>
+            <pre data-prefix="3"><code>&lt;body></code></pre>
+            <pre data-prefix="4"><code></code></pre>
+            <pre data-prefix="5"><code>&lt;p>The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt;was founded in 1948.&lt;/p&gt;</code></pre>
+            <pre data-prefix="6"><code></code></pre>
+            <pre data-prefix="7"><code>&lt;p&gt;Marking up abbreviations can give useful information to browsers, translation systems and search-engines.&lt;/p&gt;</code></pre>
+            <pre data-prefix="8"><code></code></pre>
+            <pre data-prefix="9"><code>&lt;/body></code></pre>
+            <pre data-prefix="10"><code>&lt;/html></code></pre>
+            
+
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>The WHO was founded in 1948.</p>
+            <p>Marking up abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+        </div>
+    </div>
+    <br>
+    <h2><span class="wTitle">HTML &lt;address> for Contact Information</span></h2>
+    <p>The HTML &lt;address> tag defines the contact information for the author/owner of a document or an article.</p>
+    <p>The contact information can be an email address, URL, physical address, phone number, social media handle, etc.</p>
+    <p>The text in the &lt;address> element usually renders in italic, and browsers will always add a line break before and after the &lt;address> element.</p>
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;!DOCTYPE html></code></pre>
+            <pre data-prefix="2"><code>&lt;html></code></pre>
+            <pre data-prefix="3"><code>&lt;body></code></pre>
+            <pre data-prefix="4"><code></code></pre>
+            <pre data-prefix="5"><code>&lt;p>The HTML address element defines contact information (author/owner) of a document or article.&lt;/p&gt;</code></pre>
+            <pre data-prefix="6"><code></code></pre>
+            <pre data-prefix="7"><code>&lt;address></code></pre>
+            <pre data-prefix="8"><code>Written by John Doe.&lt;br></code></pre>
+            <pre data-prefix="9"><code>Visit us at:&lt;br></code></pre>
+            <pre data-prefix="10"><code>Example.com&lt;br></code></pre>
+            <pre data-prefix="11"><code>Box 564, Disneyland&lt;br></code></pre>
+            <pre data-prefix="12"><code>USA</code></pre>
+            <pre data-prefix="13"><code>&lt;address></code></pre>
+            <pre data-prefix="14"><code></code></pre>
+            <pre data-prefix="15"><code>&lt;/body></code></pre>
+            <pre data-prefix="16"><code>&lt;/html></code></pre>
+            
+
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>The HTML address element defines contact information (author/owner) of a document or article.</p>
+            <p>Written by John Doe.<br>Visit us at:<br>Example.com<br>Box 564, Disneyland<br>USA</p>
+        </div>
+    </div>
+    <br>
+    <h2><span class="wTitle">HTML &lt;cite> for Work Title</span></h2>
+    <p>The HTML &lt;cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).</p>
+    <p><strong>Note:</strong> Use the global <code>title</code> A person's name is not the title of a work.</p>
+
+    <p>The text in the &lt;cite> element usually renders in italic.</p>
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;!DOCTYPE html></code></pre>
+            <pre data-prefix="2"><code>&lt;html></code></pre>
+            <pre data-prefix="3"><code>&lt;body></code></pre>
+            <pre data-prefix="4"><code></code></pre>
+            <pre data-prefix="5"><code>&lt;p&gt;The HTML cite element defines the title of a work.&lt;/p&gt;</code></pre>
+            <pre data-prefix="6"><code>&lt;p&gt;Browsers usually display cite elements in italic.&lt;/p&gt;</code></pre>
+            <pre data-prefix="7"><code></code></pre>
+            <pre data-prefix="8"><code>&lt;img src="1893.jpg" width="220" height="277" alt="The Scream"&gt;</code></pre>
+            <pre data-prefix="9"><code>&lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edvard Munch. Painted in 1893.&lt;/p&gt;</code></pre>
+            <pre data-prefix="4"><code></code></pre>
+            <pre data-prefix="3"><code>&lt;/body></code></pre>
+            <pre data-prefix="10"><code>&lt;/html></code></pre>
+            
+
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>The HTML cite element defines the title of a work.</p>
+            <p>Browsers usually display cite elements in italic.</p>
+            <img src="1893.jpg" width="220" height="277" alt="The Scream">
+            <p>The Scream by Edvard Munch. Painted in 1893.</p>
+        </div>
+    </div>
+    <br>
+    <h2><span class="wTitle">HTML &lt;bdo&gt; for Bi-Directional Override</span></h2>
+    <p>BDO stands for Bi-Directional Override.</p>
+    <p>The HTML &lt;bdo&gt; tag is used to override the current text direction:</p>
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;!DOCTYPE html></code></pre>
+            <pre data-prefix="2"><code>&lt;html></code></pre>
+            <pre data-prefix="3"><code>&lt;body></code></pre>
+            <pre data-prefix="4"><code></code></pre>
+            <pre data-prefix="5"><code>&lt;p&gt;If your browser supports bi-directional override (bdo), the next line will be written from right to left (rtl):&lt;/p&gt;</code></pre>
+            <pre data-prefix="7"><code></code></pre>
+            <pre data-prefix="8"><code>&lt;bdo dir="rtl"&gt;This line will be written from right to left&lt;/bdo&gt;</code></pre>
+            <pre data-prefix="4"><code></code></pre>
+            <pre data-prefix="3"><code>&lt;/body></code></pre>
+            <pre data-prefix="10"><code>&lt;/html></code></pre>
+            
+
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>If your browser supports bi-directional override (bdo), the next line will be written<br> from right to left (rtl):</p>
+            <p>This line will be written from right to left</p>
+        </div>
+    </div>
 </body>
 </html>
