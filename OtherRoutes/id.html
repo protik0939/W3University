@@ -40,43 +40,53 @@
         element will be styled according to the #myHeader style definition in the head section:</p>
     <h3>Examples:</h3>
 
+
+    <h3>Examples:</h3>
     <div class="codebox">
         <div class="mockup-code">
+
             <div class="code-header">
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
-            <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
-            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
-            <pre data-prefix="3"><code>&lt;head&gt;</code></pre>
-            <pre data-prefix="4"><code>&lt;style&gt;</code></pre>
-            <pre data-prefix="5"><code>#myHeader {</code></pre>
-            <pre data-prefix="6"><code>    background-color: lightblue;</code></pre>
-            <pre data-prefix="7"><code>    color: black;</code></pre>
-            <pre data-prefix="8"><code>    padding: 40px;</code></pre>
-            <pre data-prefix="9"><code>    text-align: center;</code></pre>
+
+            <pre
+                data-prefix="1"><code>&lt;<span style="color: tomato;">!DOCTYPE <span style="color: rgb(0, 255, 174);">html</span>&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;<span style="color: tomato;">html</span>&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;<span style="color: tomato;">head</span>&gt;</code></pre>
+            <pre data-prefix="4"><code>&lt;<span style="color: tomato;">style</span>&gt;</code></pre>
+            <pre data-prefix="5"><code><span style="color: tomato">#myHeader</span> {</code></pre>
+            <pre
+                data-prefix="6"><code>    <span style="color: #c5a5c5;">background-color</span>: lightblue;</code></pre>
+            <pre data-prefix="7"><code>    <span style="color: #c5a5c5;">color</span>: black;</code></pre>
+            <pre data-prefix="8"><code>    <span style="color: #c5a5c5;">padding</span>: 40px;</code></pre>
+            <pre data-prefix="9"><code>    <span style="color: #c5a5c5;">text-align</span>: center;</code></pre>
             <pre data-prefix="10"><code>}</code></pre>
-            <pre data-prefix="11"><code>&lt;/style&gt;</code></pre>
-            <pre data-prefix="12"><code>&lt;/head&gt;</code></pre>
-            <pre data-prefix="13"><code>&lt;body&gt;</code></pre>
-            <pre data-prefix="14"><code></code></pre>
-            <pre data-prefix="15"><code>&lt;h1 id="myHeader"&gt;My Header&lt;/h1&gt;</code></pre>
-            <pre data-prefix="16"><code></code></pre>
-            <pre data-prefix="17"><code>&lt;/body&gt;</code></pre>
-            <pre data-prefix="18"><code>&lt;/html&gt;</code></pre>
+            <pre data-prefix="11"><code>&lt;<span style="color: tomato;">/style</span>&gt;</code></pre>
+            <pre data-prefix="12"><code>&lt;<span style="color: tomato;">/head</span>&gt;</code></pre>
+
+            <pre data-prefix="13"><code>&lt;<span style="color: tomato;">body</span>&gt;</code></pre>
+            <pre
+                data-prefix="14"><code>&lt;<span style="color: tomato;">h1</span> <span style="color: #c5a5c5;">id</span>="myHeader"&gt;My Header&lt;/<span style="color: tomato;">h1</span>&gt;</code></pre>
+            <pre data-prefix="15"><code>&lt;<span style="color: tomato;">/body</span>&gt;</code></pre>
+            <pre data-prefix="16"><code>&lt;<span style="color: tomato;">/html</span>&gt;</code></pre>
+
         </div>
         <div class="outputview">
-
             <h3>Output</h3>
+            <h2>The id Attribute</h2>
+
             <h1 id="myHeader">My Header</h1>
         </div>
     </div>
     <br><br>
+
     <h2><span class="wTitle">Difference Between Class and ID</span></h2>
     <p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within
         the page:</p>
-    <div class="codebox">
+
+    <!-- <div class="codebox">
         <div class="mockup-code">
             <div class="code-header">
                 <span class="dot"></span>
@@ -125,12 +135,338 @@
             <p>Tokyo is the capital of Japan.</p>
 
         </div>
+    </div> -->
+
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <pre
+                data-prefix="1"><code>&lt;<span style="color: tomato;">!DOCTYPE <span style="color: rgb(0, 255, 174);">html</span>&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;<span style="color: tomato;">html</span>&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;<span style="color: tomato;">head</span>&gt;</code></pre>
+            <pre data-prefix="4"><code>&lt;<span style="color: tomato;">style</span>&gt;</code></pre>
+            <pre data-prefix="5"><code>/* Style the element with the id "myHeader" */</code></pre>
+            <pre data-prefix="6"><code><span style="color: tomato">#myHeader</span> {</code></pre>
+            <pre data-prefix="7"><code>  <span style="color: #c5a5c5;">background-color</span>: lightblue;</code></pre>
+            <pre data-prefix="8"><code>  <span style="color: #c5a5c5;">color</span>: black;</code></pre>
+            <pre data-prefix="9"><code>  <span style="color: #c5a5c5;">padding</span>: 40px;</code></pre>
+            <pre data-prefix="10"><code> <span style="color:#c5a5c5;">text-align</span>: center;</code></pre>
+            <pre data-prefix="11"><code>}</code></pre>
+            <pre data-prefix="12"><code>/* Style all elements with the class name "city" */</code></pre>
+            <pre data-prefix="13"><code><span style="color: tomato">.city</span> {</code></pre>
+            <pre data-prefix="14"><code>  <span style="color: #c5a5c5;">background-color</span>: tomato;</code></pre>
+            <pre data-prefix="15"><code>  <span style="color: #c5a5c5;">color</span>: white;</code></pre>
+            <pre data-prefix="16"><code>  <span style="color: #c5a5c5;">padding</span>: 10px;</code></pre>
+            <pre data-prefix="17"><code>}</code></pre>
+            <pre data-prefix="18"><code>&lt;<span style="color: tomato;">/style</span>&gt;</code></pre>
+            <pre data-prefix="19"><code>&lt;<span style="color: tomato;">/head</span>&gt;</code></pre>
+
+            <pre data-prefix="20"><code>&lt;<span style="color: tomato;">body</span>&gt;</code></pre> <br>
+            <pre
+                data-prefix="21"><code>&lt;<span style="color: tomato;">h2</span>&gt;Difference Between Class and ID&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="22"><code>&lt;<span style="color: tomato;">p</span>&gt;A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+            <br>
+            <pre data-prefix="23"><code>&lt;!-- An element with a unique id --&gt;</code></pre>
+            <pre
+                data-prefix="24"><code>&lt;<span style="color: tomato;">h1</span> <span style="color: #c5a5c5;">id</span>="myHeader"&gt;My Cities&lt;/<span style="color: tomato;">h1</span>&gt;</code></pre>
+            <br>
+            <pre data-prefix="25"><code>&lt;!-- Multiple elements with same class --&gt;</code></pre>
+            <pre
+                data-prefix="26"><code>&lt;<span style="color: tomato;">h2</span> <span style="color: #c5a5c5;">class</span>="city"&gt;London&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="27"><code>&lt;<span style="color: tomato;">p</span>&gt;London is the capital of England.&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+            <br>
+            <pre
+                data-prefix="28"><code>&lt;<span style="color: tomato;">h2</span> <span style="color: #c5a5c5;">class</span>="city"&gt;Paris&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="29"><code>&lt;<span style="color: tomato;">p</span>&gt;Paris is the capital of France.&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+            <br>
+            <pre
+                data-prefix="30"><code>&lt;<span style="color: tomato;">h2</span> <span style="color: #c5a5c5;">class</span>="city"&gt;Tokyo&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="31"><code>&lt;<span style="color: tomato;">p</span>&gt;Tokyo is the capital of Japan.&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+            <br>
+            <pre data-prefix="32"><code>&lt;<span style="color: tomato;">/body</span>&gt;</code></pre>
+            <pre data-prefix="33"><code>&lt;<span style="color: tomato;">/html</span>&gt;</code></pre>
+
+        </div>
+        <div class="outputview">
+            <h3>Output</h3>
+            <h2>Difference Between Class and ID</h2>
+            <p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML
+                element within the page:</p>
+
+            <h1 id="myHeader">My Cities</h1>
+            <h2 class="city">London</h2>
+            <p>London is the capital of England.</p>
+
+            <h2 class="city">Paris</h2>
+            <p>Paris is the capital of France.</p>
+
+            <h2 class="city">Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
     </div>
+
+
+
 
     <div class="tip-box">
         <p class="tip-text"><strong>Tip:</strong> A favicon is a small image, so it should be a simple image with high
             contrast.</p>
     </div>
+
+
+    <h2><span class="wTitle">HTML Bookmarks with ID and Links</span></h2>
+    <p>HTML bookmarks are used to allow readers to jump to specific parts of a webpage.
+
+        Bookmarks can be useful if your page is very long. <br>
+
+        To use a bookmark, you must first create it, and then add a link to it. <br>
+
+        Then, when the link is clicked, the page will scroll to the location with the bookmark.</p>
+
+    <h3>Example</h3>
+    <p>First, create a bookmark with the <span style="color: tomato;">id </span>attribute:</p>
+
+    <div class="highlight">
+        <p> <span class="noteText">
+                <span> &lt;h2 </span><span style="color: #c5a5c5">id </span> = <span
+                    style="color: rgb(0, 255, 174);">"C4"</span> &gt;<span style="color: #fff;"> Chapter 4</span> <span
+                    style="color: tomato;">&lt;/h2&gt;
+                </span>
+            </span></p>
+    </div>
+
+    <p>Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:</p>
+
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <pre
+                data-prefix="1"> <code>&lt;<span style="color: tomato;">h2</span>&gt;Chapter 9&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="2"> <code>&lt;<span style="color: tomato;">p</span>&gt;This chapter explains ba bla bla&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="3"> <code>&lt;<span style="color: tomato;">h2</span> <span style="color: #c5a5c5;">id</span>="C10"&gt;Chapter 10&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="4"> <code>&lt;<span style="color: tomato;">p</span>&gt;This chapter explains ba bla bla&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="5"> <code>&lt;<span style="color: tomato;">h2</span>&gt;Chapter 11&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="6"> <code>&lt;<span style="color: tomato;">p</span>&gt;This chapter explains ba bla bla&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="7"> <code>&lt;<span style="color: tomato;">h2</span>&gt;Chapter 12&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="8"> <code>&lt;<span style="color: tomato;">p</span>&gt;This chapter explains ba bla bla&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="9"> <code>&lt;<span style="color: tomato;">h2</span>&gt;Chapter 13&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="10"><code>&lt;<span style="color: tomato;">p</span>&gt;This chapter explains ba bla bla&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="11"><code>&lt;<span style="color: tomato;">h2</span>&gt;Chapter 14&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="12"><code>&lt;<span style="color: tomato;">p</span>&gt;This chapter explains ba bla bla&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="13"><code>&lt;<span style="color: tomato;">h2</span>&gt;Chapter 15&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="14"><code>&lt;<span style="color: tomato;">p</span>&gt;This chapter explains ba bla bla&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="15"><code>&lt;<span style="color: tomato;">h2</span>&gt;Chapter 16&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="16"><code>&lt;<span style="color: tomato;">p</span>&gt;This chapter explains ba bla bla&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="17"><code>&lt;<span style="color: tomato;">h2</span>&gt;Chapter 17&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="18"><code>&lt;<span style="color: tomato;">p</span>&gt;This chapter explains ba bla bla&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="19"><code>&lt;<span style="color: tomato;">h2</span>&gt;Chapter 18&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="20"><code>&lt;<span style="color: tomato;">p</span>&gt;This chapter explains ba bla bla&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="21"><code>&lt;<span style="color: tomato;">h2</span>&gt;Chapter 19&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="22"><code>&lt;<span style="color: tomato;">p</span>&gt;This chapter explains ba bla bla&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="23"><code>&lt;<span style="color: tomato;">h2</span>&gt;Chapter 20&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="24"><code>&lt;<span style="color: tomato;">p</span>&gt;This chapter explains ba bla bla&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="25"><code>&lt;<span style="color: tomato;">h2</span>&gt;Chapter 21&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="26"><code>&lt;<span style="color: tomato;">p</span>&gt;This chapter explains ba bla bla&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="27"><code>&lt;<span style="color: tomato;">h2</span>&gt;Chapter 22&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="28"><code>&lt;<span style="color: tomato;">p</span>&gt;This chapter explains ba bla bla&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+
+            <pre
+                data-prefix="29"><code>&lt;<span style="color: tomato;">h2</span>&gt;Chapter 23&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="30"><code>&lt;<span style="color: tomato;">p</span>&gt;This chapter explains ba bla bla&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+
+            <pre data-prefix="31"><code>&lt;<span style="color: tomato;">/body</span>&gt;</code></pre>
+            <pre data-prefix="32"><code>&lt;<span style="color: tomato;">/html</span>&gt;</code></pre>
+
+        </div>
+
+        <div class="outputview">
+            <h3>Output</h3>
+            <dl>
+                <h2>Chapter 9</h2>
+                <p>This chapter explains ba bla bla</p>
+
+                <h2 id="C10">Chapter 10</h2>
+                <p>This chapter explains ba bla bla</p>
+
+                <h2>Chapter 11</h2>
+                <p>This chapter explains ba bla bla</p>
+
+                <h2>Chapter 12</h2>
+                <p>This chapter explains ba bla bla</p>
+
+                <h2>Chapter 13</h2>
+                <p>This chapter explains ba bla bla</p>
+
+                <h2>Chapter 14</h2>
+                <p>This chapter explains ba bla bla</p>
+
+                <h2>Chapter 15</h2>
+                <p>This chapter explains ba bla bla</p>
+
+                <h2>Chapter 16</h2>
+                <p>This chapter explains ba bla bla</p>
+
+                <h2>Chapter 17</h2>
+                <p>This chapter explains ba bla bla</p>
+
+                <h2>Chapter 18</h2>
+                <p>This chapter explains ba bla bla</p>
+
+                <h2>Chapter 19</h2>
+                <p>This chapter explains ba bla bla</p>
+
+                <h2>Chapter 20</h2>
+                <p>This chapter explains ba bla bla</p>
+
+                <h2>Chapter 21</h2>
+                <p>This chapter explains ba bla bla</p>
+
+                <h2>Chapter 22</h2>
+                <p>This chapter explains ba bla bla</p>
+
+                <h2>Chapter 23</h2>
+                <p>This chapter explains ba bla bla</p>
+
+            </dl>
+        </div>
+    </div>
+    <p>Or, add a link to the bookmark ("Jump to Chapter 4"), from another page:</p>
+
+    <div class="highlight">
+        <p> <span class="noteText">
+                <span>&lt; a </span><span style="color: #c5a5c5">href</span> = <span
+                    style="color: rgb(0, 255, 174);">"html_demo.html#C4"</span> &gt;<span style="color: #fff;"> Jump to
+                    Chapter 4</span> <span style="color: tomato;">&lt;/a&gt;
+                </span>
+            </span></p>
+    </div>
+    <br>
+
+    <h2><span class="wTitle">Using The id Attribute in JavaScript</span></h2>
+
+    <p>The <span style="color: tomato;">id</span> attribute can also be used by JavaScript to perform some tasks for
+        that specific element.
+        JavaScript can access an element with a specific id with the <span tyle="color: tomato;">getElementById()</span>
+        method:</p> <br>
+
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <pre data-prefix="1"><code>&lt;<span style="color: tomato;">!DOCTYPE html</span>&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;<span style="color: tomato;">html</span>&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;<span style="color: tomato;">body</span>&gt;</code></pre> <br>
+
+            <pre
+                data-prefix="4"><code>&lt;<span style="color: tomato;">h2</span>&gt;Using The <span style="color: #c5a5c5;">id</span> Attribute in JavaScript&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+            <pre
+                data-prefix="5"><code>&lt;<span style="color: tomato;">p</span>&gt;JavaScript can access an element with a specified <span style="color: #c5a5c5;">id</span> by using the getElementById() method:&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+            <br>
+
+            <pre
+                data-prefix="6"><code>&lt;<span style="color: tomato;">h1</span> <span style="color: #c5a5c5;">id</span>=<span style="color: rgb(0, 255, 174);">"myHeader"</span>&gt;Hello World!&lt;/<span style="color: tomato;">h1</span>&gt;</code></pre>
+            <pre
+                data-prefix="7"><code>&lt;<span style="color: tomato;">button</span> <span style="color: #c5a5c5;">onclick</span>=<span style="color: rgb(0, 255, 174);">"displayResult()"</span>&gt;Change text&lt;/<span style="color: tomato;">button</span>&gt;</code></pre>
+            <br>
+            <pre data-prefix="8"><code>&lt;<span style="color: tomato;">script</span>&gt;</code></pre>
+            <pre data-prefix="9"><code><span style="color: #c5a5c5;">function</span> displayResult() {</code></pre>
+            <pre
+                data-prefix="10"><code>  document.getElementById(<span style="color: rgb(0, 255, 174);">"myHeader"</span>).innerHTML = <span style="color: rgb(0, 255, 174);">"Have a nice day!"</span>;</code></pre>
+            <pre data-prefix="11"><code>}</code></pre>
+
+            <pre data-prefix="12"><code>&lt;<span style="color: tomato;">/script</span>&gt;</code></pre> <br>
+            <pre data-prefix="13"><code>&lt;<span style="color: tomato;">/body</span>&gt;</code></pre>
+            <pre data-prefix="14"><code>&lt;<span style="color: tomato;">/html</span>&gt;</code></pre>
+
+        </div>
+
+        <div class="outputview">
+            <h3>Output</h3>
+            <h2>Using The id Attribute in JavaScript</h2>
+            <p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+            <h1>Hello World!</h1>
+            <button onclick="displayResult()">Change text</button>
+
+            <script>
+                function displayResult() {
+                    document.getElementById("myHeader").innerHTML = "Have a nice day!";
+                }
+            </script>
+
+        </div>
+    </div>
+
+    <p><b>Tip:</b> Study JavaScript in the HTML JavaScript chapter, or in our JavaScript Tutorial.</p>
+
+
+
+
 
 </body>
 
