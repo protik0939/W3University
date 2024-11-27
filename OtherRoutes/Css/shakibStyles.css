@@ -211,6 +211,16 @@ tr:nth-child(odd) {
 }
 
 
+a {
+    color: #1abc9c; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+
 
 .browser-bar {
     background-color: #e9ecef;

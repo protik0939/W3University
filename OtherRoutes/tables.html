@@ -643,8 +643,481 @@
 </div>
 
 
+<br>
+<h2><span class="wTitle">HTML Table Sizes</span></h2>
+<p>HTML tables can have different sizes for each column, row or the entire table.</p>
+
+<p>Use the <span style="color: #04aa6d;">style</span> attribute with the <span style="color: #04aa6d;">width</span> or <span style="color: #04aa6d;">height</span> properties to specify the size of a table, row or column.</p>
+<h2>HTML Table Width</h2>
+<p>To set the width of a table, add the <span style="color: #04aa6d;">style</span> attribute to the <span style="color: #04aa6d;">&lt;table&gt;</span> element:</p>
+
+<h3>Examples:</h3>
+<div class="codebox">
+    <div class="mockup-code">
+
+        <div class="code-header">
+            <span class="dot"></span>
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+        <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+<pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+<pre data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;head&gt;</code></pre>
+<pre data-prefix="4"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;style&gt;</code></pre>
+<pre data-prefix="5"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;table, th, td {</code></pre>
+<pre data-prefix="6"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;border: 1px solid black;</code></pre>
+<pre data-prefix="7"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;border-collapse: collapse;</code></pre>
+<pre data-prefix="8"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</code></pre>
+<pre data-prefix="9"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/style&gt;</code></pre>
+<pre data-prefix="10"><code>&#160;&#160;&#160;&#160;&lt;/head&gt;</code></pre>
+<pre data-prefix="11"><code>&#160;&#160;&#160;&#160;&lt;body&gt;</code></pre>
+<pre data-prefix="12"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;h2&gt;100% wide HTML Table&lt;/h2&gt;</code></pre>
+<pre data-prefix="13"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;table style=&quot;width:100%&quot;&gt;</code></pre>
+<pre data-prefix="14"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="15"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;Firstname&lt;/th&gt;</code></pre>
+<pre data-prefix="16"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;Lastname&lt;/th&gt;</code></pre>
+<pre data-prefix="17"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;Age&lt;/th&gt;</code></pre>
+<pre data-prefix="18"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="19"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="20"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Jill&lt;/td&gt;</code></pre>
+<pre data-prefix="21"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Smith&lt;/td&gt;</code></pre>
+<pre data-prefix="22"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;50&lt;/td&gt;</code></pre>
+<pre data-prefix="23"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="24"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="25"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Eve&lt;/td&gt;</code></pre>
+<pre data-prefix="26"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Jackson&lt;/td&gt;</code></pre>
+<pre data-prefix="27"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;94&lt;/td&gt;</code></pre>
+<pre data-prefix="28"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="29"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="30"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;John&lt;/td&gt;</code></pre>
+<pre data-prefix="31"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Doe&lt;/td&gt;</code></pre>
+<pre data-prefix="32"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;80&lt;/td&gt;</code></pre>
+<pre data-prefix="33"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="34"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/table&gt;</code></pre>
+<pre data-prefix="35"><code>&#160;&#160;&#160;&#160;&lt;/body&gt;</code></pre>
+<pre data-prefix="36"><code>&lt;/html&gt;</code></pre>
+</div> 
+<div class="outputview">
+
+    <h3>Output</h3>
+
+    <h2>100% wide HTML Table</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</div>
+</div>
+
+<br>
+
+<div class="tip-box">
+  <p class="tip-text"><strong>Note:</strong> Using a percentage as the size unit for a width means how wide will this element be compared to its parent element, which in this case is the <span style="color: #04aa6d;">&lt;body&gt;</span> element.
+      </p>
+</div>
+
+<br>
+
+<h2>HTML Table Column Width</h2>
+<p>To set the size of a specific column, add the <span style="color: #04aa6d;">style</span> attribute on a <span style="color: #04aa6d;">&lt;th&gt;</span> or <span style="color: #04aa6d;">&lt;td&gt;</span> element:</p>
+<h3>Examples:</h3>
+<p>Set the width of the first column to 70%:</p>
+<div class="codebox">
+    <div class="mockup-code">
+
+        <div class="code-header">
+            <span class="dot"></span>
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+        <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+<pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+<pre data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;style&gt;</code></pre>
+<pre data-prefix="4"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;table, th, td {</code></pre>
+<pre data-prefix="5"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;border: 1px solid black;</code></pre>
+<pre data-prefix="6"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;border-collapse: collapse;</code></pre>
+<pre data-prefix="7"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</code></pre>
+<pre data-prefix="8"><code>&#160;&#160;&#160;&#160;&lt;/style&gt;</code></pre>
+<pre data-prefix="9"><code>&#160;&#160;&#160;&#160;&lt;body&gt;</code></pre>
+<pre data-prefix="10"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;h2&gt;Set the first column to 70% of the table width&lt;/h2&gt;</code></pre>
+<pre data-prefix="11"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;table style=&quot;width:100%&quot;&gt;</code></pre>
+<pre data-prefix="12"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="13"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th style=&quot;width:70%&quot;&gt;Firstname&lt;/th&gt;</code></pre>
+<pre data-prefix="14"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;Lastname&lt;/th&gt;</code></pre>
+<pre data-prefix="15"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;Age&lt;/th&gt;</code></pre>
+<pre data-prefix="16"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="17"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="18"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Jill&lt;/td&gt;</code></pre>
+<pre data-prefix="19"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Smith&lt;/td&gt;</code></pre>
+<pre data-prefix="20"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;50&lt;/td&gt;</code></pre>
+<pre data-prefix="21"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="22"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="23"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Eve&lt;/td&gt;</code></pre>
+<pre data-prefix="24"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Jackson&lt;/td&gt;</code></pre>
+<pre data-prefix="25"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;94&lt;/td&gt;</code></pre>
+<pre data-prefix="26"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="27"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="28"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;John&lt;/td&gt;</code></pre>
+<pre data-prefix="29"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Doe&lt;/td&gt;</code></pre>
+<pre data-prefix="30"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;80&lt;/td&gt;</code></pre>
+<pre data-prefix="31"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="32"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/table&gt;</code></pre>
+<pre data-prefix="33"><code>&#160;&#160;&#160;&#160;&lt;/body&gt;</code></pre>
+<pre data-prefix="34"><code>&lt;/html&gt;</code></pre>
+</div> 
+<div class="outputview">
+
+    <h3>Output</h3>
+    <h2>Set the first column to 70% of the table width</h2>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:70%">Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+</div>
+</div>
+
+<br>
+
+<h2>HTML Table Row Height</h2>
+<p>To set the height of a specific row, add the <span style="color: #04aa6d;">style</span> attribute on a table row element:</p>
+<h3>Examples:</h3>
+<p>Set the height of the second row to 200 pixels:</p>
+<div class="codebox">
+    <div class="mockup-code">
+
+        <div class="code-header">
+            <span class="dot"></span>
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+        <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+<pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+<pre data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;style&gt;</code></pre>
+<pre data-prefix="4"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;table, th, td {</code></pre>
+<pre data-prefix="5"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;border: 1px solid black;</code></pre>
+<pre data-prefix="6"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;border-collapse: collapse;</code></pre>
+<pre data-prefix="7"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</code></pre>
+<pre data-prefix="8"><code>&#160;&#160;&#160;&#160;&lt;/style&gt;</code></pre>
+<pre data-prefix="9"><code>&#160;&#160;&#160;&#160;&lt;body&gt;</code></pre>
+<pre data-prefix="10"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;h2&gt;Set the height of the second row to 200 pixels&lt;/h2&gt;</code></pre>
+<pre data-prefix="11"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;table style=&quot;width:100%&quot;&gt;</code></pre>
+<pre data-prefix="12"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="13"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;Firstname&lt;/th&gt;</code></pre>
+<pre data-prefix="14"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;Lastname&lt;/th&gt;</code></pre>
+<pre data-prefix="15"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;Age&lt;/th&gt;</code></pre>
+<pre data-prefix="16"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="17"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr style=&quot;height:200px&quot;&gt;</code></pre>
+<pre data-prefix="18"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Jill&lt;/td&gt;</code></pre>
+<pre data-prefix="19"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Smith&lt;/td&gt;</code></pre>
+<pre data-prefix="20"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;50&lt;/td&gt;</code></pre>
+<pre data-prefix="21"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="22"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="23"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Eve&lt;/td&gt;</code></pre>
+<pre data-prefix="24"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Jackson&lt;/td&gt;</code></pre>
+<pre data-prefix="25"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;94&lt;/td&gt;</code></pre>
+<pre data-prefix="26"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="27"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="28"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;John&lt;/td&gt;</code></pre>
+<pre data-prefix="29"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Doe&lt;/td&gt;</code></pre>
+<pre data-prefix="30"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;80&lt;/td&gt;</code></pre>
+<pre data-prefix="31"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="32"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/table&gt;</code></pre>
+<pre data-prefix="33"><code>&#160;&#160;&#160;&#160;&lt;/body&gt;</code></pre>
+<pre data-prefix="34"><code>&lt;/html&gt;</code></pre>
+</div> 
+<div class="outputview">
+
+    <h3>Output</h3>
+    <h2>Set the height of the second row to 200 pixels</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr style="height:200px">
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+</div>
+</div>
+
+<br>
+
+<h2><span class="wTitle">HTML Table Headers</span></h2>
+<p>HTML tables can have headers for each column or row, or for many columns/rows.</p>
+<h2>HTML Table Headers</h2>
+<p>Table headers are defined with <span style="color: #04aa6d;">th</span> elements. Each <span style="color: #04aa6d;">th</span> element represents a table cell.</p>
+<h3>Examples:</h3>
+<div class="codebox">
+    <div class="mockup-code">
+
+        <div class="code-header">
+            <span class="dot"></span>
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+        <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+<pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+<pre data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;head&gt;</code></pre>
+<pre data-prefix="4"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;style&gt;</code></pre>
+<pre data-prefix="5"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;table, th, td &#123;</code></pre>
+<pre data-prefix="6"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;border: 1px solid black;</code></pre>
+<pre data-prefix="7"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;border-collapse: collapse;</code></pre>
+<pre data-prefix="8"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#125;</code></pre>
+<pre data-prefix="9"><code>&#160;&#160;&#160;&#160;&lt;/style&gt;</code></pre>
+<pre data-prefix="10"><code>&#160;&#160;&#160;&#160;&lt;/head&gt;</code></pre>
+<pre data-prefix="11"><code>&#160;&#160;&#160;&#160;&lt;body&gt;</code></pre>
+<pre data-prefix="12"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;h2&gt;Table Headers&lt;/h2&gt;</code></pre>
+<pre data-prefix="13"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;Use the TH element to define table headers.&lt;/p&gt;</code></pre>
+<pre data-prefix="14"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;table style=&quot;width:100%&quot;&gt;</code></pre>
+<pre data-prefix="15"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="16"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;Firstname&lt;/th&gt;</code></pre>
+<pre data-prefix="17"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;Lastname&lt;/th&gt;</code></pre>
+<pre data-prefix="18"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;Age&lt;/th&gt;</code></pre>
+<pre data-prefix="19"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="20"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="21"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Jill&lt;/td&gt;</code></pre>
+<pre data-prefix="22"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Smith&lt;/td&gt;</code></pre>
+<pre data-prefix="23"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;50&lt;/td&gt;</code></pre>
+<pre data-prefix="24"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="25"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="26"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Eve&lt;/td&gt;</code></pre>
+<pre data-prefix="27"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Jackson&lt;/td&gt;</code></pre>
+<pre data-prefix="28"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;94&lt;/td&gt;</code></pre>
+<pre data-prefix="29"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="30"><code>&#160;&#160;&#160;&#160;&lt;/table&gt;</code></pre>
+<pre data-prefix="31"><code>&#160;&#160;&#160;&#160;&lt;/body&gt;</code></pre>
+<pre data-prefix="32"><code>&lt;/html&gt;</code></pre>
+</div> 
+<div class="outputview">
+
+    <h3>Output</h3>
 
 
+
+<h2>Table Headers</h2>
+
+<p>Use the TH element to define table headers.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+</div>
+</div>
+
+<h2>Header for Multiple Columns</h2>
+<p>You can have a header that spans over two or more columns.</p>
+<p>To do this, use the <span style="color: #04aa6d;">colspan</span> attribute on the <span style="color: #04aa6d;">&lt;th&gt;</span> element:</p>
+
+<h3>Examples:</h3>
+<div class="codebox">
+    <div class="mockup-code">
+
+        <div class="code-header">
+            <span class="dot"></span>
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div> 
+<pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+<pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+<pre data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;head&gt;</code></pre>
+<pre data-prefix="4"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;style&gt;</code></pre>
+<pre data-prefix="5"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;table, th, td &#123;</code></pre>
+<pre data-prefix="6"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;border: 1px solid black;</code></pre>
+<pre data-prefix="7"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;border-collapse: collapse;</code></pre>
+<pre data-prefix="8"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#125;</code></pre>
+<pre data-prefix="9"><code>&#160;&#160;&#160;&#160;&lt;/style&gt;</code></pre>
+<pre data-prefix="10"><code>&#160;&#160;&#160;&#160;&lt;/head&gt;</code></pre>
+<pre data-prefix="11"><code>&#160;&#160;&#160;&#160;&lt;body&gt;</code></pre>
+<pre data-prefix="12"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;h2&gt;A header that spans two columns&lt;/h2&gt;</code></pre>
+<pre data-prefix="13"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;Use the colspan attribute to have a header span over multiple columns.&lt;/p&gt;</code></pre>
+<pre data-prefix="14"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;table style=&quot;width:100%&quot;&gt;</code></pre>
+<pre data-prefix="15"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="16"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th colspan=&quot;2&quot;&gt;Name&lt;/th&gt;</code></pre>
+<pre data-prefix="17"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;Age&lt;/th&gt;</code></pre>
+<pre data-prefix="18"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="19"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="20"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Jill&lt;/td&gt;</code></pre>
+<pre data-prefix="21"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Smith&lt;/td&gt;</code></pre>
+<pre data-prefix="22"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;50&lt;/td&gt;</code></pre>
+<pre data-prefix="23"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="24"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="25"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Eve&lt;/td&gt;</code></pre>
+<pre data-prefix="26"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Jackson&lt;/td&gt;</code></pre>
+<pre data-prefix="27"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;94&lt;/td&gt;</code></pre>
+<pre data-prefix="28"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="29"><code>&#160;&#160;&#160;&#160;&lt;/table&gt;</code></pre>
+<pre data-prefix="30"><code>&#160;&#160;&#160;&#160;&lt;/body&gt;</code></pre>
+<pre data-prefix="31"><code>&lt;/html&gt;</code></pre>
+</div> 
+<div class="outputview">
+
+    <h3>Output</h3>
+    <h2>A header that spans two columns</h2>
+
+<p>Use the colspan attribute to have a header span over multiple columns.</p>
+
+<table style="width:100%">
+  <tr>
+     <th colspan="2" style="text-align: center;">Name</th>
+
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+</div>
+</div>
+
+<br>
+<h2>Table Caption</h2>
+<p>You can add a caption that serves as a heading for the entire table.</p>
+
+<p>To add a caption to a table, use the <span style="color: #04aa6d;">&lt;caption&gt;</span> tag:</p>
+<h3>Examples:</h3>
+        <div class="codebox">
+            <div class="mockup-code">
+    
+                <div class="code-header">
+                    <span class="dot"></span>
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div> 
+                <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+<pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+<pre data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;head&gt;</code></pre>
+<pre data-prefix="4"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;style&gt;</code></pre>
+<pre data-prefix="5"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;table, th, td &#123;</code></pre>
+<pre data-prefix="6"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;border: 1px solid black;</code></pre>
+<pre data-prefix="7"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;border-collapse: collapse;</code></pre>
+<pre data-prefix="8"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#125;</code></pre>
+<pre data-prefix="9"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;th, td &#123;</code></pre>
+<pre data-prefix="10"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;padding: 5px;</code></pre>
+<pre data-prefix="11"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;text-align: left;</code></pre>
+<pre data-prefix="12"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#125;</code></pre>
+<pre data-prefix="13"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/style&gt;</code></pre>
+<pre data-prefix="14"><code>&#160;&#160;&#160;&#160;&lt;/head&gt;</code></pre>
+<pre data-prefix="15"><code>&#160;&#160;&#160;&#160;&lt;body&gt;</code></pre>
+<pre data-prefix="16"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;h2&gt;Table Caption&lt;/h2&gt;</code></pre>
+<pre data-prefix="17"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;To add a caption to a table, use the caption tag.&lt;/p&gt;</code></pre>
+<pre data-prefix="18"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;table style=&quot;width:100%&quot;&gt;</code></pre>
+<pre data-prefix="19"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;caption&gt;Monthly savings&lt;/caption&gt;</code></pre>
+<pre data-prefix="20"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="21"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;Month&lt;/th&gt;</code></pre>
+<pre data-prefix="22"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;Savings&lt;/th&gt;</code></pre>
+<pre data-prefix="23"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="24"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="25"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;January&lt;/td&gt;</code></pre>
+<pre data-prefix="26"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;$100&lt;/td&gt;</code></pre>
+<pre data-prefix="27"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="28"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="29"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;February&lt;/td&gt;</code></pre>
+<pre data-prefix="30"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;$50&lt;/td&gt;</code></pre>
+<pre data-prefix="31"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="32"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/table&gt;</code></pre>
+<pre data-prefix="33"><code>&#160;&#160;&#160;&#160;&lt;/body&gt;</code></pre>
+<pre data-prefix="34"><code>&lt;/html&gt;</code></pre>
+</div> 
+<div class="outputview">
+
+    <h3>Output</h3>
+    <h2>Table Caption</h2>
+<p>To add a caption to a table, use the caption tag.</p>
+
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+</div>
+</div>
+<br>
 
 
 
