@@ -86,6 +86,7 @@ document.getElementById("forms").onclick = () => updatePage("forms");
 document.getElementById("formAttributes").onclick = () => updatePage("formAttributes");
 document.getElementById("formElements").onclick = () => updatePage("formElements");
 document.getElementById("inputType").onclick = () => updatePage("inputType");
+document.getElementById("inputFormAttributes").onclick = () => updatePage("inputFormAttributes");
 document.getElementById("links").onclick = () => updatePage("links");
 document.getElementById("favicon").onclick = () => updatePage("favicon");
 document.getElementById("images").onclick = () => updatePage("images");

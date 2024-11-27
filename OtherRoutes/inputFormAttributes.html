@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/siyumStyles.css">
+    <title>HTML Input Attributes</title>
+</head>
+
+<body>
+    <h2>HTML Input Attributes</h2>
+    <p>HTML input attributes provide additional information about an input element.</p>
+    <br>
+
+    <!-- Required Attribute -->
+    <h3 style="margin-top: 40px"><span class="wTitle">The <span style="color: #04aa6d;">required</span> Attribute</span></h3>
+    <p>The <span style="color: #04aa6d;">required</span> attribute specifies that an input field must be filled out before submitting the form.</p>
+    <h3>Examples</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <pre data-prefix="1"><code>&lt;form&gt;</code></pre>
+            <pre data-prefix="2"><code>  &lt;label for="fname"&gt;First Name:&lt;/label&gt;&lt;br&gt;</code></pre>
+            <pre data-prefix="3"><code>  &lt;input type="text" id="fname" name="fname" required&gt;&lt;br&gt;&lt;br&gt;</code></pre>
+            <pre data-prefix="4"><code>  &lt;input type="submit" value="Submit"&gt;</code></pre>
+            <pre data-prefix="5"><code>&lt;/form&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h3>Output</h3>
+            <form>
+                <label for="fname">First Name:</label><br />
+                <input type="text" id="fname" name="fname" required /><br /><br />
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+
+    <!-- Placeholder Attribute -->
+    <h3 style="margin-top: 40px"><span class="wTitle">The <span style="color: #04aa6d;">placeholder</span> Attribute</span></h3>
+    <p>The <span style="color: #04aa6d;">placeholder</span> attribute provides a hint describing the expected value of the input field.</p>
+    <h3>Examples</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <pre data-prefix="1"><code>&lt;form&gt;</code></pre>
+            <pre data-prefix="2"><code>  &lt;label for="name"&gt;Name:&lt;/label&gt;&lt;br&gt;</code></pre>
+            <pre data-prefix="3"><code>  &lt;input type="text" id="name" placeholder="Enter your name"&gt;&lt;br&gt;&lt;br&gt;</code></pre>
+            <pre data-prefix="4"><code>  &lt;input type="submit" value="Submit"&gt;</code></pre>
+            <pre data-prefix="5"><code>&lt;/form&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h3>Output</h3>
+            <form>
+                <label for="name">Name:</label><br />
+                <input type="text" id="name" placeholder="Enter your name" /><br /><br />
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+
+    <!-- Value Attribute -->
+    <h3 style="margin-top: 40px"><span class="wTitle">The <span style="color: #04aa6d;">value</span> Attribute</span></h3>
+    <p>The <span style="color: #04aa6d;">value</span> attribute specifies the initial value for an input field.</p>
+    <h3>Examples</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <pre data-prefix="1"><code>&lt;form&gt;</code></pre>
+            <pre data-prefix="2"><code>  &lt;label for="name"&gt;Name:&lt;/label&gt;&lt;br&gt;</code></pre>
+            <pre data-prefix="3"><code>  &lt;input type="text" id="name" value="Jubair"&gt;&lt;br&gt;&lt;br&gt;</code></pre>
+            <pre data-prefix="4"><code>  &lt;input type="submit" value="Submit"&gt;</code></pre>
+            <pre data-prefix="5"><code>&lt;/form&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h3>Output</h3>
+            <form>
+                <label for="name">Name:</label><br />
+                <input type="text" id="name" value="Jubair" /><br /><br />
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+
+    <!-- Disabled Attribute -->
+    <h3 style="margin-top: 40px"><span class="wTitle">The <span style="color: #04aa6d;">disabled</span> Attribute</span></h3>
+    <p>The <span style="color: #04aa6d;">disabled</span> attribute makes the input field uneditable and prevents form submission.</p>
+    <h3>Examples</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <pre data-prefix="1"><code>&lt;form&gt;</code></pre>
+            <pre data-prefix="2"><code>  &lt;label for="disabledInput"&gt;Disabled Field:&lt;/label&gt;&lt;br&gt;</code></pre>
+            <pre data-prefix="3"><code>  &lt;input type="text" id="disabledInput" value="Cannot edit" disabled&gt;&lt;br&gt;&lt;br&gt;</code></pre>
+            <pre data-prefix="4"><code>  &lt;input type="submit" value="Submit"&gt;</code></pre>
+            <pre data-prefix="5"><code>&lt;/form&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h3>Output</h3>
+            <form>
+                <label for="disabledInput">Disabled Field:</label><br />
+                <input type="text" id="disabledInput" value="Cannot edit" disabled /><br /><br />
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+
+    <!-- Readonly Attribute -->
+    <h3 style="margin-top: 40px"><span class="wTitle">The <span style="color: #04aa6d;">readonly</span> Attribute</span></h3>
+    <p>The <span style="color: #04aa6d;">readonly</span> attribute makes the input field non-editable but still submits data.</p>
+    <h3>Examples</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <pre data-prefix="1"><code>&lt;form&gt;</code></pre>
+            <pre data-prefix="2"><code>  &lt;label for="readonlyInput"&gt;Read Only:&lt;/label&gt;&lt;br&gt;</code></pre>
+            <pre data-prefix="3"><code>  &lt;input type="text" id="readonlyInput" value="Read Only" readonly&gt;&lt;br&gt;&lt;br&gt;</code></pre>
+            <pre data-prefix="4"><code>  &lt;input type="submit" value="Submit"&gt;</code></pre>
+            <pre data-prefix="5"><code>&lt;/form&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h3>Output</h3>
+            <form>
+                <label for="readonlyInput">Read Only:</label><br />
+                <input type="text" id="readonlyInput" value="Read Only" readonly /><br /><br />
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+
+
+
+    <table class="attributes-table">
+        <thead>
+            <tr>
+                <th>Attribute</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>type</code></td>
+                <td>Specifies the type of input control to display (e.g., text, password, checkbox).</td>
+                <td><code>&lt;input type="text"&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>name</code></td>
+                <td>Defines the name of the input field, which is used to identify form data when submitted.</td>
+                <td><code>&lt;input type="text" name="username"&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>value</code></td>
+                <td>Specifies the initial value for the input field.</td>
+                <td><code>&lt;input type="text" value="John Doe"&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>placeholder</code></td>
+                <td>Provides a short hint that describes the expected value of the input field.</td>
+                <td><code>&lt;input type="text" placeholder="Enter your name"&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>required</code></td>
+                <td>Indicates that the user must fill out the input field before submitting the form.</td>
+                <td><code>&lt;input type="text" required&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>disabled</code></td>
+                <td>Disables the input field, preventing the user from interacting with it.</td>
+                <td><code>&lt;input type="text" disabled&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>readonly</code></td>
+                <td>Prevents the user from editing the input field, but the value can still be submitted.</td>
+                <td><code>&lt;input type="text" readonly&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>maxlength</code></td>
+                <td>Specifies the maximum number of characters allowed in the input field.</td>
+                <td><code>&lt;input type="text" maxlength="10"&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>size</code></td>
+                <td>Specifies the visible width of the input field (in characters).</td>
+                <td><code>&lt;input type="text" size="20"&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>pattern</code></td>
+                <td>Defines a regular expression that the input value must match to be valid.</td>
+                <td><code>&lt;input type="text" pattern="[A-Za-z]+"&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>autofocus</code></td>
+                <td>Automatically focuses the input field when the page loads.</td>
+                <td><code>&lt;input type="text" autofocus&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>autocomplete</code></td>
+                <td>Specifies whether the browser should automatically suggest values for the input field based on previous entries.</td>
+                <td><code>&lt;input type="email" autocomplete="on"&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>min</code></td>
+                <td>Specifies the minimum value for input fields of type <code>number</code>, <code>range</code>, etc.</td>
+                <td><code>&lt;input type="number" min="10"&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>max</code></td>
+                <td>Specifies the maximum value for input fields of type <code>number</code>, <code>range</code>, etc.</td>
+                <td><code>&lt;input type="number" max="100"&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>step</code></td>
+                <td>Defines the legal number intervals for input fields of type <code>number</code>, <code>range</code>, etc.</td>
+                <td><code>&lt;input type="number" step="5"&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>accept</code></td>
+                <td>Specifies the types of files that can be uploaded in an <code>input type="file"</code> field.</td>
+                <td><code>&lt;input type="file" accept="image/*"&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>multiple</code></td>
+                <td>Allows the user to select multiple files in an <code>input type="file"</code> field.</td>
+                <td><code>&lt;input type="file" multiple&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>checked</code></td>
+                <td>Specifies that a checkbox or radio button should be selected by default.</td>
+                <td><code>&lt;input type="checkbox" checked&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>readonly</code></td>
+                <td>Prevents the user from changing the input value while still allowing it to be submitted.</td>
+                <td><code>&lt;input type="text" readonly&gt;</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br><br>
+</body>
+
+</html>
