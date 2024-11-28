@@ -140,12 +140,11 @@ tr:nth-child(even) {
 }
 
 
-
-
 /* For Customizing Scrollbar */
 
 ::-webkit-scrollbar {
     width: 8px;
+    height: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
