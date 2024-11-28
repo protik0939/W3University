@@ -61,6 +61,7 @@ function hideIframe(page) {
 
     const newUrl = `${window.location.pathname}`;
     window.history.pushState({ path: newUrl }, '', newUrl);
+    document.title = "W3University";
 }
 
 iframe.onload = function () {
