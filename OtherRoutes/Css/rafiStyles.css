@@ -137,7 +137,7 @@ h6 {
 .highlight {
     background-color: rgb(1, 43, 30) ;
     color: tomato;
-    /* padding: 2.5rem 1.5rem 1.5rem 1.5rem; */
+    
     border-radius: 8px;
     font-family: 'Courier New', monospace;
     font-size: 1rem;
@@ -157,6 +157,85 @@ h6 {
     overflow-x: auto;
     position: relative;
 }
+
+
+
+
+
+
+.quiz-container {
+    background-color: #1e1e2f;
+    padding: 20px;
+    border-radius: 8px;
+    width: 800px;
+   
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .quiz-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .options label {
+    display: block;
+    background-color: #29293d;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .options input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .options label:hover {
+    background-color: #00d084;
+  }
+  
+  .submit-btn {
+    background-color: #00d084;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #00b874;
+  }
+  
+  .feedback {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #f44336; 
+  }
+  
+  .feedback.correct {
+    color: #00d084; 
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 /* Making Responsive */
 
