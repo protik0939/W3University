@@ -1,12 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colors</title>
-    <link rel="stylesheet" href="./Css/jarifStyles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colors</title>
+  <link rel="stylesheet" href="./Css/jarifStyles.css">
+  <style>
+        .color-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .color-box {
+            width: 150px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .gray { color: black; }
+        .lightgray { color: black; }
+        .separator-box {
+            margin: 20px auto;
+            padding: 10px;
+            width: 90%;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .blue-box {
+            background-color: DodgerBlue;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            padding: 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .red-box {
+            background-color: Tomato;
+            color: white;
+            padding: 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            text-align: justify;
+        }
+        .red-text {
+            color: Tomato;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .blue-text {
+            color: DodgerBlue;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .green-text {
+            color: MediumSeaGreen;
+            font-size: 16px;
+        }
+  </style>
 </head>
 <body>
+  <h2><span class="wTitle">HTML Colors</span></h2>
+  <p>HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.</p>
+  <h2><span class="wTitle">Color Names</span></h2>
+  <p>In HTML, a color can be specified by using a color name:</p>
+  <div class="color-container">
+    <div class="color-box" style="background-color: Tomato;">
+      Tomato
+    </div>
+    <div class="color-box" style="background-color: Orange;">
+      Orange
+    </div>
+    <div class="color-box" style="background-color: DodgerBlue;">
+      DodgerBlue
+    </div>
+    <div class="color-box" style="background-color: MediumSeaGreen;">
+      MediumSeaGreen
+    </div>
+    <div class="color-box gray" style="background-color: Gray;">
+      Gray
+    </div>
+    <div class="color-box" style="background-color: SlateBlue;">
+      SlateBlue
+    </div>
+    <div class="color-box" style="background-color: Violet;">
+      Violet
+    </div>
+    <div class="color-box lightgray" style="background-color: LightGray;">
+      LightGray
+    </div>
+  </div>
+  <p>HTML supports 140 standard color names.</p>
+  <h2><span class="wTitle">Background Color</span></h2>
+  <p>You can set the background color for HTML elements:</p>
+  <div class="blue-box">
+    Hello World
+  </div>
+  <div class="red-box">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+  </div>
+  <h3>Examples:</h3>
+  <div class="codebox">
+    <div class="mockup-code">
+      <div class="code-header"></div>
+      <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+      <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+      <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+      <pre data-prefix="4"></pre>
+      <pre data-prefix="5"><code>&lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;</code></pre>
+      <pre data-prefix="6"></pre>
+      <pre data-prefix="7"><code>&lt;p style="background-color:Tomato;"&gt;</code></pre>
+      <pre data-prefix="8"><code>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</code></pre>
+      <pre data-prefix="9"><code>&lt;/p&gt;</code></pre>
+      <pre data-prefix="10"></pre>
+      <pre data-prefix="11"><code>&lt;/body&gt;</code></pre>
+      <pre data-prefix="12"><code>&lt;/html&gt;</code></pre>
+    </div>
+    <div class="outputview">
+      <h1>Output</h1>
+      <h1 style="background-color:DodgerBlue;">Hello World</h1>
+      <p style="background-color:Tomato;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div><br>
+  <h2><span class="wTitle">Text Color</span></h2>
+  <p>You can set the color of text:</p>
+  <div class="red-text">
+    Hello World
+  </div>
+  <div class="blue-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+  </div>
+  <div class="green-text">
+    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+  </div>
+  <h3>Examples:</h3>
+  <div class="codebox">
+    <div class="mockup-code">
+      <div class="code-header"></div>
+      <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+      <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+      <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+      <pre data-prefix="4"></pre>
+      <pre data-prefix="5"><code>&lt;h3 style="color:Tomato;"&gt;Hello World&lt;/h3&gt;</code></pre>
+      <pre data-prefix="6"></pre>
+      <pre data-prefix="7"><code>&lt;p style="color:DodgerBlue;"&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.&lt;/p&gt;</code></pre>
+      <pre data-prefix="8"></pre>
+      <pre data-prefix="9"><code>&lt;p style="color:MediumSeaGreen;"&gt;Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.&lt;/p&gt;</code></pre>
+      <pre data-prefix="10"></pre>
+      <pre data-prefix="11"><code>&lt;/body&gt;</code></pre>
+      <pre data-prefix="12"><code>&lt;/html&gt;</code></pre>
+    </div>
+    <div class="outputview">
+      <h1>Output</h1>
+      <h3 style="color:Tomato;">Hello World</h3>
+      <p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+      <p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div><br>
+  <h2><span class="wTitle">Border Color</span></h2>
+  <p>You can set the color of borders:</p><br>
+  <h1 style="border: 2px solid Tomato;">Hello World</h1><br>
+  <h1 style="border: 2px solid DodgerBlue;">Hello World</h1><br>
+  <h1 style="border: 2px solid Violet;">Hello World</h1><br>
+  <h3>Examples:</h3>
+  <div class="codebox">
+    <div class="mockup-code">
+      <div class="code-header"></div>
+      <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+      <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+      <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+      <pre data-prefix="4"></pre>
+      <pre data-prefix="5"><code>&lt;h1 style="border: 2px solid Tomato;"&gt;Hello World&lt;/h1&gt;</code></pre>
+      <pre data-prefix="6"></pre>
+      <pre data-prefix="7"><code>&lt;h1 style="border: 2px solid DodgerBlue;"&gt;Hello World&lt;/h1&gt;</code></pre>
+      <pre data-prefix="8"></pre>
+      <pre data-prefix="9"><code>&lt;h1 style="border: 2px solid Violet;"&gt;Hello Worldl&lt;/h1&gt;</code></pre>
+      <pre data-prefix="10"></pre>
+      <pre data-prefix="11"><code>&lt;/body&gt;</code></pre>
+      <pre data-prefix="12"><code>&lt;/html&gt;</code></pre>
+    </div>
+    <div class="outputview">
+      <h1>Output</h1>
+      <h1 style="border: 2px solid Tomato;">Hello World</h1><br>
+      <h1 style="border: 2px solid DodgerBlue;">Hello World</h1><br>
+      <h1 style="border: 2px solid Violet;">Hello World</h1><br>
+    </div>
+  </div>
+  <br>
+  <h2><span class="wTitle">Color Values</span></h2>
+  <p>In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values.</p>
+  <p>The following three &lt;div&gt; elements have their background color set with RGB, HEX, and HSL values:</p>
+  <body>  
+    <h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+    <br>
+    <h1 style="background-color:#ff6347;">#ff6347</h1>
+    <br>
+    <h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
     
+    <p>The following two &lt;div> elements have their background color set with RGBA and HSLA values, which add an Alpha channel to the color (here we have 50% transparency):</p>
+    <h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+    <br>
+    <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+    </body>
+  <h3>Examples:</h3>
+  <div class="codebox">
+    <div class="mockup-code">
+      <div class="code-header"></div>
+      <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+      <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+      <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+      <pre data-prefix="4"><code></code></pre>
+      <pre data-prefix="5"><code>&lt;p&gt;Same as color name "Tomato":&lt;/p&gt;</code></pre>
+      <pre data-prefix="6"><code></code></pre>
+      <pre data-prefix="7"><code>&lt;h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)&lt;/h1&gt;</code></pre>
+      <pre data-prefix="8"><code>&lt;h1 style="background-color:#ff6347;">#ff6347&lt;/h1&gt;</code></pre>
+      <pre data-prefix="9"><code>&lt;h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)&lt;/h1&gt;</code></pre>
+      <pre data-prefix="10"><code></code></pre>
+      <pre data-prefix="11"><code>&lt;p>Same as color name "Tomato", but 50% transparent:&lt;/p&gt;</code></pre>
+      <pre data-prefix="12"><code>&lt;h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)&lt;/h1&gt;</code></pre>
+      <pre data-prefix="13"><code>&lt;h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)&lt;/h1&gt;</code></pre>
+      <pre data-prefix="14"><code></code></pre>
+      <pre data-prefix="15"><code>&lt;p>In addition to the predefined color names, colors can be specified using RGB, HEX, HSL, or even transparent colors using RGBA or HSLA color values.&lt;/h1&gt;</code></pre>
+      <pre data-prefix="16"><code></code></pre>
+      <pre data-prefix="17"><code>&lt;/body&gt;</code></pre>
+      <pre data-prefix="18"><code>&lt;/html&gt;</code></pre>
+    </div>
+    <div class="outputview">
+      <h1>Output</h1>
+      <body>
+
+        <p>Same as color name "Tomato":</p>
+        
+        <h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+        <br>
+        <h1 style="background-color:#ff6347;">#ff6347</h1>
+        <br>
+        <h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+        
+        <p>Same as color name "Tomato", but 50% transparent:</p>
+        <h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+        <br>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+        
+        <p>In addition to the predefined color names, colors can be specified using RGB, HEX, HSL, or even transparent colors using RGBA or HSLA color values.</p>
+        
+        </body>
+    </div>
+  </div>
 </body>
 </html>
