@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Example</title>
-    <link rel="stylesheet" href="./Css/jarifStyles.css">
+    <link rel="stylesheet" href="./Css/jarifStyles.css"> <!-- No closing </link> tag needed here -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -115,9 +115,9 @@
     <div class="tip-box">
         <p class="tip-text"><strong>Note:</strong>The word <strong>cascading</strong> means that a style applied to a parent element will also apply to all children elements within the parent. So, if you set the color of the body text to "blue", all headings, paragraphs, and other text elements within the body will also get the same color (unless you specify something else)!</p>
     </div>
-    <br>
-    <h2><span class="wTitle">Add Comments</span></h2>
-    <p>With comments you can place notifications and reminders in your HTML code:</p>
+    <br> <!-- Correct usage of <br> tag, no closing needed -->
+    <h2><span class="wTitle">Using CSS</span></h2>
+    <p>CSS can be added to HTML documents in 3 ways:</p>
 
     <div class="codebox">
         <div class="mockup-code">
@@ -127,12 +127,37 @@
                 <span class="dot"></span>
             </div>
 
-            <pre data-prefix="1"><code>&lt;!-- This is a comment --&gt;</code></pre>
-            <pre data-prefix="2"><code></code></pre>
-            <pre data-prefix="3"><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
-            <pre data-prefix="4"><code></code></pre>
-            <pre data-prefix="5"><code>&lt;!-- Comments are not displayed in the browser --&gt;</code></pre>
+            <pre data-prefix="1"><code>Inline - by using the style attribute inside HTML elements</code></pre>
+            <pre data-prefix="2"><code>Internal - by using a &lt;style> element in the &lt;head> section</code></pre>
+            <pre data-prefix="3"><code>External - by using a &lt;link> element to link to an external CSS file</code></pre>
 
+        </div>
+    </div>
+    <p>The most common way to add CSS, is to keep the styles in external CSS files. However, in this tutorial we will use inline and internal styles, because this is easier to demonstrate, and easier for you to try it yourself.</p>
+    <h2><span class="wTitle">HTML &lt;sup> Element</span></h2>
+    <p>The HTML &lt;sup> element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]:</p>
+    <br>
+
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;DOCTYPE html&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+            <pre data-prefix="4"><code></code></pre>
+            <pre data-prefix="5"><code>&lt;p>This is &lt;sup>subscripted&lt;/sup> text.&lt;/p></code></pre>
+            <pre data-prefix="6"><code></code></pre>
+            <pre data-prefix="7"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix="8"><code>&lt;/html&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>This is <sup>subscripted</sup> text.</p>
         </div>
     </div>
 </body>
