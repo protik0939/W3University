@@ -1,15 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./OtherRoutes.css" />
+    <link rel="stylesheet" href="./Css/cssForAboutUsPage.css" />
     <title>About</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            line-height: 1.6;
+        }
 
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h1 {
+            font-size: 2.5em;
+            color: #04aa6d;
+            text-align: center;
+        }
+
+        .container p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn {
+            background: #16a085;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #1abc9c;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>This is About</h1>
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Welcome to <span class="highlight">w3university</span>! We are passionate about simplifying web development
+            for learners of all levels. Our mission is to provide comprehensive and easy-to-follow tutorials on HTML,
+            CSS, JavaScript, and beyond.</p>
+        <p>Our tutorials are designed with a focus on:</p>
+        <ul>
+            <li>Clarity: Step-by-step guides to ensure you understand every concept.</li>
+            <li>Practicality: Real-world examples and projects to sharpen your skills.</li>
+            <li>Accessibility: Content suitable for beginners and advanced learners alike.</li>
+        </ul>
+        <p>Whether you're just starting out or looking to deepen your knowledge, <span
+                class="highlight">w3university</span> is here to guide you every step of the way.</p>
+        <p>Join our growing community of developers and take the next step in your web development journey with us.</p>
+        
+        <h1>Made with love by:</h1>
+        <!-- <div class="button-container">
+            <button class="btn" onclick="location.href='contact.html'">Contact Us</button>
+        </div> -->
+
+        <article class="profile">
+            <div class="profile-image">
+                <img src="https://assets.codepen.io/285131/neongirl.jpg" />
+            </div>
+            <h2 class="profile-username">Ishmak Rahat Rafi</h2>
+            <small class="profile-user-handle">1847</small>
+            <div class="profile-actions">
+                <button class="btn btn--primary">Portfolio</button>
+                <button class="btn btn--icon">
+                    <i class="ph-export"></i>
+                </button>
+                <button class="btn btn--icon">
+                    <i class="ph-dots-three-outline-fill"></i>
+                </button>
+            </div>
+            <div class="profile-links">
+                <a href="#" class="link link--icon">
+                    <ion-icon class="crossIcon" id="crossIcon" name="logo-github" />
+                </a>
+                <a href="#" class="link link--icon">
+                    <ion-icon class="crossIcon" id="crossIcon" name="logo-instagram" />
+                </a>
+                <a href="#" class="link link--icon">
+                    <ion-icon class="crossIcon" id="crossIcon" name="logo-facebook" />
+                </a>
+            </div>
+        </article>
+
+    </div>
+
+
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
