@@ -3,10 +3,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formatting</title>
+    <title>Quotation</title>
     <link rel="stylesheet" href="./Css/jarifStyles.css">
 </head>
 <body>
+    <h2><span class="wTitle">HTML Text Formatting</span></h2>
+    <p>HTML contains several elements for defining text with a special meaning.</p>
+    <br>
+
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+            <pre data-prefix="5"><code>&lt;p&gt;&lt;b&gt;This text is bold&lt;/b&gt;&lt;/p&gt;</code></pre>
+            <pre data-prefix="6"><code>&lt;p&gt;&lt;i&gt;This text is italic&lt;/i&gt;&lt;/p&gt;</code></pre>
+            <pre data-prefix="7"><code>&lt;p&gt;This is&lt;sub&gt; subscript&lt;/sub&gt; and &lt;sup&gt;superscript&lt;/sup&gt;&lt;/p&gt;</code></pre>
+            <pre data-prefix="10"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix="11"><code>&lt;/html&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p><b>This text is bold</b></p>
+            <p><i>This text is italic</i></p>
+            <p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+        </div>
+    </div>
+    <br>
+
+    <h2><span class="wTitle">HTML Formatting Elements</span></h2>
+    <p>Formatting elements were designed to display special types of text:</p>
+    <ul>
+        <li>&lt;b&gt; - Bold text</li>
+        <li>&lt;strong&gt; - Important text</li>
+        <li>&lt;i&gt; - Italic text</li>
+        <li>&lt;em&gt; - Emphasized text</li>
+        <li>&lt;mark&gt; - Marked text</li>
+        <li>&lt;small&gt; - Smaller text</li>
+        <li>&lt;del&gt; - Deleted text</li>
+        <li>&lt;ins&gt; - Inserted text</li>
+        <li>&lt;sub&gt; - Subscript text</li>
+        <li>&lt;sup&gt; - Superscript text</li>
+    </ul>
+    <br>
+
+    <h2><span class="wTitle">HTML &lt;b&gt; and &lt;strong&gt; Elements</span></h2>
+    <p>The HTML &lt;b&gt; element defines bold text, without any extra importance.</p>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+            <pre data-prefix="5"><code>&lt;p&gt;This text is normal.&lt;/p&gt;</code></pre>
+            <pre data-prefix="7"><code>&lt;p&gt;&lt;b&gt;This text is bold.&lt;/b&gt;&lt;/p&gt;</code></pre>
+            <pre data-prefix="10"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix="11"><code>&lt;/html&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>This text is normal.</p>
+            <p><b>This text is bold.</b></p>
+        </div>
+    </div>
+    <br>
     
+    <p>The HTML &lt;strong&gt; element defines text with strong importance. The content inside is typically displayed in bold.</p>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+            <pre data-prefix="5"><code>&lt;p&gt;This text is normal.&lt;/p&gt;</code></pre>
+            <pre data-prefix="7"><code>&lt;p&gt;&lt;strong&gt;This text is important!&lt;/strong&gt;&lt;/p&gt;</code></pre>
+            <pre data-prefix="10"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix="11"><code>&lt;/html&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>This text is normal.</p>
+            <p><strong>This text is important!</strong></p>
+        </div>
+    </div>
+    <br>
+    <h2><span class="wTitle">HTML &lt;i> and &lt;em> Elements</span></h2>
+    <p>The HTML &lt;i> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.</p>
+    <p><strong>Tip:</strong> The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.</p>
+    <br>
+
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+            <pre data-prefix="4"><code></code></pre>
+            <pre data-prefix="5"><code>&lt;p&gt;This text is normal.&lt;/p&gt;</code></pre>
+            <pre data-prefix="6"><code></code></pre>
+            <pre data-prefix="7"><code>&lt;p&gt;&lt;i&gt;This text is italic&lt;/i&gt;&lt;/p&gt;</code></pre>
+            <pre data-prefix="8"><code></code></pre>
+            <pre data-prefix="9"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix="10"><code>&lt;/html&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>This text is normal.</p>
+            <p><i>This text is italic.</i></p>
+        </div>
+    </div>
+    <br>
+    <h2><span class="wTitle">HTML &lt;small> Element</span></h2>
+    <p>The HTML &lt;small> element defines smaller text:</p>
+    <br>
+
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+            <pre data-prefix="4"><code></code></pre>
+            <pre data-prefix="5"><code>&lt;p&gt;This is some normal text.&lt;/p&gt;</code></pre>
+            <pre data-prefix="6"><code></code></pre>
+            <pre data-prefix="7"><code><&lt;p>&lt;small>This is some smaller text.&lt;/small>&lt;/p></code></pre>
+            <pre data-prefix="8"><code></code></pre>
+            <pre data-prefix="9"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix="10"><code>&lt;/html&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>This is some normal text.</p>
+            <p><small>This is some smaller text.</small></p>
+
+        </div>
+    </div>
+    <br>
+    <h2><span class="wTitle">HTML &lt;mark> Element</span></h2>
+    <p>The HTML &lt;mark> element defines text that should be marked or highlighted:</p>
+    <br>
+
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+            <pre data-prefix="4"><code></code></pre>
+            <pre data-prefix="5"><code>&lt;p>Do not forget to buy &lt;mark>milk&lt;/mark> today.&lt;/p></code></pre>
+            <pre data-prefix="6"><code></code></pre>
+            <pre data-prefix="7"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix="8"><code>&lt;/html&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>Do not forget to buy <mark>milk</mark> today.</p>
+
+        </div>
+    </div>
+    <br>
+    <h2><span class="wTitle">HTML &lt;del> Element</span></h2>
+    <p>The HTML &lt;del> element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text:</p>
+    <br>
+
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+            <pre data-prefix="4"><code></code></pre>
+            <pre data-prefix="5"><code>&lt;p>My favorite color is &lt;del>blue&lt;/del> red.&lt;/p></code></pre>
+            <pre data-prefix="6"><code></code></pre>
+            <pre data-prefix="7"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix="8"><code>&lt;/html&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>My favorite color is <del>blue</del> red.</p>
+
+        </div>
+    </div>
+    <br>
+    <h2><span class="wTitle">HTML &lt;ins> Element</span></h2>
+    <p>The HTML &lt;ins> element defines a text that has been inserted into a document. Browsers will usually underline inserted text:</p>
+    <br>
+
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+            <pre data-prefix="4"><code></code></pre>
+            <pre data-prefix="5"><code>&lt;p>My favorite color is &lt;del>blue&lt;/del> &lt;ins>red&lt;/ins>.&lt;/p></code></pre>
+            <pre data-prefix="6"><code></code></pre>
+            <pre data-prefix="7"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix="8"><code>&lt;/html&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+        </div>
+    </div>
+    <br>
+    <h2><span class="wTitle">HTML &lt;sub> Element</span></h2>
+    <p>The HTML &lt;sub> element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O:</p>
+    <br>
+
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+            <pre data-prefix="4"><code></code></pre>
+            <pre data-prefix="5"><code>&lt;p>This is &lt;sub>subscripted&lt;/sub> text.&lt;/p></code></pre>
+            <pre data-prefix="6"><code></code></pre>
+            <pre data-prefix="7"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix="8"><code>&lt;/html&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>This is <sub>subscripted</sub> text.</p>
+
+        </div>
+    </div>
+    <br>
+    <h2><span class="wTitle">HTML &lt;sup> Element</span></h2>
+    <p>The HTML <sup> element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]:</p>
+    <br>
+
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+            <pre data-prefix="4"><code></code></pre>
+            <pre data-prefix="5"><code>&lt;p>This is &lt;sup>subscripted&lt;/sup> text.&lt;/p></code></pre>
+            <pre data-prefix="6"><code></code></pre>
+            <pre data-prefix="7"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix="8"><code>&lt;/html&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <p>This is <sup>subscripted</sup> text.</p>
+
+        </div>
+    </div>
 </body>
 </html>
