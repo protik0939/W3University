@@ -6,11 +6,6 @@ const questions = [
         correct: "action",
       },
       {
-        question: "Which attribute specifies the HTTP method used when submitting the form?",
-        options: ["method", "type", "action", "enctype"],
-        correct: "method",
-      },
-      {
         question: "Which attribute is used to specify the target window or frame to display the form result?",
         options: ["action", "formtarget", "target", "method"],
         correct: "target",
@@ -26,19 +21,9 @@ const questions = [
         correct: "Prevents form validation when submitting",
       },
       {
-        question: "Which attribute specifies the encoding type used when submitting the form data?",
-        options: ["method", "enctype", "type", "formtarget"],
-        correct: "enctype",
-      },
-      {
         question: "Which attribute overrides the form's method attribute for a specific button?",
         options: ["formtarget", "formenctype", "formaction", "formmethod"],
         correct: "formmethod",
-      },
-      {
-        question: "Which attribute prevents validation of input elements before form submission?",
-        options: ["formnovalidate", "required", "novalidate", "validate"],
-        correct: "formnovalidate",
       },
       {
         question: "What is the default value of the 'method' attribute in an HTML form?",
