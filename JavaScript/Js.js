@@ -72,6 +72,9 @@ iframe.onload = function () {
 document.getElementById("home").onclick = () => updatePageUp("home");
 document.getElementById("about").onclick = () => updatePageUp("about");
 document.getElementById("privacy").onclick = () => updatePageUp("privacy");
+document.getElementById("homeb").onclick = () => updatePageUp("home");
+document.getElementById("aboutb").onclick = () => updatePageUp("about");
+document.getElementById("privacyb").onclick = () => updatePageUp("privacy");
 document.getElementById("list").onclick = () => updatePage("list");
 document.getElementById("aboutHtml").onclick = () => updatePage("home");
 document.getElementById("classes").onclick = () => updatePage("classes");
@@ -108,6 +111,23 @@ document.getElementById("w3UniLogo").onclick = () => hideIframe();
 window.onload = loadIframeFromURL;
 
 
+// Select hamburger icon and menu box
+const hamburger = document.getElementById('hamburger');
+const menuBox = document.getElementById('menuBox');
+
+// Function to toggle the visibility of the menu box
+hamburger.addEventListener('click', function (event) {
+    event.stopPropagation(); // Prevent the click from propagating to the document
+    menuBox.style.display = menuBox.style.display === 'block' ? 'none' : 'block';
+});
+
+// Close the menu box when clicking outside of it
+document.addEventListener('click', function (event) {
+    // Check if the clicked target is not the menu box or the hamburger icon
+    if (!menuBox.contains(event.target) && !hamburger.contains(event.target)) {
+        menuBox.style.display = 'none'; // Hide the menu box
+    }
+});
 
 
 
