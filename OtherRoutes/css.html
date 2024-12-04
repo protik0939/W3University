@@ -3,10 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css</title>
+    <title>CSS Example</title>
     <link rel="stylesheet" href="./Css/jarifStyles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        .info {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+            width: 400px;
+            height: 200px;
+        }
+
+        .box1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: lightblue;
+        }
+
+        .box2 {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            width: 50%;
+            height: 60%;
+            background-color: lightgreen;
+        }
+
+        .border {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 5px solid orange;
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 18px;
+        }
+
+        .footer .colors {
+            color: lightblue;
+        }
+
+        .footer .boxes {
+            color: magenta;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: rgb(245, 245, 245);
+        }
+
+        p {
+            font-size: 16px;
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="info">
+        <h2><span class="wTitle">HTML Styles - CSS</span></h2>
+        <p>CSS stands for Cascading Style Sheets.</p>
+        <p>CSS saves a lot of work. It can control the layout of multiple web pages all at once.</p>
+    </div>
+
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="border"></div>
+        <div class="text">CSS = Styles and Colors</div>
+    </div>
+
+    <div class="footer">
+        <p>Manipulate Text</p>
+        <p>
+            <span class="colors">Colors</span>, 
+            <span class="boxes">Boxes</span>
+        </p>
+    </div>
+
+    <h1>What is CSS?</h1>
+    <p>Cascading Style Sheets (CSS) is used to format the layout of a webpage.</p>
+    <p>With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!</p>
+    <div class="tip-box">
+        <p class="tip-text"><strong>Note:</strong>The word <strong>cascading</strong> means that a style applied to a parent element will also apply to all children elements within the parent. So, if you set the color of the body text to "blue", all headings, paragraphs, and other text elements within the body will also get the same color (unless you specify something else)!</p>
+    </div>
+    <br>
+    <h2><span class="wTitle">Add Comments</span></h2>
+    <p>With comments you can place notifications and reminders in your HTML code:</p>
+
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <pre data-prefix="1"><code>&lt;!-- This is a comment --&gt;</code></pre>
+            <pre data-prefix="2"><code></code></pre>
+            <pre data-prefix="3"><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+            <pre data-prefix="4"><code></code></pre>
+            <pre data-prefix="5"><code>&lt;!-- Comments are not displayed in the browser --&gt;</code></pre>
+
+        </div>
+    </div>
 </body>
 </html>
