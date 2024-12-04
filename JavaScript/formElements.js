@@ -1,34 +1,34 @@
 
 const questions = [
     {
-        question: "Which attribute specifies the URL to send form data to after submission?",
-        options: ["method", "formaction", "target", "action"],
-        correct: "action",
+        question: "Which HTML element is used to create a form?",
+        options: ["<input>", "<button>", "<form>", "<fieldset>"],
+        correct: "<form>",
       },
       {
-        question: "Which attribute is used to specify the target window or frame to display the form result?",
-        options: ["action", "formtarget", "target", "method"],
-        correct: "target",
+        question: "Which element defines a clickable button inside a form?",
+        options: ["<input>", "<label>", "<button>", "<submit>"],
+        correct: "<button>",
       },
       {
-        question: "What does the 'novalidate' attribute do?",
+        question: "Which element groups related form controls together?",
+        options: ["<fieldset>", "<group>", "<section>", "<label>"],
+        correct: "<fieldset>",
+      },
+      {
+        question: "What is the purpose of the <label> element?",
         options: [
-          "Prevents form validation when submitting",
-          "Requires all fields to be filled out",
-          "Validates input data types",
-          "Allows form submission without filling any field",
+          "To define a form control",
+          "To describe an input element",
+          "To create a submit button",
+          "To group input elements",
         ],
-        correct: "Prevents form validation when submitting",
+        correct: "To describe an input element",
       },
       {
-        question: "Which attribute overrides the form's method attribute for a specific button?",
-        options: ["formtarget", "formenctype", "formaction", "formmethod"],
-        correct: "formmethod",
-      },
-      {
-        question: "What is the default value of the 'method' attribute in an HTML form?",
-        options: ["GET", "POST", "PUT", "DELETE"],
-        correct: "GET",
+        question: "Which element is used to provide a hint or description for a form field?",
+        options: ["<legend>", "<label>", "<title>", "<placeholder>"],
+        correct: "<label>",
       },
     ];
   
