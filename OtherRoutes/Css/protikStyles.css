@@ -96,7 +96,27 @@ h6 {
     color: #333;
 }
 
+/* rafir paknami */
 
+.syntax-box {
+    background-color: #005a35;; 
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px; 
+    font-family: Arial, sans-serif;
+   
+  }
+
+  .syntax-box code {
+    display: block;
+    background-color:rgb(21, 32, 43);
+    color: #d4d4d4; 
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 14px;
+  }
+  
 
 
 /* rafir paknami */
