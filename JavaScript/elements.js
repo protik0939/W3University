@@ -1,36 +1,41 @@
-
 const questions = [
-  {
-    question: "Which attribute is used to provide an alternative text for an image?",
-    options: [ "src", "title", "href","alt"],
-    correct: "alt",
-  },
-  {
-    question: "Which attribute specifies a unique identifier for an HTML element?",
-    options: [ "class", "name", "id","key"],
-    correct: "id",
-  },
-  {
-    question: "Which attribute is used to open a hyperlink in a new tab or window?",
-    options: [ "rel", "target","href", "src"],
-    correct: "target",
-  },
-  {
-    question: "What is the purpose of the 'placeholder' attribute in an input tag?",
-    options: [
-      "To provide default text in the input field",
-      "To set the input value",
-      "To change the input type",
-      "To add a label to the field"
-    ],
-    correct: "To provide default text in the input field",
-  },
-  {
-    question: "Which attribute is used to specify inline CSS styles for an element?",
-    options: [ "class", "id", "style","css"],
-    correct: "style",
-  },
+    {
+      question: "Which HTML element is used to define the main heading of a webpage?",
+      options: ["<title>", "<h1>", "<head>", "<header>"],
+      correct: "<h1>",
+    },
+    {
+      question: "What is the purpose of the <footer> element in HTML?",
+      options: [
+        "To display the title of the page",
+        "To define navigation links",
+        "To provide footer content like copyright or links",
+        "To include metadata"
+      ],
+      correct: "To provide footer content like copyright or links",
+    },
+    {
+      question: "Which HTML element is used to create an ordered list?",
+      options: ["<ul>", "<ol>", "<li>", "<list>"],
+      correct: "<ol>",
+    },
+    {
+      question: "What does the <nav> element represent in HTML?",
+      options: [
+        "A container for navigation links",
+        "A section for advertisements",
+        "A sidebar for additional content",
+        "A placeholder for images"
+      ],
+      correct: "A container for navigation links",
+    },
+    {
+      question: "Which HTML element is used to embed a video in a webpage?",
+      options: ["<embed>", "<video>", "<iframe>", "<media>"],
+      correct: "<video>",
+    },
 ];
+
 
   // Variables to track progress
   let currentQuestionIndex = 0;

@@ -1,35 +1,34 @@
-
 const questions = [
-  {
-    question: "Which attribute is used to provide an alternative text for an image?",
-    options: [ "src", "title", "href","alt"],
-    correct: "alt",
-  },
-  {
-    question: "Which attribute specifies a unique identifier for an HTML element?",
-    options: [ "class", "name", "id","key"],
-    correct: "id",
-  },
-  {
-    question: "Which attribute is used to open a hyperlink in a new tab or window?",
-    options: [ "rel", "target","href", "src"],
-    correct: "target",
-  },
-  {
-    question: "What is the purpose of the 'placeholder' attribute in an input tag?",
-    options: [
-      "To provide default text in the input field",
-      "To set the input value",
-      "To change the input type",
-      "To add a label to the field"
-    ],
-    correct: "To provide default text in the input field",
-  },
-  {
-    question: "Which attribute is used to specify inline CSS styles for an element?",
-    options: [ "class", "id", "style","css"],
-    correct: "style",
-  },
+    {
+      question: "Which attribute is used to provide an alternative text for an image?",
+      options: ["alt", "src", "title", "href"],
+      correct: "alt",
+    },
+    {
+      question: "Which attribute specifies a unique identifier for an HTML element?",
+      options: ["id", "class", "name", "key"],
+      correct: "id",
+    },
+    {
+      question: "Which attribute is used to open a hyperlink in a new tab or window?",
+      options: ["target", "rel", "href", "src"],
+      correct: "target",
+    },
+    {
+      question: "What is the purpose of the 'placeholder' attribute in an input tag?",
+      options: [
+        "To provide default text in the input field",
+        "To set the input value",
+        "To change the input type",
+        "To add a label to the field"
+      ],
+      correct: "To provide default text in the input field",
+    },
+    {
+      question: "Which attribute is used to specify inline CSS styles for an element?",
+      options: ["style", "class", "id", "css"],
+      correct: "style",
+    },
 ];
 
   // Variables to track progress
