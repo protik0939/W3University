@@ -11,7 +11,167 @@
 </head>
 
 <body>
-    <h1>Iframe</h1>
+<h2> <span class="wTitle">HTML Iframes</span></h2>
+<p>An HTML iframe is used to display a web page within a web page.</p>
+
+<iframe src="https://protik0939.github.io/W3University/" width="100%" height="500px"> </iframe> <br>
+<br>
+<h2> <span class="wTitle">HTML Iframe Syntax</span></h2>
+<p>The HTML <span style="color: tomato;"> &lt;iframe&gt;</span> tag specifies an inline frame.</p>
+<p>An inline frame is used to embed another document within the current HTML document.</p>
+
+
+<div class="syntax-box">
+    <p>Syntax</p>
+    <code>&lt;<span style="color: tomato;">iframe</span> <span style="color:#c5a5c5;">src</span>=<span style="color: rgb(0, 255, 174);">"url" </span><span style="color:#c5a5c5;">title</span>=<span style="color: rgb(0, 255, 174);">"description"</span>&gt;&lt;<span style="color:tomato">/iframe</span>&gt;</code>
+  </div>
+  
+<br>
+  <div class="tip-box">
+    <p class="tip-text"><strong>Tip:</strong>It is a good practice to always include a <span style="color: tomato;">title</span> attribute for the <span style="color: tomato;">&lt;iframe&gt;</span>. This is used by screen readers to read out what the content of the iframe is.</p>
+</div>
+<br>
+<h2> <span class="wTitle">Iframe - Set Height and Width</span></h2>
+
+<p>Use the <span style="color: tomato;">height</span> and <span style="color: tomato;">width</span> attributes to specify the size of the iframe.</p>
+<p>The height and width are specified in pixels by default:</p>
+<br>
+
+
+<h3>Examples:</h3>
+<div class="codebox">
+    <div class="mockup-code">
+
+        <div class="code-header">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <pre data-prefix="1"><code>&lt;<span style="color: tomato;">!DOCTYPE <span style="color: rgb(0, 255, 174);">html</span>&gt;</code></pre>
+        <pre data-prefix="2"><code>&lt;<span style="color: tomato;">html</span>&gt;</code></pre>
+        <pre data-prefix="3"><code>&lt;<span style="color: tomato;">body</span>&gt;</code></pre>
+        <pre data-prefix="4"><code>&lt;<span style="color: tomato;">h2</span>&gt;HTML Iframes&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+        <pre data-prefix="5"><code>&lt;<span style="color: tomato;">p</span>&gt;You can use the height and width attributes to specify the size of the iframe:&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+        <pre data-prefix="6"><code>&lt;<span style="color: tomato;">iframe</span> <span style="color: #c5a5c5;">src</span>="demo_iframe.htm" <span style="color: #c5a5c5;">height</span>="200" <span style="color: #c5a5c5;">width</span>="300" <span style="color: #c5a5c5;">title</span>="Iframe Example"&gt;&lt;/<span style="color: tomato;">iframe</span>&gt;</code></pre>
+        <pre data-prefix="7"><code>&lt;<span style="color: tomato;">/body</span>&gt;</code></pre>
+        <pre data-prefix="8"><code>&lt;<span style="color: tomato;">/html</span>&gt;</code></pre>
+
+    </div>
+    <div class="outputview">
+        <h3>Output</h3>
+        <h2>HTML Iframes</h2>
+        <p>You can use the height and width attributes to specify the size of the iframe:</p>
+
+        <iframe src="https://protik0939.github.io/W3University/" height="200" width="300" title="Iframe Example"></iframe>
+    </div>
+</div>
+
+<p>Or you can add the <span style="color: tomato;">style</span> attribute and use the CSS <span style="color: tomato;">height</span> and <span style="color: tomato;">width</span>properties:</p>
+<br>
+
+<h3>Examples:</h3>
+<div class="codebox">
+    <div class="mockup-code">
+
+        <div class="code-header">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <pre data-prefix="1"><code>&lt;<span style="color: tomato;">!DOCTYPE <span style="color: rgb(0, 255, 174);">html</span>&gt;</span></code></pre>
+        <pre data-prefix="2"><code>&lt;<span style="color: tomato;">html</span>&gt;</code></pre>
+        <pre data-prefix="3"><code>&lt;<span style="color: tomato;">body</span>&gt;</code></pre>
+        <pre data-prefix="4"><code>&lt;<span style="color: tomato;">h2</span>&gt;HTML Iframes&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+        <pre data-prefix="5"><code>&lt;<span style="color: tomato;">p</span>&gt;You can also use the CSS height and width properties to specify the size of the iframe:&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+        <pre data-prefix="6"><code>&lt;<span style="color: tomato;">iframe</span> <span style="color: #c5a5c5;">src</span>="demo_iframe.htm" <span style="color: #c5a5c5;">style</span>="height:200px;width:300px" <span style="color: #c5a5c5;">title</span>="Iframe Example"&gt;&lt;/<span style="color: tomato;">iframe</span>&gt;</code></pre>
+        <pre data-prefix="7"><code>&lt;<span style="color: tomato;">/body</span>&gt;</code></pre>
+        <pre data-prefix="8"><code>&lt;<span style="color: tomato;">/html</span>&gt;</code></pre>
+
+    </div>
+    <div class="outputview">
+        <h3>Output</h3>
+        <h2>HTML Iframes</h2>
+        <p>You can also use the CSS height and width properties to specify the size of the iframe:</p>
+
+        <iframe src="https://protik0939.github.io/W3University/" style="height:200px;width:300px" title="Iframe Example"></iframe>
+    </div>
+</div>
+<p>With CSS, you can also change the size, style and color of the iframe's border:</p>
+<br>
+
+<h3>Examples:</h3>
+<div class="codebox">
+    <div class="mockup-code">
+
+        <div class="code-header">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <pre data-prefix="1"><code>&lt;<span style="color: tomato;">!DOCTYPE <span style="color: rgb(0, 255, 174);">html</span>&gt;</span></code></pre>
+        <pre data-prefix="2"><code>&lt;<span style="color: tomato;">html</span>&gt;</code></pre>
+        <pre data-prefix="3"><code>&lt;<span style="color: tomato;">body</span>&gt;</code></pre>
+        <pre data-prefix="4"><code>&lt;<span style="color: tomato;">h2</span>&gt;Custom Iframe Border&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+        <pre data-prefix="5"><code>&lt;<span style="color: tomato;">p</span>&gt;With CSS, you can also change the size, style and color of the iframe's border:&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+        <pre data-prefix="6"><code>&lt;<span style="color: tomato;">iframe</span> <span style="color: #c5a5c5;">src</span>="demo_iframe.htm" <span style="color: #c5a5c5;">style</span>="border:2px solid red;" <span style="color: #c5a5c5;">title</span>="Iframe Example"&gt;&lt;/<span style="color: tomato;">iframe</span>&gt;</code></pre>
+        <pre data-prefix="7"><code>&lt;<span style="color: tomato;">/body</span>&gt;</code></pre>
+        <pre data-prefix="8"><code>&lt;<span style="color: tomato;">/html</span>&gt;</code></pre>
+
+    </div>
+    <div class="outputview">
+        <h3>Output</h3>
+        <h2>Custom Iframe Border</h2>
+        <p>With CSS, you can also change the size, style and color of the iframe's border:</p>
+
+        <iframe src="https://protik0939.github.io/W3University/" style="border:2px solid red;" title="Iframe Example"></iframe>
+    </div>
+</div>
+
+<br>
+<h2> <span class="wTitle">Iframe - Target for a Link</span></h2>
+<p>An iframe can be used as the target frame for a link.</p>
+<p>The <span style="color: tomato;"> target </span> attribute of the link must refer to the <span style="color: tomato;">name</span> attribute of the iframe:</p>
+<br>
+
+
+<h3>Examples:</h3>
+<div class="codebox">
+    <div class="mockup-code">
+
+        <div class="code-header">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <pre data-prefix="1"><code>&lt;<span style="color: tomato;">!DOCTYPE <span style="color: rgb(0, 255, 174);">html</span>&gt;</span></code></pre>
+        <pre data-prefix="2"><code>&lt;<span style="color: tomato;">html</span>&gt;</code></pre>
+        <pre data-prefix="3"><code>&lt;<span style="color: tomato;">body</span>&gt;</code></pre>
+        <pre data-prefix="4"><code>&lt;<span style="color: tomato;">h2</span>&gt;Iframe - Target for a Link&lt;/<span style="color: tomato;">h2</span>&gt;</code></pre>
+        <pre data-prefix="5"><code>&lt;<span style="color: tomato;">iframe</span> <span style="color: #c5a5c5;">src</span>="demo_iframe.htm" <span style="color: #c5a5c5;">name</span>="iframe_a" <span style="color: #c5a5c5;">height</span>="300px" <span style="color: #c5a5c5;">width</span>="100%" <span style="color: #c5a5c5;">title</span>="Iframe Example"&gt;&lt;/<span style="color: tomato;">iframe</span>&gt;</code></pre>
+        <pre data-prefix="6"><code>&lt;<span style="color: tomato;">p</span>&gt;&lt;<span style="color: tomato;">a</span> <span style="color: #c5a5c5;">href</span>="https://www.w3schools.com" <span style="color: #c5a5c5;">target</span>="iframe_a"&gt;W3Schools.com&lt;/<span style="color: tomato;">a</span>&gt;&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+        <pre data-prefix="7"><code>&lt;<span style="color: tomato;">p</span>&gt;When the <span style="color: #c5a5c5;">target</span> attribute of a link matches the name of an iframe, the link will open in the iframe.&lt;/<span style="color: tomato;">p</span>&gt;</code></pre>
+        <pre data-prefix="8"><code>&lt;<span style="color: tomato;">/body</span>&gt;</code></pre>
+        <pre data-prefix="9"><code>&lt;<span style="color: tomato;">/html</span>&gt;</code></pre>
+
+    </div>
+    <div class="outputview">
+        <h3>Output</h3>
+        <h2>Iframe - Target for a Link</h2>
+
+        <iframe src="https://protik0939.github.io/W3University/" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+
+        <p><a href="https://protik0939.github.io/W3University/" target="iframe_a">W3University.com</a></p>
+
+        <p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+    </div>
+</div>
+ <br> <br>
+
+
 </body>
 
 </html>

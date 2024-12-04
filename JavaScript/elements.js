@@ -1,28 +1,42 @@
-
-// Questions and answers array
 const questions = [
     {
-      question: "Which of the following headers is the largest and most important header?",
-      options: ["<h1>", "<h2>", "<h3>", "<h4>", "<h5>", "<h6>"], // Use unescaped values here
+      question: "Which HTML element is used to define the main heading of a webpage?",
+      options: ["<title>", "<h1>", "<head>", "<header>"],
       correct: "<h1>",
     },
     {
-      question: "Which HTML tag is used to create a hyperlink?",
-      options: ["<link>", "<href>", "<url>", "<a>"], // Use unescaped values here
-      correct: "<a>",
+      question: "What is the purpose of the <footer> element in HTML?",
+      options: [
+        "To display the title of the page",
+        "To define navigation links",
+        "To provide footer content like copyright or links",
+        "To include metadata"
+      ],
+      correct: "To provide footer content like copyright or links",
     },
     {
-      question: "Which of the following HTML Elements is used for making any text bold?",
-      options: ["<p>", "<i>", "<li>", "<b>"],
-      correct: "<b>",
+      question: "Which HTML element is used to create an ordered list?",
+      options: ["<ul>", "<ol>", "<li>", "<list>"],
+      correct: "<ol>",
     },
     {
-      question: "What is the font-size of the h1 heading tag?",
-      options: ["3.5em", "2.17em", "2em", "1.5em"],
-      correct: "2em",
+      question: "What does the <nav> element represent in HTML?",
+      options: [
+        "A container for navigation links",
+        "A section for advertisements",
+        "A sidebar for additional content",
+        "A placeholder for images"
+      ],
+      correct: "A container for navigation links",
     },
-  ];
-  
+    {
+      question: "Which HTML element is used to embed a video in a webpage?",
+      options: ["<embed>", "<video>", "<iframe>", "<media>"],
+      correct: "<video>",
+    },
+];
+
+
   // Variables to track progress
   let currentQuestionIndex = 0;
   
