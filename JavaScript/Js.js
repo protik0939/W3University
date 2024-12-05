@@ -72,9 +72,11 @@ iframe.onload = function () {
 document.getElementById("home").onclick = () => updatePageUp("home");
 document.getElementById("about").onclick = () => updatePageUp("about");
 document.getElementById("privacy").onclick = () => updatePageUp("privacy");
+document.getElementById("profile").onclick = () => updatePageUp("authentication");
 document.getElementById("homeb").onclick = () => updatePageUp("home");
 document.getElementById("aboutb").onclick = () => updatePageUp("about");
 document.getElementById("privacyb").onclick = () => updatePageUp("privacy");
+document.getElementById("profileb").onclick = () => updatePageUp("authentication");
 document.getElementById("list").onclick = () => updatePage("list");
 document.getElementById("aboutHtml").onclick = () => updatePage("home");
 document.getElementById("classes").onclick = () => updatePage("classes");

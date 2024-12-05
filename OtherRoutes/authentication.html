@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description"
+        content=" Today in this blog you will learn how to create a responsive Login & Registration Form in HTML CSS & JavaScript. The blog will cover everything from the basics of creating a Login & Registration in HTML, to styling it with CSS and adding with JavaScript." />
+    <meta name="keywords" content=" 
+ Animated Login & Registration Form,Form Design,HTML and CSS,HTML CSS JavaScript,login & registration form,login & signup form,Login Form Design,registration form,Signup Form,HTML,CSS,JavaScript,
+" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login & Signup Form HTML CSS | CodingNepal</title>
+    <link rel="stylesheet" href="./Css/cssForAuthenticationPage.css" />
+    <link rel="stylesheet" href="../Css/ScrollbarStyle.css">
+    <script src="../custom-scripts.js" defer></script>
+</head>
+
+<body>
+    <section class="wrapper">
+        <div class="form signup">
+            <header>Login</header>
+            <form action="#">
+                <input type="text" placeholder="Email address" required />
+                <input type="password" placeholder="Password" required />
+                <a href="#">Forgot password?</a>
+                <input type="submit" value="Login" />
+            </form>
+        </div>
+
+        <div class="form login">
+            <header>Signup</header>
+            <form action="#">
+                <input type="text" placeholder="Full name" required />
+                <input type="text" placeholder="Email address" required />
+                <input type="password" placeholder="Password" required />
+                <select type="select">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <input type="date" name="Date of birth" id="dateofbirth">
+                <div class="fileTypeInput">
+                    <input type="file" id="file-input">
+                    <label for="file-input"><ion-icon name="image" /></label>
+                    <span class="file-text">No file chosen</span>
+                </div>
+                <textarea type="text" placeholder="bio" required ></textarea>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="signupCheck" />
+                    <label for="signupCheck">I accept all terms & conditions</label>
+                </div>
+
+                <input type="submit" value="Signup" />
+            </form>
+        </div>
+
+        <script>
+            const wrapper = document.querySelector(".wrapper"),
+                signupHeader = document.querySelector(".signup header"),
+                loginHeader = document.querySelector(".login header");
+
+            loginHeader.addEventListener("click", () => {
+                wrapper.classList.add("active");
+            });
+            signupHeader.addEventListener("click", () => {
+                wrapper.classList.remove("active");
+            });
+
+            const fileInput = document.getElementById('file-input');
+            const fileText = document.querySelector('.file-text');
+
+            fileInput.addEventListener('change', function () {
+                if (fileInput.files.length > 0) {
+                    fileText.textContent = fileInput.files[0].name;
+                } else {
+                    fileText.textContent = 'No file chosen';
+                }
+            });
+        </script>
+        
+    </section>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

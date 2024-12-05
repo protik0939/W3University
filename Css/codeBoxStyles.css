@@ -63,10 +63,11 @@
 h3.outputHeading {
     position: absolute;
     top: 0;
+    left: 0;
     background-color: #04aa6dcf;
     color: #ffffff;
     padding: 3px 6px;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 0px;
 }
 
 .outputview {
