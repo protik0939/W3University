@@ -242,6 +242,12 @@ body {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.sideBarButton:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .sideBar::-webkit-scrollbar {
