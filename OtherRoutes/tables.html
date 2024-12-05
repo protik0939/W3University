@@ -1274,6 +1274,110 @@
 </div>
 <br>
 
+<h2><span class="wTitle">HTML Table Styling</span></h2>
+<h3>Hoverable Table</h3>
+<p>Use the <span style="color: #04aa6d;">:hover</span> selector on <span style="color: #04aa6d;">tr</span> to highlight table rows on mouse over:</p>
+
+
+<h3>Examples:</h3>
+        <div class="codebox">
+            <div class="mockup-code">
+    
+                <div class="code-header">
+                    <span class="dot"></span>
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+
+                <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+                <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+                <pre data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;head&gt;</code></pre>
+                <pre data-prefix="4"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;style&gt;</code></pre>
+                <pre data-prefix="5"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;table &#123;</code></pre>
+                <pre data-prefix="6"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;border-collapse: collapse;</code></pre>
+                <pre data-prefix="7"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;width: 100&#37;;</code></pre>
+                <pre data-prefix="8"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#125;</code></pre>
+                <pre data-prefix="9"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;th, td &#123;</code></pre>
+                <pre data-prefix="10"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;padding: 8px;</code></pre>
+                <pre data-prefix="11"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;text-align: left;</code></pre>
+                <pre data-prefix="12"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;border-bottom: 1px solid #DDD;</code></pre>
+                <pre data-prefix="13"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#125;</code></pre>
+                <pre data-prefix="14"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tr:hover &#123;background-color: #D6EEEE;&#125;</code></pre>
+                <pre data-prefix="15"><code>&#160;&#160;&#160;&#160;&lt;/style&gt;</code></pre>
+                <pre data-prefix="16"><code>&#160;&#160;&#160;&#160;&lt;/head&gt;</code></pre>
+                <pre data-prefix="17"><code>&#160;&#160;&#160;&#160;&lt;body&gt;</code></pre>
+                <pre data-prefix="18"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;h2&gt;Hoverable Table&lt;/h2&gt;</code></pre>
+                <pre data-prefix="19"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;Move the mouse over the table rows to see the effect.&lt;/p&gt;</code></pre>
+                <pre data-prefix="20"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;table&gt;</code></pre>
+                <pre data-prefix="21"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+                <pre data-prefix="22"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;First Name&lt;/th&gt;</code></pre>
+                <pre data-prefix="23"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;Last Name&lt;/th&gt;</code></pre>
+                <pre data-prefix="24"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;Points&lt;/th&gt;</code></pre>
+                <pre data-prefix="25"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+                <pre data-prefix="26"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+                <pre data-prefix="27"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Peter&lt;/td&gt;</code></pre>
+                <pre data-prefix="28"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Griffin&lt;/td&gt;</code></pre>
+                <pre data-prefix="29"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;$100&lt;/td&gt;</code></pre>
+                <pre data-prefix="30"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+                <pre data-prefix="31"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+                <pre data-prefix="32"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Lois&lt;/td&gt;</code></pre>
+                <pre data-prefix="33"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Griffin&lt;/td&gt;</code></pre>
+                <pre data-prefix="34"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;$150&lt;/td&gt;</code></pre>
+                <pre data-prefix="35"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+                <pre data-prefix="36"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+                <pre data-prefix="37"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Joe&lt;/td&gt;</code></pre>
+                <pre data-prefix="38"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Swanson&lt;/td&gt;</code></pre>
+                <pre data-prefix="39"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;$300&lt;/td&gt;</code></pre>
+                <pre data-prefix="40"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+                <pre data-prefix="41"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+                <pre data-prefix="42"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Cleveland&lt;/td&gt;</code></pre>
+                <pre data-prefix="43"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Brown&lt;/td&gt;</code></pre>
+                <pre data-prefix="44"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;$250&lt;/td&gt;</code></pre>
+                <pre data-prefix="45"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+                <pre data-prefix="46"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/table&gt;</code></pre>
+                <pre data-prefix="47"><code>&#160;&#160;&#160;&#160;&lt;/body&gt;</code></pre>
+                <pre data-prefix="48"><code>&lt;/html&gt;</code></pre>
+                
+</div> 
+<div class="outputview">
+
+  <h3>Output</h3>
+  
+  <table class="hovertable">
+    <tr>
+      <th >First Name</th>
+      <th>Last Name</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>Peter</td>
+      <td>Griffin</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>Lois</td>
+      <td>Griffin</td>
+      <td>$150</td>
+    </tr>
+    <tr>
+      <td>Joe</td>
+      <td>Swanson</td>
+      <td>$300</td>
+    </tr>
+    <tr>
+      <td>Cleveland</td>
+      <td>Brown</td>
+      <td>$250</td>
+    </tr>
+  </table>
+
+
+
+
+</div>
+</div>
+<br>
+
 
 
 
