@@ -1122,6 +1122,92 @@
 </div>
 </div>
 <br>
+
+<h2><span class="wTitle">HTML Table Colspan & Rowspan</span></h2>
+<p>HTML tables can have cells that span over multiple rows and/or columns.</p>
+
+<h3>HTML Table - Colspan</h3>
+<p>To make a cell span over multiple columns, use the <span style="color: #04aa6d;">colspan</span> attribute:</p>
+<h3>Examples:</h3>
+        <div class="codebox">
+            <div class="mockup-code">
+    
+                <div class="code-header">
+                    <span class="dot"></span>
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div> 
+
+                <pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+                <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+                <pre data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;head&gt;</code></pre>
+                <pre data-prefix="4"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;style&gt;</code></pre>
+                <pre data-prefix="5"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;table, th, td &#123;</code></pre>
+                <pre data-prefix="6"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;border: 1px solid black;</code></pre>
+                <pre data-prefix="7"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;border-collapse: collapse;</code></pre>
+                <pre data-prefix="8"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#125;</code></pre>
+                <pre data-prefix="9"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;th, td &#123;</code></pre>
+                <pre data-prefix="10"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;padding: 5px;</code></pre>
+                <pre data-prefix="11"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;text-align: left;</code></pre>
+                <pre data-prefix="12"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#125;</code></pre>
+                <pre data-prefix="13"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/style&gt;</code></pre>
+                <pre data-prefix="14"><code>&#160;&#160;&#160;&#160;&lt;/head&gt;</code></pre>
+                <pre data-prefix="15"><code>&#160;&#160;&#160;&#160;&lt;body&gt;</code></pre>
+                <pre data-prefix="16"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;h2&gt;Cell that spans two columns&lt;/h2&gt;</code></pre>
+                <pre data-prefix="17"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;To make a cell span more than one column, use the colspan attribute.&lt;/p&gt;</code></pre>
+                <pre data-prefix="18"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;table style=&quot;width:100%&quot;&gt;</code></pre>
+                <pre data-prefix="19"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+                <pre data-prefix="20"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th colspan=&quot;2&quot;&gt;Name&lt;/th&gt;</code></pre>
+                <pre data-prefix="21"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;Age&lt;/th&gt;</code></pre>
+                <pre data-prefix="22"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+                <pre data-prefix="23"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+                <pre data-prefix="24"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Jill&lt;/td&gt;</code></pre>
+                <pre data-prefix="25"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Smith&lt;/td&gt;</code></pre>
+                <pre data-prefix="26"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;43&lt;/td&gt;</code></pre>
+                <pre data-prefix="27"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+                <pre data-prefix="28"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+                <pre data-prefix="29"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Eve&lt;/td&gt;</code></pre>
+                <pre data-prefix="30"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Jackson&lt;/td&gt;</code></pre>
+                <pre data-prefix="31"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;57&lt;/td&gt;</code></pre>
+                <pre data-prefix="32"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+                <pre data-prefix="33"><code>&#160;&#160;&#160;&#160;&lt;/table&gt;</code></pre>
+                <pre data-prefix="34"><code>&#160;&#160;&#160;&#160;&lt;/body&gt;</code></pre>
+                <pre data-prefix="35"><code>&lt;/html&gt;</code></pre>
+                
+              </div> 
+              <div class="outputview">
+              
+                  <h3>Output</h3>
+
+                  <h2>Cell that spans two columns</h2>
+<p>To make a cell span more than one column, use the colspan attribute.</p>
+
+<table style="width:100%">
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>57</td>
+  </tr>
+</table>
+
+
+</div>
+</div>
+<br>
+
+
+
+
+
 <div class="quiz-container">
   <h1>Practice Quiz</h1>
   <div id="quiz-content">
