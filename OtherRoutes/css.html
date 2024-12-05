@@ -96,7 +96,7 @@
 
 
         .codebox pre, .outputview p {
-            color: black; 
+            color: rgb(228, 223, 223); 
         }
 
         .outputview h1 {
@@ -127,7 +127,7 @@
         </p>
     </div>
 
-    <h1>What is CSS?</h1>
+    <h1 style="color: white;">What is CSS?</h1>
     <p>Cascading Style Sheets (CSS) is used to format the layout of a webpage.</p>
     <p>With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!</p>
     <div class="tip-box">
@@ -152,8 +152,10 @@
         </div>
     </div>
     <p>The most common way to add CSS, is to keep the styles in external CSS files. However, in this tutorial we will use inline and internal styles, because this is easier to demonstrate, and easier for you to try it yourself.</p>
-    <h2><span class="wTitle">HTML &lt;sup> Element</span></h2>
-    <p>The HTML &lt;sup> element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]:</p>
+    <h2><span class="wTitle">Inline CSS</span></h2>
+    <p>An inline CSS is used to apply a unique style to a single HTML element.</p>
+    <p>An inline CSS uses the style attribute of an HTML element.</p>
+    <p>The following example sets the text color of the &lt;h1> element to blue, and the text color of the &lt;p> element to red:</p>
     <br>
 
     <h3>Examples:</h3>
@@ -168,14 +170,236 @@
             <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
             <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
             <pre data-prefix="4"><code></code></pre>
-            <pre data-prefix="5"><code>&lt;p>This is &lt;sup>subscripted&lt;/sup> text.&lt;/p></code></pre>
+            <pre data-prefix="5"><code>&lt;h1 style="color:blue;">A Blue Heading&lt;/h1></code></pre>
             <pre data-prefix="6"><code></code></pre>
-            <pre data-prefix="7"><code>&lt;/body&gt;</code></pre>
-            <pre data-prefix="8"><code>&lt;/html&gt;</code></pre>
+            <pre data-prefix="7"><code>&lt;p style="color:red;">A red paragraph.&lt;/p></code></pre>
+            <pre data-prefix="8"><code></code></pre>
+            <pre data-prefix="9"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix="10"><code>&lt;/html&gt;</code></pre>
         </div>
         <div class="outputview">
             <h1>Output</h1>
-            <p>This is <sup>subscripted</sup> text.</p>
+            <h1 style="color:blue;">A Blue Heading</h1>
+            <p style="color:red;">A red paragraph.</p>
+
+        </div>
+    </div>
+    <br>
+    <h2><span class="wTitle">Internal CSS</span></h2>
+    <p>An internal CSS is used to define a style for a single HTML page.</p>
+    <p>An internal CSS is defined in the &lt;head> section of an HTML page, within a &lt;style> element.</p>
+    <p>The following example sets the text color of ALL the &lt;h1> elements (on that page) to blue, and the text color of ALL the &lt;p> elements to red. In addition, the page will be displayed with a "powderblue" background color: </p>
+    <br>
+
+    <h3>Examples:</h3>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;DOCTYPE html&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+            <pre data-prefix="4"><code>&lt;style></code></pre>
+            <pre data-prefix="5"><code>body {background-color: powderblue;}</code></pre>
+            <pre data-prefix="6"><code>h1   {color: blue;}</code></pre>
+            <pre data-prefix="7"><code>p    {color: red;}</code></pre>
+            <pre data-prefix="8"><code>&lt;/style></code></pre>
+            <pre data-prefix="9"><code>&lt;/head></code></pre>
+            <pre data-prefix="10"><code>&lt;body></code></pre>
+            <pre data-prefix="11"><code></code></pre>
+            <pre data-prefix="12"><code>&lt;h1>This is a heading&lt;/h1></code></pre>
+            <pre data-prefix="13"><code>&lt;p>This is a paragraph.&lt;/p></code></pre>
+            <pre data-prefix="14"><code></code></pre>
+            <pre data-prefix="15"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix="16"><code>&lt;/html&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h1>Output</h1>
+            <h1 style="color:blue;">This is a heading</h1>
+            <p style="color:red;">This is a paragraph.</p>
+
+        </div>
+    </div>
+    <br>
+    <h2><span class="wTitle">CSS Colors, Fonts and Sizes</span></h2>
+    <p>Here, we will demonstrate some commonly used CSS properties. You will learn more about them later.</p>
+    <p>The CSS color property defines the text color to be used.</p>
+    <p>The CSS font-family property defines the font to be used.</p>
+    <p>The CSS font-size property defines the text size to be used.</p>
+    <br>
+
+    <h3>Examples:</h3>
+    <p>Use of CSS color, font-family and font-size properties:</p>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;DOCTYPE html&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+            <pre data-prefix="4"><code>&lt;style></code></pre>
+            <pre data-prefix="5"><code>h1 {</code></pre>
+            <pre data-prefix="6"><code>color: blue;</code></pre>
+            <pre data-prefix="7"><code>font-family: verdana;</code></pre>
+            <pre data-prefix="8"><code>font-size: 300%;</code></pre>
+            <pre data-prefix="9"><code>}</code></pre>
+            <pre data-prefix="10"><code>p  {</code></pre>
+            <pre data-prefix="11"><code>color: red;</code></pre>
+            <pre data-prefix="12"><code>font-family: courier;</code></pre>
+            <pre data-prefix="13"><code>font-size: 160%;</code></pre>
+            <pre data-prefix="14"><code>}</code></pre>
+            <pre data-prefix="15"><code>&lt;/style></code></pre>
+            <pre data-prefix="16"><code>&lt;/head></code></pre>
+            <pre data-prefix="17"><code>&lt;body></code></pre>
+            <pre data-prefix="18"><code></code></pre>
+            <pre data-prefix="19"><code>&lt;h1>This is a heading&lt;/h1></code></pre>
+            <pre data-prefix="20"><code>&lt;p>This is a paragraph.&lt;/p></code></pre>
+            <pre data-prefix="21"><code></code></pre>
+            <pre data-prefix="22"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix="23"><code>&lt;/html&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h1 style="color: blue; font-size: 300%;">This is a heading</h1>
+            <p style="color:red; font-size: 160%;">This is a paragraph.</p>
+
+        </div>
+    </div>
+    <br>
+    <h2><span class="wTitle">CSS Border</span></h2>
+    <p>The CSS border property defines a border around an HTML element.</p>
+    <p>Tip: You can define a border for nearly all HTML elements.</p>
+    <br>
+
+    <h3>Examples:</h3>
+    <p>Use of CSS border property: </p>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;DOCTYPE html&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+            <pre data-prefix="4"><code>&lt;style></code></pre>
+            <pre data-prefix="5"><code>p {</code></pre>
+            <pre data-prefix="6"><code>border: 2px solid powderblue;</code></pre>
+            <pre data-prefix="7"><code>}</code></pre>
+            <pre data-prefix="8"><code>&lt;/style></code></pre>
+            <pre data-prefix="9"><code>&lt;/head></code></pre>
+            <pre data-prefix="10"><code>&lt;body></code></pre>
+            <pre data-prefix="11"><code></code></pre>
+            <pre data-prefix="12"><code>&lt;h1>This is a heading&lt;/h1></code></pre>
+            <pre data-prefix="13"><code></code></pre>
+            <pre data-prefix="14"><code>&lt;p>This is a paragraph.&lt;/p></code></pre>
+            <pre data-prefix="15"><code>&lt;p>This is a paragraph.&lt;/p></code></pre>
+            <pre data-prefix="16"><code>&lt;p>This is a paragraph.&lt;/p></code></pre>
+            <pre data-prefix="17"><code></code></pre>
+            <pre data-prefix="18"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix="19"><code>&lt;/html&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h1 style="color: rgb(0, 0, 0); font-size: 300%;">This is a heading</h1>
+            <p style="border: 2px solid rgb(0, 0, 0); color: black; display: inline;">This is a paragraph.</p>
+            <br>
+            <p style="border: 2px solid rgb(0, 0, 0); color: black; display: inline;">This is a paragraph.</p>
+            <br>
+            <p style="border: 2px solid rgb(2, 2, 2); color: black; display: inline;">This is a paragraph.</p>
+        </div>
+    </div>
+    <br>
+    <h2><span class="wTitle">CSS Padding</span></h2>
+    <p>The CSS padding property defines a padding (space) between the text and the border.</p>
+    <br>
+
+    <h3>Examples:</h3>
+    <p>Use of CSS border and padding properties:</p>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;DOCTYPE html&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+            <pre data-prefix="4"><code>&lt;style></code></pre>
+            <pre data-prefix="5"><code>p {</code></pre>
+            <pre data-prefix="6"><code>border: 2px solid powderblue;</code></pre>
+            <pre data-prefix="7"><code>padding: 30px;</code></pre>
+            <pre data-prefix="8"><code>}</code></pre>
+            <pre data-prefix="9"><code>&lt;/style></code></pre>
+            <pre data-prefix="10"><code>&lt;/head></code></pre>
+            <pre data-prefix="11"><code>&lt;body></code></pre>
+            <pre data-prefix="12"><code></code></pre>
+            <pre data-prefix="14"><code>&lt;h1>This is a heading&lt;/h1></code></pre>
+            <pre data-prefix="15"><code></code></pre>
+            <pre data-prefix="16"><code>&lt;p>This is a paragraph.&lt;/p></code></pre>
+            <pre data-prefix="17"><code>&lt;p>This is a paragraph.&lt;/p></code></pre>
+            <pre data-prefix="18"><code>&lt;p>This is a paragraph.&lt;/p></code></pre>
+            <pre data-prefix="19"><code></code></pre>
+            <pre data-prefix="20"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix=""><code>&lt;/html&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h1 style="color: rgb(0, 0, 0); font-size: 300%;">This is a heading</h1>
+            <p style="border: 2px solid rgb(0, 0, 0); color: black; display: inline;">This is a paragraph.</p>
+            <br>
+            <p style="border: 2px solid rgb(0, 0, 0); color: black; display: inline; padding:40px;">This is a paragraph.</p>
+            <br>
+            <p style="border: 2px solid rgb(2, 2, 2); color: black; display: inline;">This is a paragraph.</p>
+        </div>
+    </div>
+    <br>
+    <h2><span class="wTitle">CSS Margin</span></h2>
+    <p>The CSS margin property defines a margin (space) outside the border.</p>
+    <br>
+
+    <h3>Examples:</h3>
+    <p>Use of CSS border and margin properties:</p>
+    <div class="codebox">
+        <div class="mockup-code">
+            <div class="code-header">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <pre data-prefix="1"><code>&lt;DOCTYPE html&gt;</code></pre>
+            <pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+            <pre data-prefix="3"><code>&lt;body&gt;</code></pre>
+            <pre data-prefix="4"><code>&lt;style></code></pre>
+            <pre data-prefix="5"><code>p {</code></pre>
+            <pre data-prefix="6"><code>border: 2px solid powderblue;</code></pre>
+            <pre data-prefix="7"><code>margin: 30px;</code></pre>
+            <pre data-prefix="8"><code>}</code></pre>
+            <pre data-prefix="9"><code>&lt;/style></code></pre>
+            <pre data-prefix="10"><code>&lt;/head></code></pre>
+            <pre data-prefix="11"><code>&lt;body></code></pre>
+            <pre data-prefix="12"><code></code></pre>
+            <pre data-prefix="14"><code>&lt;h1>This is a heading&lt;/h1></code></pre>
+            <pre data-prefix="15"><code></code></pre>
+            <pre data-prefix="16"><code>&lt;p>This is a paragraph.&lt;/p></code></pre>
+            <pre data-prefix="17"><code>&lt;p>This is a paragraph.&lt;/p></code></pre>
+            <pre data-prefix="18"><code>&lt;p>This is a paragraph.&lt;/p></code></pre>
+            <pre data-prefix="19"><code></code></pre>
+            <pre data-prefix="20"><code>&lt;/body&gt;</code></pre>
+            <pre data-prefix=""><code>&lt;/html&gt;</code></pre>
+        </div>
+        <div class="outputview">
+            <h1 style="color: rgb(0, 0, 0); font-size: 300%;">This is a heading</h1>
+            <p style="border: 2px solid rgb(0, 0, 0); color: black; display: inline; margin:40px;">This is a paragraph.</p>
+            <br>
+            <p style="border: 2px solid rgb(0, 0, 0); color: black; display: inline; margin:40px;">This is a paragraph.</p>
+            <br>
+            <p style="border: 2px solid rgb(2, 2, 2); color: black; display: inline; margin:40px;">This is a paragraph.</p>
         </div>
     </div>
 </body>
