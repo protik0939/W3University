@@ -1,4 +1,4 @@
-input {
+.quiz-container input {
   appearance: none;
   border-radius: 50%;
   width: 16px;
@@ -10,7 +10,7 @@ input {
   top: 4px;
 }
 
-input:checked {
+.quiz-container input:checked {
   border: 6px solid #04aa6d;
 }
 
