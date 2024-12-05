@@ -4,77 +4,9 @@
 /* Body Styling */
 body {
     color: white;
-    font-family: "Baloo Da 2", serif;
-    
-
-    
+    font-family: "Baloo Da 2", serif;    
 }
 
-.wTitle {
-    border: solid #04aa6d 2px;
-    color: #04aa6d;
-    border-right: 0px;
-    border-top: 0px;
-    padding: 2px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 10px;
-}
-  
-.codebox {
-    width: 100%;
-    display: flex;
-}
-
-/* Code box styling */
-.mockup-code {
-    background-color: #053122;
-    color: #f5f5f7;
-    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
-    border-radius: 8px 0px 0px 8px;
-    font-family: 'Courier New', monospace;
-    font-size: 1rem;
-    width: 50%;
-    overflow-x: auto;
-    position: relative;
-}
-
-.code-header {
-    display: flex;
-    gap: 0.5rem;
-    padding: 0.5rem 0;
-    position: absolute;
-    top: 0.5rem;
-    left: 1rem;
-}
-
-.dot {
-    width: 0.5rem;
-    height: 0.5rem;
-    background-color: #04aa6d;
-    border-radius: 50%;
-}
-
-.mockup-code pre {
-    margin: 0;
-}
-
-.mockup-code pre::before {
-    content: attr(data-prefix);
-    color: #04aa6d;
-    margin-right: 1rem;
-    min-width: 2rem;
-    text-align: right;
-}
-
-.outputview {
-    padding: 10px;
-    background-color: #ffffff;
-    color: #000000;
-    width: 50%;
-    border-radius: 0px 8px 8px 0px;
-    overflow: auto;
-}
 
 .button {
     display: inline-block;
@@ -365,47 +297,3 @@ a:hover {
   .feedback.correct {
     color: #00d084; 
   }
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-  
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-/* For Customizing Scrollbar */
-
-::-webkit-scrollbar {
-    width: 8px;
-    height: 4px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #04aa6d95;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}

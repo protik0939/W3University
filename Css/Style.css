@@ -262,7 +262,17 @@ body {
     /* Rounded scrollbar thumb */
 }
 
+.sideBar::-webkit-scrollbar-thumb:hover {
+    background-color: #ffffff95;
+    /* Color of the scrollbar thumb */
+    border-radius: 0px;
+    /* Rounded scrollbar thumb */
+}
+
+
 .sideBar::-webkit-scrollbar-track {
     background-color: transparent;
     /* Color of the scrollbar track */
 }
+
+

@@ -1,6 +1,7 @@
 /* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap');
 
+
 /* Body Styling */
 body {
     color: white;
@@ -18,79 +19,17 @@ h6 {
     margin: 0;
 }
 
-.codebox {
-    width: 100%;
-    display: flex;
-}
-
-.wTitle {
-    border: solid #04aa6d 2px;
-    color: #04aa6d;
-    border-right: 0px;
-    border-top: 0px;
-    padding: 2px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 10px;
-}
-
-/* Code box styling */
-.mockup-code {
-    background-color: #053122;
-    color: #f5f5f7;
-    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
-    border-radius: 8px 0px 0px 8px;
-    font-family: 'Courier New', monospace;
-    font-size: 1rem;
-    width: 50%;
-    overflow-x: auto;
-    position: relative;
-}
-
-.code-header {
-    display: flex;
-    gap: 0.5rem;
-    padding: 0.5rem 0;
-    position: absolute;
-    top: 0.5rem;
-    left: 1rem;
-}
-
-.dot {
-    width: 0.5rem;
-    height: 0.5rem;
-    background-color: #04aa6d;
-    border-radius: 50%;
-}
-
-.mockup-code pre {
-    margin: 0;
-}
-
-.mockup-code pre::before {
-    content: attr(data-prefix);
-    color: #04aa6d;
-    margin-right: 1rem;
-    min-width: 2rem;
-    text-align: right;
-}
-
-.outputview {
-    padding: 10px;
-    background-color: #ffffff;
-    color: #000000;
-    width: 50%;
-    border-radius: 0px 8px 8px 0px;
-}
 
 
 .tip-box {
-    background-color: #fff8b0; /* Yellow background */
+    background-color: #fff8b0;
+    /* Yellow background */
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-family: Arial, sans-serif;
 }
+
 .tip-text {
     font-size: 14px;
     color: #333;
@@ -99,30 +38,31 @@ h6 {
 /* rafir paknami */
 
 .syntax-box {
-    background-color: #005a35;; 
+    background-color: #005a35;
+    ;
     border: 1px solid #ccc;
     padding: 10px;
-    border-radius: 10px; 
+    border-radius: 10px;
     font-family: Arial, sans-serif;
-   
-  }
 
-  .syntax-box code {
+}
+
+.syntax-box code {
     display: block;
-    background-color:rgb(21, 32, 43);
-    color: #d4d4d4; 
+    background-color: rgb(21, 32, 43);
+    color: #d4d4d4;
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;
     font-size: 14px;
-  }
-  
+}
+
 
 
 /* rafir paknami */
 
 .highlight {
-    background-color: rgb(1, 43, 30) ;
+    background-color: rgb(1, 43, 30);
     color: tomato;
     /* padding: 2.5rem 1.5rem 1.5rem 1.5rem; */
     border-radius: 8px;
@@ -134,8 +74,8 @@ h6 {
 }
 
 
-.highlightStyles{
-    background-color: rgb(1, 43, 30) ;
+.highlightStyles {
+    background-color: rgb(1, 43, 30);
     color: tomato;
     padding-bottom: 25px;
     border-radius: 8px;
@@ -184,23 +124,23 @@ tr:nth-child(even) {
     padding: 20px;
     border-radius: 8px;
     width: 800px;
-   
-   
+
+
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .quiz-container h1 {
+}
+
+.quiz-container h1 {
     font-size: 24px;
     margin-bottom: 20px;
-  }
-  
-  .question {
+}
+
+.question {
     font-size: 18px;
     margin-bottom: 15px;
-  }
-  
-  .options label {
+}
+
+.options label {
     display: block;
     background-color: #29293d;
     padding: 10px;
@@ -208,17 +148,17 @@ tr:nth-child(even) {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  .options input[type="radio"] {
+}
+
+.options input[type="radio"] {
     margin-right: 10px;
-  }
-  
-  .options label:hover {
+}
+
+.options label:hover {
     background-color: #00d084;
-  }
-  
-  .submit-btn {
+}
+
+.submit-btn {
     background-color: #00d084;
     color: #fff;
     border: none;
@@ -227,65 +167,18 @@ tr:nth-child(even) {
     cursor: pointer;
     font-size: 16px;
     margin-top: 20px;
-  }
-  
-  .submit-btn:hover {
+}
+
+.submit-btn:hover {
     background-color: #00b874;
-  }
-  
-  .feedback {
+}
+
+.feedback {
     margin-top: 10px;
     font-size: 16px;
-    color: #f44336; 
-  }
-  
-  .feedback.correct {
-    color: #00d084; 
-  }
-
-
-
-
-/* Making Responsive */
-
-@media only screen and (max-width: 600px) {
-
-    .codebox {
-        width: 100%;
-        flex-direction: column;
-    }
-
-/* Code box styling */
-.mockup-code {
-    border-radius: 8px 8px 0px 0px;
-    width: auto;
-    font-size: medium;
+    color: #f44336;
 }
 
-
-    .outputview {
-        width: auto;
-        border-radius: 0px 0px 8px 8px;
-        overflow: auto;
-    }
-
-}
-
-
-
-
-/* For Customizing Scrollbar */
-
-::-webkit-scrollbar {
-    width: 8px;
-    height: 4px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #04aa6d95;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: transparent;
+.feedback.correct {
+    color: #00d084;
 }
