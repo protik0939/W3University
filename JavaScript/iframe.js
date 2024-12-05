@@ -1,6 +1,6 @@
 const questions = [
     {
-      question: "What is the purpose of the <iframe> element in HTML?",
+      question: "What is the purpose of the &lt;iframe&gt; element in HTML?",
       options: [
         "To embed another webpage within a webpage",
         "To include multimedia content",
@@ -10,12 +10,12 @@ const questions = [
       correct: "To embed another webpage within a webpage",
     },
     {
-      question: "Which attribute specifies the URL of the page to embed in an <iframe>?",
+      question: "Which attribute specifies the URL of the page to embed in an &lt;iframe&gt;?",
       options: ["src", "href", "link", "url"],
       correct: "src",
     },
     {
-      question: "How do you set the width of an <iframe> in HTML?",
+      question: "How do you set the width of an &lt;iframe&gt; in HTML?",
       options: [
         "Using the width attribute",
         "Using the size attribute",
@@ -25,12 +25,12 @@ const questions = [
       correct: "Using the width attribute",
     },
     {
-      question: "Can an <iframe> be styled with CSS?",
+      question: "Can an &lt;iframe&gt; be styled with CSS?",
       options: ["Yes", "No"],
       correct: "Yes",
     },
     {
-      question: "Which attribute prevents an <iframe> from being resized by the user?",
+      question: "Which attribute prevents an &lt;iframe&gt; from being resized by the user?",
       options: ["scrolling", "frameborder", "resizable", "sandbox"],
       correct: "scrolling",
     },

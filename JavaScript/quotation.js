@@ -1,28 +1,28 @@
 const questions = [
     {
         question: "Which HTML element is used to represent a block-level quotation that is typically indented?",
-        options: ["&lt;q&gt;", "&lt;blockquote&gt;", "&lt;address&gt;", "&lt;cite&gt;"],
-        correct: "&lt;blockquote&gt;",
+        options: ["<q>", "<blockquote>", "<address>", "<cite>"],
+        correct: "<blockquote>",
       },
       {
-        question: "What does the &lt;q&gt; tag represent in HTML?",
+        question: "What does the <q> tag represent in HTML?",
         options: ["A block-level quote", "A citation of a reference", "A short inline quotation", "A bolded text"],
         correct: "A short inline quotation",
       },
       {
         question: "Which HTML element is used to define an abbreviation or acronym?",
-        options: ["&lt;abbr&gt;", "&lt;bdo&gt;", "&lt;blockquote&gt;", "&lt;q&gt;"],
-        correct: "&lt;abbr&gt;",
+        options: ["<abbr>", "<bdo>", "<blockquote>", "<q>"],
+        correct: "<abbr>",
       },
       {
-        question: "What is the purpose of the &lt;address&gt; tag in HTML?",
+        question: "What is the purpose of the <address> tag in HTML?",
         options: ["To display a citation", "To mark a physical address", "To indicate a quote", "To emphasize a block of text"],
         correct: "To mark a physical address",
       },
       {
         question: "Which HTML element is used to provide the source or reference for a citation?",
-        options: ["&lt;blockquote&gt;", "&lt;bdo&gt;", "&lt;cite&gt;", "&lt;q&gt;"],
-        correct: "&lt;cite&gt;",
+        options: ["<blockquote>", "<bdo>", "<cite>", "<q>"],
+        correct: "<cite>",
       },
 ];
 
