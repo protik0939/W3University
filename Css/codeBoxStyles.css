@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
+.color-tag-maintags {
+    color: tomato; /* BlueViolet for </ul> */
+}
+
+.color-tag-othertag {
+    color: rgb(0, 255, 174);
+}
+
 
 .codebox {
     width: 100%;

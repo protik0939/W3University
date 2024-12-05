@@ -146,3 +146,4 @@ loadQuestion();
 // Event listener for the submit button
 submitBtn.addEventListener("click", checkAnswer);
 
+
