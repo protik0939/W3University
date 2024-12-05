@@ -1205,6 +1205,76 @@
 <br>
 
 
+<h3>HTML Table - Rowspan</h3>
+<p>To make a cell span over multiple rows, use the <span style="color: #04aa6d;">roespan</span> attribute:</p>
+
+<h3>Examples:</h3>
+        <div class="codebox">
+            <div class="mockup-code">
+    
+                <div class="code-header">
+                    <span class="dot"></span>
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+
+<pre data-prefix="1"><code>&lt;!DOCTYPE html&gt;</code></pre>
+<pre data-prefix="2"><code>&lt;html&gt;</code></pre>
+<pre data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;head&gt;</code></pre>
+<pre data-prefix="4"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;style&gt;</code></pre>
+<pre data-prefix="5"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;table, th, td &#123;</code></pre>
+<pre data-prefix="6"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;border: 1px solid black;</code></pre>
+<pre data-prefix="7"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;border-collapse: collapse;</code></pre>
+<pre data-prefix="8"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#125;</code></pre>
+<pre data-prefix="9"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/style&gt;</code></pre>
+<pre data-prefix="10"><code>&#160;&#160;&#160;&#160;&lt;/head&gt;</code></pre>
+<pre data-prefix="11"><code>&#160;&#160;&#160;&#160;&lt;body&gt;</code></pre>
+<pre data-prefix="12"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;h2&gt;Cell that spans two rows&lt;/h2&gt;</code></pre>
+<pre data-prefix="13"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;To make a cell span more than one row, use the rowspan attribute.&lt;/p&gt;</code></pre>
+<pre data-prefix="14"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;table style=&quot;width:100%&quot;&gt;</code></pre>
+<pre data-prefix="15"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="16"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th&gt;Name&lt;/th&gt;</code></pre>
+<pre data-prefix="17"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;Jill&lt;/td&gt;</code></pre>
+<pre data-prefix="18"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="19"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="20"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;th rowspan=&quot;2&quot;&gt;Phone&lt;/th&gt;</code></pre>
+<pre data-prefix="21"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;555-1234&lt;/td&gt;</code></pre>
+<pre data-prefix="22"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="23"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;tr&gt;</code></pre>
+<pre data-prefix="24"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;td&gt;555-8745&lt;/td&gt;</code></pre>
+<pre data-prefix="25"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/tr&gt;</code></pre>
+<pre data-prefix="26"><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/table&gt;</code></pre>
+<pre data-prefix="27"><code>&#160;&#160;&#160;&#160;&lt;/body&gt;</code></pre>
+<pre data-prefix="28"><code>&lt;/html&gt;</code></pre>
+
+</div> 
+<div class="outputview">
+
+    <h3>Output</h3>
+
+    <h2>Cell that spans two rows</h2>
+<p>To make a cell span more than one row, use the rowspan attribute.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <td>Jill</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>555-1234</td>
+  </tr>
+  <tr>
+    <td>555-8745</td>
+  </tr>
+</table>
+
+
+</div>
+</div>
+<br>
+
+
 
 
 
