@@ -3,10 +3,9 @@
 .quiz-container {
     background-color: #1e1e2f;
     padding: 20px;
+    margin: 100px auto;
     border-radius: 8px;
-    width: 800px;
-   
-   
+    max-width: 700px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
@@ -63,3 +62,82 @@
   .feedback.correct {
     color: #00d084; 
   }
+
+
+
+  .red-fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 1000px #ff0000;
+    animation: fade-out 1s ease forwards;
+}
+
+
+@keyframes fade-out {
+  0% {
+      opacity: 0.5;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+
+.js-confetti{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+
+@keyframes confetti-slow {
+  0% {
+    transform: translate3d(0, 0, 0) rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(180deg);
+  }
+}
+
+@keyframes confetti-medium {
+  0% {
+    transform: translate3d(0, 0, 0) rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: translate3d(100px, 105vh, 0) rotateX(100deg) rotateY(360deg);
+  }
+}
+
+@keyframes confetti-fast {
+  0% {
+    transform: translate3d(0, 0, 0) rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg);
+  }
+}
+
+.confetti {
+  position: absolute;
+  top: -10px;
+}
+
+.confetti--animation-slow {
+  animation: confetti-slow 2s linear forwards;
+}
+
+.confetti--animation-medium {
+  animation: confetti-medium 1.5s linear forwards;
+}
+
+.confetti--animation-fast {
+  animation: confetti-fast 1s linear forwards;
+}
