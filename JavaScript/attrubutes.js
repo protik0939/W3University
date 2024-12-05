@@ -77,10 +77,10 @@ function triggerRedFade() {
 
 function triggerConfetti() {
   const container = document.querySelector('.js-confetti');
-  const confettiColors = ['#EF2964', '#00C09D', '#2D87B0', '#48485E', '#EFFF1D'];
+  const confettiColors = ['#EF2964', '#00C09D', '#2D87B0', '#48485E', '#EFFF1D', '#04aa6d'];
   const confettiAnimations = ['slow', 'medium', 'fast'];
 
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 40; i++) {
     const confetti = document.createElement('div');
     const size = Math.random() * 8 + 5 + 'px';
     const color = confettiColors[Math.floor(Math.random() * confettiColors.length)];
@@ -95,7 +95,6 @@ function triggerConfetti() {
     confetti.style.top = top;
 
     container.appendChild(confetti);
-
     // Remove confetti after animation
     setTimeout(() => {
       confetti.remove();
