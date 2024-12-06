@@ -1,385 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Css/siyumStyles.css" />
-    
-    <link rel="stylesheet" href="../Css/ScrollbarStyle.css">
-    <link rel="stylesheet" href="../Css/quizStyles.css">
-    <link rel="stylesheet" href="../Css/codeBoxStyles.css">
-    <title>Form Attributes in HTML</title>
-  </head>
-  <body>
-    <h2>HTML Form Attributes</h2>
-    <p>
-      This chapter describes the different attributes for the HTML
-      <span style="color: #04aa6d">&lt;form&gt;</span> element.
-    </p>
-    <!--action attr-->
 
-    <h3><span class="wTitle">The Action Attribute</span></h3>
-    <p>
-      The <span style="color: #04aa6d">action</span> attribute defines the
-      action to be performed when the form is submitted.<br />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./Css/siyumStyles.css" />
 
-      Usually, the form data is sent to a file on the server when the user
-      clicks on the submit button.<br /><br />
+  <link rel="stylesheet" href="../Css/ScrollbarStyle.css">
+  <link rel="stylesheet" href="../Css/quizStyles.css">
+  <link rel="stylesheet" href="../Css/codeBoxStyles.css">
+  <title>Form Attributes in HTML</title>
+</head>
 
-      In the example below, the form data is sent to a file called
-      <span style="color: #04aa6d"> "action_page.php" </span>. This file
-      contains a server-side script that handles the form data:
-    </p>
+<body>
+  <h2><span class="wTitle">HTML Form Attributes</span></h2>
 
-    <h3>Examples</h3>
-    <div class="codebox">
-      <div class="mockup-code">
-        <div class="code-header">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
+  <p>
+    This chapter describes the different attributes for the HTML
+    <span style="color: #04aa6d">&lt;form&gt;</span> element.
+  </p>
+  <!--action attr-->
 
-        <pre
-          data-prefix="1"
-        ><code>&lt;form action=&quot;/action_page.php&quot;&gt;</code></pre>
-        <pre
-          data-prefix="2"
-        ><code>&#160;&#160;&#160;&#160;&lt;label for=&quot;fname&quot;&gt;First name:&lt;/label&gt;&lt;br&gt;</code></pre>
-        <pre
-          data-prefix="3"
-        ><code>&#160;&#160;&#160;&#160;&lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;fname&quot; value=&quot;John&quot;&gt;&lt;br&gt;</code></pre>
-        <pre
-          data-prefix="4"
-        ><code>&#160;&#160;&#160;&#160;&lt;label for=&quot;lname&quot;&gt;Last name:&lt;/label&gt;&lt;br&gt;</code></pre>
-        <pre
-          data-prefix="5"
-        ><code>&#160;&#160;&#160;&#160;&lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lname&quot; value=&quot;Doe&quot;&gt;&lt;br&gt;&lt;br&gt;</code></pre>
-        <pre
-          data-prefix="6"
-        ><code>&#160;&#160;&#160;&#160;&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;</code></pre>
-        <pre data-prefix="7"><code>&lt;/form&gt;</code></pre>
+  <h3><span class="wTitle">The Action Attribute</span></h3>
+  <p>
+    The <span style="color: #04aa6d">action</span> attribute defines the
+    action to be performed when the form is submitted.<br />
+
+    Usually, the form data is sent to a file on the server when the user
+    clicks on the submit button.<br /><br />
+
+    In the example below, the form data is sent to a file called
+    <span style="color: #04aa6d"> "action_page.php" </span>. This file
+    contains a server-side script that handles the form data:
+  </p>
+
+  <h3>Examples</h3>
+  <div class="codebox">
+    <div class="mockup-code">
+      <div class="code-header">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
-      <div class="outputview">
-        <h3 class="outputHeading">Output</h3>
-        <form action="/action_page.php">
-          <label for="fname">First name:</label><br />
-          <input type="text" id="fname" name="fname" value="John" /><br />
-          <label for="lname">Last name:</label><br />
-          <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
+
+      <pre data-prefix="1"><code>&lt;<span style="color: tomato;">form</span> action=&quot;/action_page.php&quot;&gt;</code>
+</pre>
+      <pre
+        data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">label</span> for=&quot;fname&quot;&gt;First name:&lt;<span style="color: rgb(0, 255, 174);">/label</span>&gt;&lt;<span style="color: tomato;">br</span>&gt;</code> </pre>
+      <pre
+        data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: tomato;">input</span> type=&quot;text&quot; id=&quot;fname&quot; name=&quot;fname&quot; value=&quot;John&quot;&gt;&lt;<span style="color: tomato;">br</span>&gt;</code> </pre>
+      <pre
+        data-prefix="4"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: rgb(0, 255, 174);">label</span> for=&quot;lname&quot;&gt;Last name:&lt;<span style="color: rgb(0, 255, 174);">/label</span>&gt;&lt;<span style="color: tomato;">br</span>&gt;</code></pre>
+      <pre
+        data-prefix="5"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: tomato;">input</span> type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lname&quot; value=&quot;Doe&quot;&gt;&lt;<span style="color: tomato;">br</span>&gt;&lt;<span style="color: tomato;">br</span>&gt;</code></pre>
+      <pre
+        data-prefix="6"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: tomato;">input</span> type=&quot;submit&quot; value=&quot;Submit&quot;&gt;</code> </pre>
+      <pre data-prefix="7"><code>&lt;<span style="color: tomato;">/form</span>&gt;</code>
+        </pre>
     </div>
-
-    <!--target attr-->
-    <h3 style="margin-top: 40px">
-      <span class="wTitle">The Target Attribute</span>
-    </h3>
-    <p>
-      The <span style="color: #04aa6d">target</span> attribute specifies where
-      to display the response after submitting the form.<br />
-
-      It can take values like <span style="color: #04aa6d">_self</span>,
-      <span style="color: #04aa6d">_blank</span>,
-      <span style="color: #04aa6d">_parent</span>, or
-      <span style="color: #04aa6d">_top</span>.<br /><br />
-
-      In the example below, the response will open in a new tab or window due to
-      the <span style="color: #04aa6d">target="_blank"</span> attribute:
-    </p>
-
-    <h3>Examples</h3>
-    <div class="codebox">
-      <div class="mockup-code">
-        <div class="code-header">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-
-        <pre
-          data-prefix="1"
-        ><code>&lt;form action=&quot;/action_page.php&quot; target=&quot;_blank&quot;&gt;</code></pre>
-        <pre
-          data-prefix="2"
-        ><code>&#160;&#160;&#160;&#160;&lt;label for=&quot;fname&quot;&gt;First name:&lt;/label&gt;&lt;br&gt;</code></pre>
-        <pre
-          data-prefix="3"
-        ><code>&#160;&#160;&#160;&#160;&lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;fname&quot; value=&quot;John&quot;&gt;&lt;br&gt;</code></pre>
-        <pre
-          data-prefix="4"
-        ><code>&#160;&#160;&#160;&#160;&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;</code></pre>
-        <pre data-prefix="5"><code>&lt;/form&gt;</code></pre>
-      </div>
-      <div class="outputview">
-        <h3 class="outputHeading">Output</h3>
-        <form action="/action_page.php" target="_blank">
-          <label for="fname">First name:</label><br />
-          <input type="text" id="fname" name="fname" value="John" /><br /><br />
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
+    <div class="outputview">
+      <h3 class="outputHeading">Output</h3>
+      <form action="/action_page.php">
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="John" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
     </div>
-
-    <div class="table-container">
-      <table border="1" cellspacing="0" cellpadding="8">
-        <tr>
-          <th>Attribute</th>
-          <th>Description</th>
-        </tr>
-        <tr>
-          <td><code>_self</code></td>
-          <td>
-            Default. Opens the document in the same window/tab as it was
-            clicked.
-          </td>
-        </tr>
-        <tr>
-          <td><code>_blank</code></td>
-          <td>Opens the document in a new window or tab.</td>
-        </tr>
-        <tr>
-          <td><code>_parent</code></td>
-          <td>Opens the document in the parent frame.</td>
-        </tr>
-        <tr>
-          <td><code>_top</code></td>
-          <td>Opens the document in the full body of the window.</td>
-        </tr>
-        <tr>
-          <td><code>framename</code></td>
-          <td>Opens the document in a named iframe.</td>
-        </tr>
-      </table>
-    </div>
-
-    <!--method attr-->
-
-    <h3 style="margin-top: 40px">
-      <span class="wTitle">The Method Attribute</span>
-    </h3>
-    <p>
-      The <span style="color: #04aa6d">method</span> attribute specifies how to
-      send form data.<br />
-      It can use <span style="color: #04aa6d">GET</span> or
-      <span style="color: #04aa6d">POST</span> methods.<br />
-
-      In the example below, the form data is sent using the
-      <span style="color: #04aa6d">method="post"</span>:
-    </p>
-
-    <h3>Examples</h3>
-    <div class="codebox">
-      <div class="mockup-code">
-        <div class="code-header">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-
-        <pre
-          data-prefix="1"
-        ><code>&lt;form action=&quot;/action_page.php&quot; method=&quot;post&quot;&gt;</code></pre>
-        <pre
-          data-prefix="2"
-        ><code>&#160;&#160;&#160;&#160;&lt;label for=&quot;lname&quot;&gt;Last name:&lt;/label&gt;&lt;br&gt;</code></pre>
-        <pre
-          data-prefix="3"
-        ><code>&#160;&#160;&#160;&#160;&lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lname&quot; value=&quot;Doe&quot;&gt;&lt;br&gt;</code></pre>
-        <pre
-          data-prefix="4"
-        ><code>&#160;&#160;&#160;&#160;&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;</code></pre>
-        <pre data-prefix="5"><code>&lt;/form&gt;</code></pre>
-      </div>
-      <div class="outputview">
-        <h3 class="outputHeading">Output</h3>
-        <form action="/action_page.php" method="post">
-          <label for="lname">Last name:</label><br />
-          <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
-    </div>
-
-    <!--autocomplete attr-->
-    <h3 style="margin-top: 40px">
-      <span class="wTitle">The Autocomplete Attribute</span>
-    </h3>
-    <p>
-      The <span style="color: #04aa6d">autocomplete</span> attribute specifies
-      whether the browser should autocomplete form fields by using previously
-      entered data on same type of input field.<br />
-
-      In the example below, the form has
-      <span style="color: #04aa6d">autocomplete="on"</span>:
-    </p>
-
-    <h3>Examples</h3>
-    <div class="codebox">
-      <div class="mockup-code">
-        <div class="code-header">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-
-        <pre
-          data-prefix="1"
-        ><code>&lt;form action=&quot;/action_page.php&quot; autocomplete=&quot;on&quot;&gt;</code></pre>
-        <pre
-          data-prefix="2"
-        ><code>&#160;&#160;&#160;&#160;&lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;&lt;br&gt;</code></pre>
-        <pre
-          data-prefix="3"
-        ><code>&#160;&#160;&#160;&#160;&lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot;&gt;&lt;br&gt;</code></pre>
-        <pre
-          data-prefix="4"
-        ><code>&#160;&#160;&#160;&#160;&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;</code></pre>
-        <pre data-prefix="5"><code>&lt;/form&gt;</code></pre>
-      </div>
-      <div class="outputview">
-        <h3 class="outputHeading">Output</h3>
-        <form action="/action_page.php" autocomplete="on">
-          <label for="email">Email:</label><br />
-          <input type="email" id="email" name="email" /><br /><br />
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
-    </div>
-
-    <!--noValidate attr-->
-
-    <h3 style="margin-top: 40px">
-      <span class="wTitle">The Novalidate Attribute</span>
-    </h3>
-    <p>
-      The <span style="color: #04aa6d">novalidate</span> attribute disables form
-      validation when submitting.<br />
-
-      In the example below, the form uses the
-      <span style="color: #04aa6d">novalidate</span> attribute:
-    </p>
-
-    <h3>Examples</h3>
-    <div class="codebox">
-      <div class="mockup-code">
-        <div class="code-header">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-
-        <pre
-          data-prefix="1"
-        ><code>&lt;form action=&quot;/action_page.php&quot; novalidate&gt;</code></pre>
-        <pre
-          data-prefix="2"
-        ><code>&#160;&#160;&#160;&#160;&lt;label for=&quot;username&quot;&gt;Username:&lt;/label&gt;&lt;br&gt;</code></pre>
-        <pre
-          data-prefix="3"
-        ><code>&#160;&#160;&#160;&#160;&lt;input type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot;&gt;&lt;br&gt;</code></pre>
-        <pre
-          data-prefix="4"
-        ><code>&#160;&#160;&#160;&#160;&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;</code></pre>
-        <pre data-prefix="5"><code>&lt;/form&gt;</code></pre>
-      </div>
-      <div class="outputview">
-        <h3 class="outputHeading">Output</h3>
-        <form action="/action_page.php" novalidate>
-          <label for="username">Username:</label><br />
-          <input type="text" id="username" name="username" /><br /><br />
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
-    </div>
-    <br /><br />
-    <h3 style="margin-top: 40px">
-      <span class="wTitle"
-        >List of All
-        <span style="color: aliceblue">&lt;form&gt;</span> Attributes
-      </span>
-    </h3>
-    <div class="table-container">
-      <table border="1" cellspacing="0" cellpadding="8">
-        <tr>
-          <th>Attribute</th>
-          <th>Description</th>
-        </tr>
-        <tr>
-          <td><code>action</code></td>
-          <td>
-            Specifies where to send the form data when the form is submitted.
-          </td>
-        </tr>
-        <tr>
-          <td><code>method</code></td>
-          <td>
-            Specifies the HTTP method to use when sending form data (GET or
-            POST).
-          </td>
-        </tr>
-        <tr>
-          <td><code>target</code></td>
-          <td>
-            Specifies where to display the response received after submitting
-            the form (_self, _blank, _parent, _top).
-          </td>
-        </tr>
-        <tr>
-          <td><code>enctype</code></td>
-          <td>
-            Specifies how form data should be encoded when submitting it to the
-            server (used with POST).
-          </td>
-        </tr>
-        <tr>
-          <td><code>autocomplete</code></td>
-          <td>
-            Specifies whether the browser should automatically complete form
-            fields based on previous entries.
-          </td>
-        </tr>
-        <tr>
-          <td><code>novalidate</code></td>
-          <td>
-            Specifies that the form should not be validated when submitted.
-          </td>
-        </tr>
-        <tr>
-          <td><code>name</code></td>
-          <td>Specifies the name of the form, used to identify the form.</td>
-        </tr>
-        <tr>
-          <td><code>accept-charset</code></td>
-          <td>
-            Specifies the character encodings that are to be used for the form
-            submission.
-          </td>
-        </tr>
-        <tr>
-          <td><code>rel</code></td>
-          <td>
-            Specifies the relationship between the current document and the
-            linked resource.
-          </td>
-        </tr>
-      </table>
-    </div>
-    <br /><br /><br />
-
-    <div class="quiz-container">
-      <h1>Practice Quiz</h1>
-      <div id="quiz-content">
-
-      </div>
-      <button id="submit-btn" class="submit-btn">Submit Answer</button>
-      <p id="feedback" class="feedback"></p>
   </div>
-  <div class="js-confetti"/>
 
-        <script src="../JavaScript/formAttributes.js"></script>
+  <!--target attr-->
+  <h3 style="margin-top: 40px">
+    <span class="wTitle">The Target Attribute</span>
+  </h3>
+  <p>
+    The <span style="color: #04aa6d">target</span> attribute specifies where
+    to display the response after submitting the form.<br />
+
+    It can take values like <span style="color: #04aa6d">_self</span>,
+    <span style="color: #04aa6d">_blank</span>,
+    <span style="color: #04aa6d">_parent</span>, or
+    <span style="color: #04aa6d">_top</span>.<br /><br />
+
+    In the example below, the response will open in a new tab or window due to
+    the <span style="color: #04aa6d">target="_blank"</span> attribute:
+  </p>
+
+  <h3>Examples</h3>
+  <div class="codebox">
+    <div class="mockup-code">
+      <div class="code-header">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <pre
+        data-prefix="1"><code>&lt;<span style="color: tomato;">form</span> <span style="color: rgb(0, 255, 174);">action</span>=&quot;/action_page.php&quot; <span style="color: rgb(0, 255, 174);">target</span>=&quot;_blanquot;&gt;</code></pre>
+      <pre
+        data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: tomato;">label</span> <span style="color: rgb(0, 255, 174);">for</span>=&quot;fname&quot;&gt;First name:&lt;/<span style="color: tomato;">label</span>&gt;&lt;br&gt;</code></pre>
+      <pre
+        data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: tomato;">input</span> <span style="color: rgb(0, 255, 174);">type</span>=&quot;text&quot; <span style="color: rgb(0, 255, 174);">id</span>=&quot;fname&quot; <span style="color: rgb(0, 255, 174);">name</span>=&quot;fname&quot; <span style="color: rgb(0, 255, 174);">value</span>=&quot;John&quot;&gt;&lt;br&gt;&lt;br&gt;</code></pre>
+      <pre
+        data-prefix="4"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: tomato;">input</span> <span style="color: rgb(0, 255, 174);">type</span>=&quot;submit&quot; <span style="color: rgb(0, 255, 174);">value</span>=&quot;Submit&quot;&gt;</code></pre>
+      <pre data-prefix="5"><code>&lt;/<span style="color: tomato;">form</span>&gt;</code></pre>
+    </div>
+    <div class="outputview">
+      <h3 class="outputHeading">Output</h3>
+      <form action="/action_page.php" target="_blank">
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="John" /><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </div>
 
 
-  </body>
+  <div class="table-container">
+    <table border="1" cellspacing="0" cellpadding="8">
+      <tr>
+        <th>Attribute</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>_self</code></td>
+        <td>
+          Default. Opens the document in the same window/tab as it was
+          clicked.
+        </td>
+      </tr>
+      <tr>
+        <td><code>_blank</code></td>
+        <td>Opens the document in a new window or tab.</td>
+      </tr>
+      <tr>
+        <td><code>_parent</code></td>
+        <td>Opens the document in the parent frame.</td>
+      </tr>
+      <tr>
+        <td><code>_top</code></td>
+        <td>Opens the document in the full body of the window.</td>
+      </tr>
+      <tr>
+        <td><code>framename</code></td>
+        <td>Opens the document in a named iframe.</td>
+      </tr>
+    </table>
+  </div>
+
+  <!--method attr-->
+
+  <h3 style="margin-top: 40px">
+    <span class="wTitle">The Method Attribute</span>
+  </h3>
+  <p>
+    The <span style="color: #04aa6d">method</span> attribute specifies how to
+    send form data.<br />
+    It can use <span style="color: #04aa6d">GET</span> or
+    <span style="color: #04aa6d">POST</span> methods.<br />
+
+    In the example below, the form data is sent using the
+    <span style="color: #04aa6d">method="post"</span>:
+  </p>
+
+
+  <h3>Examples</h3>
+  <div class="codebox">
+    <div class="mockup-code">
+      <div class="code-header">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <pre
+        data-prefix="1"><code>&lt;<span style="color: tomato;">form</span> <span style="color: rgb(0, 255, 174);">action</span>=&quot;/action_page.php&quot; <span style="color: rgb(0, 255, 174);">method</span>=&quot;post&quot;&gt;</code></pre>
+      <pre
+        data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: tomato;">label</span> <span style="color: rgb(0, 255, 174);">for</span>=&quot;lname&quot;&gt;Last name:&lt;/<span style="color: tomato;">label</span>&gt;&lt;br&gt;</code></pre>
+      <pre
+        data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: tomato;">input</span> <span style="color: rgb(0, 255, 174);">type</span>=&quot;text&quot; <span style="color: rgb(0, 255, 174);">id</span>=&quot;lname&quot; <span style="color: rgb(0, 255, 174);">name</span>=&quot;lname&quot; <span style="color: rgb(0, 255, 174);">value</span>=&quot;Doe&quot;&gt;&lt;br&gt;</code></pre>
+      <pre
+        data-prefix="4"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: tomato;">input</span> <span style="color: rgb(0, 255, 174);">type</span>=&quot;submit&quot; <span style="color: rgb(0, 255, 174);">value</span>=&quot;Submit&quot;&gt;</code></pre>
+      <pre data-prefix="5"><code>&lt;/<span style="color: tomato;">form</span>&gt;</code></pre>
+    </div>
+    <div class="outputview">
+      <h3 class="outputHeading">Output</h3>
+      <form action="/action_page.php" method="post">
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </div>
+
+
+  <!--autocomplete attr-->
+  <h3 style="margin-top: 40px">
+    <span class="wTitle">The Autocomplete Attribute</span>
+  </h3>
+  <p>
+    The <span style="color: #04aa6d">autocomplete</span> attribute specifies
+    whether the browser should autocomplete form fields by using previously
+    entered data on same type of input field.<br />
+
+    In the example below, the form has
+    <span style="color: #04aa6d">autocomplete="on"</span>:
+  </p>
+
+
+  <h3>Examples</h3>
+  <div class="codebox">
+    <div class="mockup-code">
+      <div class="code-header">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <pre
+        data-prefix="1"><code>&lt;<span style="color: tomato;">form</span> <span style="color: rgb(0, 255, 174);">action</span>=&quot;/action_page.php&quot; <span style="color: rgb(0, 255, 174);">autocomplete</span>=&quot;on&quot;&gt;</code></pre>
+      <pre
+        data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: tomato;">label</span> <span style="color: rgb(0, 255, 174);">for</span>=&quot;email&quot;&gt;Email:&lt;/<span style="color: tomato;">label</span>&gt;&lt;br&gt;</code></pre>
+      <pre
+        data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: tomato;">input</span> <span style="color: rgb(0, 255, 174);">type</span>=&quot;email&quot; <span style="color: rgb(0, 255, 174);">id</span>=&quot;email&quot; <span style="color: rgb(0, 255, 174);">name</span>=&quot;email&quot;&gt;&lt;br&gt;</code></pre>
+      <pre
+        data-prefix="4"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: tomato;">input</span> <span style="color: rgb(0, 255, 174);">type</span>=&quot;submit&quot; <span style="color: rgb(0, 255, 174);">value</span>=&quot;Submit&quot;&gt;</code></pre>
+      <pre data-prefix="5"><code>&lt;/<span style="color: tomato;">form</span>&gt;</code></pre>
+    </div>
+    <div class="outputview">
+      <h3 class="outputHeading">Output</h3>
+      <form action="/action_page.php" autocomplete="on">
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </div>
+
+  <!--noValidate attr-->
+
+  <h3 style="margin-top: 40px">
+    <span class="wTitle">The Novalidate Attribute</span>
+  </h3>
+  <p>
+    The <span style="color: #04aa6d">novalidate</span> attribute disables form
+    validation when submitting.<br />
+
+    In the example below, the form uses the
+    <span style="color: #04aa6d">novalidate</span> attribute:
+  </p>
+
+
+  <h3>Examples</h3>
+  <div class="codebox">
+    <div class="mockup-code">
+      <div class="code-header">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <pre
+        data-prefix="1"><code>&lt;<span style="color: tomato;">form</span> <span style="color: rgb(0, 255, 174);">action</span>=&quot;/action_page.php&quot; <span style="color: rgb(0, 255, 174);">novalidate</span>&gt;</code></pre>
+      <pre
+        data-prefix="2"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: tomato;">label</span> <span style="color: rgb(0, 255, 174);">for</span>=&quot;username&quot;&gt;Username:&lt;/<span style="color: tomato;">label</span>&gt;&lt;br&gt;</code></pre>
+      <pre
+        data-prefix="3"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: tomato;">input</span> <span style="color: rgb(0, 255, 174);">type</span>=&quot;text&quot; <span style="color: rgb(0, 255, 174);">id</span>=&quot;username&quot; <span style="color: rgb(0, 255, 174);">name</span>=&quot;username&quot;&gt;&lt;br&gt;</code></pre>
+      <pre
+        data-prefix="4"><code>&#160;&#160;&#160;&#160;&lt;<span style="color: tomato;">input</span> <span style="color: rgb(0, 255, 174);">type</span>=&quot;submit&quot; <span style="color: rgb(0, 255, 174);">value</span>=&quot;Submit&quot;&gt;</code></pre>
+      <pre data-prefix="5"><code>&lt;/<span style="color: tomato;">form</span>&gt;</code></pre>
+    </div>
+    <div class="outputview">
+      <h3 class="outputHeading">Output</h3>
+      <form action="/action_page.php" novalidate>
+        <label for="username">Username:</label><br />
+        <input type="text" id="username" name="username" /><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </div>
+
+  <br /><br />
+  <h3 style="margin-top: 40px">
+    <span class="wTitle">List of All
+      <span style="color: aliceblue">&lt;form&gt;</span> Attributes
+    </span>
+  </h3>
+  <div class="table-container">
+    <table border="1" cellspacing="0" cellpadding="8">
+      <tr>
+        <th>Attribute</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>action</code></td>
+        <td>
+          Specifies where to send the form data when the form is submitted.
+        </td>
+      </tr>
+      <tr>
+        <td><code>method</code></td>
+        <td>
+          Specifies the HTTP method to use when sending form data (GET or
+          POST).
+        </td>
+      </tr>
+      <tr>
+        <td><code>target</code></td>
+        <td>
+          Specifies where to display the response received after submitting
+          the form (_self, _blank, _parent, _top).
+        </td>
+      </tr>
+      <tr>
+        <td><code>enctype</code></td>
+        <td>
+          Specifies how form data should be encoded when submitting it to the
+          server (used with POST).
+        </td>
+      </tr>
+      <tr>
+        <td><code>autocomplete</code></td>
+        <td>
+          Specifies whether the browser should automatically complete form
+          fields based on previous entries.
+        </td>
+      </tr>
+      <tr>
+        <td><code>novalidate</code></td>
+        <td>
+          Specifies that the form should not be validated when submitted.
+        </td>
+      </tr>
+      <tr>
+        <td><code>name</code></td>
+        <td>Specifies the name of the form, used to identify the form.</td>
+      </tr>
+      <tr>
+        <td><code>accept-charset</code></td>
+        <td>
+          Specifies the character encodings that are to be used for the form
+          submission.
+        </td>
+      </tr>
+      <tr>
+        <td><code>rel</code></td>
+        <td>
+          Specifies the relationship between the current document and the
+          linked resource.
+        </td>
+      </tr>
+    </table>
+  </div>
+  <br /><br /><br />
+
+  <div class="quiz-container">
+    <h1>Practice Quiz</h1>
+    <div id="quiz-content">
+
+    </div>
+    <button id="submit-btn" class="submit-btn">Submit Answer</button>
+    <p id="feedback" class="feedback"></p>
+  </div>
+  <div class="js-confetti" />
+
+  <script src="../JavaScript/formAttributes.js"></script>
+
+
+</body>
+
 </html>
