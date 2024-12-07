@@ -86,6 +86,7 @@ h3.outputHeading {
     width: 50%;
     border-radius: 0px 8px 8px 0px;
     padding-top: 40px;
+    overflow: auto;
 }
 
 
@@ -113,7 +114,6 @@ h3.outputHeading {
     .outputview {
         width: auto;
         border-radius: 0px 0px 8px 8px;
-        overflow: auto;
     }
 
 }
